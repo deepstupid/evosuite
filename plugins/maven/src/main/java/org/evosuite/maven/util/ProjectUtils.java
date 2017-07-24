@@ -19,14 +19,14 @@
  */
 package org.evosuite.maven.util;
 
+import org.apache.maven.artifact.DependencyResolutionRequiredException;
+import org.apache.maven.project.MavenProject;
+import org.evosuite.PackageInfo;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
-import org.apache.maven.artifact.DependencyResolutionRequiredException;
-import org.apache.maven.project.MavenProject;
-import org.evosuite.PackageInfo;
 
 /**
  * 

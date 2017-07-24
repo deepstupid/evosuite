@@ -22,11 +22,11 @@
  */
 package org.evosuite.junit;
 
-import java.util.List;
-import java.util.Map;
-
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.TestCodeVisitor;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>JUnit3TestAdapter class.</p>

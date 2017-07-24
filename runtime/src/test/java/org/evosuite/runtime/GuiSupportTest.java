@@ -19,12 +19,11 @@
  */
 package org.evosuite.runtime;
 
-import java.awt.GraphicsEnvironment;
-
 import org.junit.Assert;
-
 import org.junit.Assume;
 import org.junit.Test;
+
+import java.awt.*;
 
 public class GuiSupportTest {
 

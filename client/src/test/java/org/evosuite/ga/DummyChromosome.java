@@ -23,7 +23,6 @@ import org.evosuite.ga.localsearch.LocalSearchObjective;
 import org.evosuite.utils.Randomness;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 

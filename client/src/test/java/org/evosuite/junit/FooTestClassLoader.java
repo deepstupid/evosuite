@@ -19,8 +19,12 @@
  */
 package org.evosuite.junit;
 
-import static org.junit.Assert.assertNotNull;
+import com.examples.with.different.packagename.junit.Foo;
+import org.apache.commons.io.FileUtils;
+import org.junit.Test;
 
+import javax.tools.*;
+import javax.tools.JavaCompiler.CompilationTask;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -30,23 +34,9 @@ import java.net.URI;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
-import javax.tools.DiagnosticCollector;
-import javax.tools.JavaCompiler;
-import javax.tools.JavaCompiler.CompilationTask;
-import javax.tools.JavaFileObject;
-import javax.tools.StandardJavaFileManager;
-import javax.tools.ToolProvider;
-
-import org.apache.commons.io.FileUtils;
-import org.junit.Test;
-
-import com.examples.with.different.packagename.junit.Foo;
+import static org.junit.Assert.assertNotNull;
 
 public class FooTestClassLoader {
 

@@ -19,33 +19,20 @@
  */
 package org.evosuite.instrumentation.testability.transformer;
 
+import org.evosuite.graphs.GraphPool;
+import org.evosuite.graphs.cdg.ControlDependenceGraph;
+import org.evosuite.graphs.cfg.*;
+import org.evosuite.instrumentation.TransformationStatistics;
+import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
+import org.evosuite.instrumentation.testability.DescriptorMapping;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.tree.*;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Set;
-
-import org.evosuite.graphs.GraphPool;
-import org.evosuite.graphs.cdg.ControlDependenceGraph;
-import org.evosuite.graphs.cfg.BasicBlock;
-import org.evosuite.graphs.cfg.BytecodeInstruction;
-import org.evosuite.graphs.cfg.BytecodeInstructionFactory;
-import org.evosuite.graphs.cfg.BytecodeInstructionPool;
-import org.evosuite.graphs.cfg.ControlDependency;
-import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
-import org.evosuite.instrumentation.testability.DescriptorMapping;
-import org.evosuite.instrumentation.TransformationStatistics;
-import org.objectweb.asm.Label;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.FieldInsnNode;
-import org.objectweb.asm.tree.FrameNode;
-import org.objectweb.asm.tree.InsnList;
-import org.objectweb.asm.tree.JumpInsnNode;
-import org.objectweb.asm.tree.LabelNode;
-import org.objectweb.asm.tree.LineNumberNode;
-import org.objectweb.asm.tree.LocalVariableNode;
-import org.objectweb.asm.tree.MethodNode;
-import org.objectweb.asm.tree.VarInsnNode;
 
 /**
  * Expand ifs without else

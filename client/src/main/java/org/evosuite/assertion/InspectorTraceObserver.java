@@ -19,18 +19,18 @@
  */
 package org.evosuite.assertion;
 
-import java.net.URL;
-import java.util.List;
-import java.util.concurrent.TimeoutException;
-import java.util.regex.Pattern;
-
 import org.evosuite.Properties;
-import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.testcase.statements.ConstructorStatement;
 import org.evosuite.testcase.statements.PrimitiveStatement;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.variable.VariableReference;
+
+import java.net.URL;
+import java.util.List;
+import java.util.concurrent.TimeoutException;
+import java.util.regex.Pattern;
 
 public class InspectorTraceObserver extends AssertionTraceObserver<InspectorTraceEntry> {
 

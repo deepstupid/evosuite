@@ -19,17 +19,15 @@
  */
 package org.evosuite.junit;
 
-import junit.framework.Assert;
-
-import org.evosuite.Properties;
-import org.evosuite.testcase.TestCase;
-import org.junit.Ignore;
-import org.junit.Test;
-
 import com.examples.with.different.packagename.testreader.SimpleTestExample01;
 import com.examples.with.different.packagename.testreader.SimpleTestExample02;
 import com.examples.with.different.packagename.testreader.SimpleTestExample03;
 import com.examples.with.different.packagename.testreader.SimpleTestExample04;
+import junit.framework.Assert;
+import org.evosuite.Properties;
+import org.evosuite.testcase.TestCase;
+import org.junit.Ignore;
+import org.junit.Test;
 
 public class JUnitTestReaderSimpleTest {
 

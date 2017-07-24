@@ -19,13 +19,13 @@
  */
 package org.evosuite;
 
-import static org.junit.Assert.fail;
-
 import org.evosuite.Properties.NoSuchParameterException;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import static org.junit.Assert.fail;
 
 public class PropertiesTest {
 

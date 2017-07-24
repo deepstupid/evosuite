@@ -19,17 +19,16 @@
  */
 package org.evosuite.junit.examples;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.Arrays;
-import java.util.Collection;
-
+import com.examples.with.different.packagename.FlagExample1;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import com.examples.with.different.packagename.FlagExample1;
+import java.util.Arrays;
+import java.util.Collection;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class JUnit4ParameterizedTest {

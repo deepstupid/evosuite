@@ -19,9 +19,9 @@
  */
  package org.evosuite.symbolic.vm;
 
-import static org.evosuite.dse.util.Assertions.check;
-
 import java.lang.reflect.Member;
+
+import static org.evosuite.dse.util.Assertions.check;
 
 
 /**

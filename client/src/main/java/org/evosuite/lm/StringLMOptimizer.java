@@ -19,11 +19,11 @@
  */
 package org.evosuite.lm;
 
-import java.io.IOException;
-
 import org.evosuite.Properties;
 import org.evosuite.testcase.ValueMinimizer;
 import org.evosuite.testcase.variable.ConstantValue;
+
+import java.io.IOException;
 
 /**
  * Uses a language model to locate more readable alternatives

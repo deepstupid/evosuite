@@ -19,10 +19,10 @@
  */
 package org.evosuite.junit;
 
-import java.util.List;
-
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+
+import java.util.List;
 
 /**
  * Creates a JUnitResult instance from 

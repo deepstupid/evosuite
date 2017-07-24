@@ -19,13 +19,13 @@
  */
 package org.evosuite.testcase.execution;
 
+import org.evosuite.testcase.TestCase;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.variable.VariableReference;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
-import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.variable.VariableReference;
 
 /**
  * Abstract base class of all execution observers

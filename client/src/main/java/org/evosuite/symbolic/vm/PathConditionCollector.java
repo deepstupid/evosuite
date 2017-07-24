@@ -19,12 +19,12 @@
  */
 package org.evosuite.symbolic.vm;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import org.evosuite.symbolic.BranchCondition;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.expr.IntegerConstraint;
+
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Collects a path condition during concolic execution

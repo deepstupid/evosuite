@@ -19,11 +19,11 @@
  */
 package org.evosuite.runtime.mock.java.net;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class InetAddressTest {
 

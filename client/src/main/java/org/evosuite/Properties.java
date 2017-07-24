@@ -26,8 +26,8 @@ import org.evosuite.runtime.LoopCounter;
 import org.evosuite.runtime.Runtime;
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.sandbox.Sandbox;
-import org.evosuite.utils.LoggingUtils;
 import org.evosuite.utils.FileIOUtils;
+import org.evosuite.utils.LoggingUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -1196,11 +1196,6 @@ public class Properties {
 	// Experimental
 
 
-	@Parameter(key = "jee" , description = "Support for JEE")
-	public static boolean JEE = true;
-
-	@Parameter(key = "handle_servlets" , description = "Special treatment of JEE Servlets")
-	public static boolean HANDLE_SERVLETS = false; //TODO off for now, as we might not need it in the end
 
 	@Parameter(key = "cluster_recursion", description = "The maximum level of recursion when calculating the dependencies in the test cluster")
 	public static int CLUSTER_RECURSION = 10;

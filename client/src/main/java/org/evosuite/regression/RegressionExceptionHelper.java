@@ -19,6 +19,7 @@
  */
 package org.evosuite.regression;
 
+import dk.brics.automaton.RegExp;
 import org.apache.commons.lang3.StringUtils;
 import org.evosuite.PackageInfo;
 import org.evosuite.runtime.mock.EvoSuiteMock;
@@ -31,7 +32,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import dk.brics.automaton.RegExp;
 
 public class RegressionExceptionHelper {
 

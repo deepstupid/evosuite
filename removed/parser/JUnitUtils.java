@@ -19,18 +19,13 @@
  */
 package org.evosuite.junit;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.Properties;
-import org.evosuite.testcase.ExecutionResult;
-import org.evosuite.testcase.ExecutionTrace;
-import org.evosuite.testcase.ExecutionTracer;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestCaseExecutor;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.slf4j.Logger;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @SuppressWarnings("synthetic-access")
 public class JUnitUtils {

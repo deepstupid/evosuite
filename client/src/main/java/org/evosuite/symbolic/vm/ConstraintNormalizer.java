@@ -19,12 +19,7 @@
  */
 package org.evosuite.symbolic.vm;
 
-import org.evosuite.symbolic.expr.Comparator;
-import org.evosuite.symbolic.expr.Constraint;
-import org.evosuite.symbolic.expr.Expression;
-import org.evosuite.symbolic.expr.IntegerConstraint;
-import org.evosuite.symbolic.expr.RealConstraint;
-import org.evosuite.symbolic.expr.StringConstraint;
+import org.evosuite.symbolic.expr.*;
 import org.evosuite.symbolic.expr.bv.IntegerComparison;
 import org.evosuite.symbolic.expr.bv.IntegerConstant;
 import org.evosuite.symbolic.expr.bv.RealComparison;

@@ -19,10 +19,9 @@
  */
 package com.examples.with.different.packagename;
 
-import java.util.regex.Pattern;
-
 import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.StringUtils;
+
+import java.util.regex.Pattern;
 
 /**
  * Snippet from Lang project

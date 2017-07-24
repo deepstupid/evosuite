@@ -19,20 +19,13 @@
  */
 package org.evosuite.symbolic.vm.string;
 
-import static org.objectweb.asm.Type.BOOLEAN_TYPE;
-import static org.objectweb.asm.Type.CHAR_TYPE;
-import static org.objectweb.asm.Type.DOUBLE_TYPE;
-import static org.objectweb.asm.Type.FLOAT_TYPE;
-import static org.objectweb.asm.Type.INT_TYPE;
-import static org.objectweb.asm.Type.LONG_TYPE;
-import static org.objectweb.asm.Type.VOID_TYPE;
-import static org.objectweb.asm.Type.getMethodDescriptor;
+import org.objectweb.asm.Type;
 
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.StringTokenizer;
 
-import org.objectweb.asm.Type;
+import static org.objectweb.asm.Type.*;
 
 public interface Types {
 

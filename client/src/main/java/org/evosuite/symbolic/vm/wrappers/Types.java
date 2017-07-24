@@ -19,17 +19,9 @@
  */
 package org.evosuite.symbolic.vm.wrappers;
 
-import static org.objectweb.asm.Type.INT_TYPE;
-import static org.objectweb.asm.Type.LONG_TYPE;
-import static org.objectweb.asm.Type.FLOAT_TYPE;
-import static org.objectweb.asm.Type.DOUBLE_TYPE;
-import static org.objectweb.asm.Type.SHORT_TYPE;
-import static org.objectweb.asm.Type.BYTE_TYPE;
-import static org.objectweb.asm.Type.CHAR_TYPE;
-import static org.objectweb.asm.Type.BOOLEAN_TYPE;
-import static org.objectweb.asm.Type.VOID_TYPE;
-
 import org.objectweb.asm.Type;
+
+import static org.objectweb.asm.Type.*;
 
 public interface Types {
 

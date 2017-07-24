@@ -19,18 +19,13 @@
  */
 package org.evosuite.maven.util;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import org.evosuite.Properties;
+import org.evosuite.utils.MD5;
+
+import java.io.*;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.evosuite.Properties;
-import org.evosuite.utils.MD5;
 
 /**
  * <p>

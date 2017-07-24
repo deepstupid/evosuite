@@ -19,10 +19,10 @@
  */
 package org.evosuite.coverage.lcsaj;
 
+import org.evosuite.testsuite.AbstractFitnessFactory;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import org.evosuite.testsuite.AbstractFitnessFactory;
 
 /**
  * <p>

@@ -22,16 +22,15 @@
  */
 package org.evosuite.coverage.cbranch;
 
-import java.util.Map;
-import java.util.Map.Entry;
-
 import org.evosuite.coverage.branch.Branch;
 import org.evosuite.coverage.branch.BranchCoverageGoal;
-import org.evosuite.coverage.branch.BranchCoverageTestFitness;
 import org.evosuite.setup.CallContext;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionResult;
+
+import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * @author Gordon Fraser, mattia

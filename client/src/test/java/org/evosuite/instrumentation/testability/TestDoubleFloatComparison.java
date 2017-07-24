@@ -19,12 +19,13 @@
  */
 package org.evosuite.instrumentation.testability;
 
-import static org.junit.Assert.*;
-
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.statements.numeric.DoublePrimitiveStatement;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestDoubleFloatComparison {
 

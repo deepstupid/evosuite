@@ -19,13 +19,13 @@
  */
 package org.evosuite.assertion.stable;
 
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.junit.JUnitAnalyzer;
 import org.evosuite.runtime.sandbox.Sandbox;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.TestCaseExecutor;
+
+import java.util.List;
 
 public abstract class TestStabilityChecker {
 	public static boolean checkStability(List<TestCase> list) {

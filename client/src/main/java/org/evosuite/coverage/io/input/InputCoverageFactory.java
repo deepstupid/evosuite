@@ -19,8 +19,6 @@
  */
 package org.evosuite.coverage.io.input;
 
-import static org.evosuite.coverage.io.IOCoverageConstants.*;
-
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.coverage.MethodNameMatcher;
@@ -33,7 +31,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Method;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import static org.evosuite.coverage.io.IOCoverageConstants.*;
 
 /**
  * @author Jose Miguel Rojas

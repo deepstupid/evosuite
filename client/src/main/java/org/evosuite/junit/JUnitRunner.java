@@ -22,11 +22,11 @@
  */
 package org.evosuite.junit;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Request;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>

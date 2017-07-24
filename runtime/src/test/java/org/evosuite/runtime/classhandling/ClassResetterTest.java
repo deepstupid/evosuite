@@ -19,7 +19,6 @@
  */
 package org.evosuite.runtime.classhandling;
 
-import com.examples.with.different.packagename.classhandling.FooEnum;
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.instrumentation.EvoClassLoader;
 import org.junit.Assert;

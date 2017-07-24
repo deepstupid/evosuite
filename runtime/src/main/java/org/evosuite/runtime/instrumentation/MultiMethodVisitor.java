@@ -19,14 +19,10 @@
  */
 package org.evosuite.runtime.instrumentation;
 
+import org.objectweb.asm.*;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.objectweb.asm.AnnotationVisitor;
-import org.objectweb.asm.Attribute;
-import org.objectweb.asm.Label;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
 
 /**
  * MethodVisitor that acts as a proxy to two other visitors

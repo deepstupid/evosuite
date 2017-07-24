@@ -19,6 +19,10 @@
  */
 package org.evosuite.runtime.agent;
 
+import org.evosuite.runtime.util.JarPathing;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
@@ -32,10 +36,6 @@ import java.util.Set;
 import java.util.jar.Attributes;
 import java.util.jar.JarFile;
 import java.util.jar.Manifest;
-
-import org.evosuite.runtime.util.JarPathing;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
  
 
 /**

@@ -19,6 +19,9 @@
  */
 package org.evosuite.runtime.vnet;
 
+import org.evosuite.runtime.mock.java.net.MockInetAddress;
+import org.evosuite.runtime.mock.java.net.MockURL;
+
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -30,9 +33,6 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import org.evosuite.runtime.mock.java.net.MockInetAddress;
-import org.evosuite.runtime.mock.java.net.MockURL;
 
 
 /**

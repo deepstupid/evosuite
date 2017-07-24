@@ -17,10 +17,11 @@
  */
 package org.evosuite.ga.metaheuristics.mosa.comparators;
 
-import java.util.Comparator;
-import java.util.Set;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.FitnessFunction;
+
+import java.util.Comparator;
+import java.util.Set;
 
 /**
  * This class implements a <code>Comparator</code> (a method for comparing <code>Chromosomes</code> objects) 

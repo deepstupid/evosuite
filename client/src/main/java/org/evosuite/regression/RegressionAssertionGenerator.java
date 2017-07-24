@@ -20,19 +20,7 @@
 package org.evosuite.regression;
 
 import org.evosuite.Properties;
-import org.evosuite.assertion.AssertionGenerator;
-import org.evosuite.assertion.ComparisonTraceEntry;
-import org.evosuite.assertion.ComparisonTraceObserver;
-import org.evosuite.assertion.InspectorTraceEntry;
-import org.evosuite.assertion.InspectorTraceObserver;
-import org.evosuite.assertion.NullTraceEntry;
-import org.evosuite.assertion.NullTraceObserver;
-import org.evosuite.assertion.PrimitiveFieldTraceEntry;
-import org.evosuite.assertion.PrimitiveFieldTraceObserver;
-import org.evosuite.assertion.PrimitiveTraceEntry;
-import org.evosuite.assertion.PrimitiveTraceObserver;
-import org.evosuite.assertion.SameTraceEntry;
-import org.evosuite.assertion.SameTraceObserver;
+import org.evosuite.assertion.*;
 import org.evosuite.ga.stoppingconditions.MaxStatementsStoppingCondition;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.ExecutionResult;

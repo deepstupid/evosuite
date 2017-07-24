@@ -19,16 +19,15 @@
  */
 package org.evosuite.jenkins.actions;
 
+import hudson.model.AbstractBuild;
 import hudson.model.Action;
 import hudson.model.BuildListener;
 import hudson.remoting.VirtualChannel;
-import hudson.model.AbstractBuild;
-
-import java.io.ByteArrayInputStream;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import org.evosuite.continuous.ContinuousTestGeneration;
+import org.evosuite.jenkins.recorder.EvoSuiteRecorder;
+import org.evosuite.xsd.CUT;
+import org.evosuite.xsd.Project;
+import org.evosuite.xsd.ProjectUtil;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -36,12 +35,11 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
-
-import org.evosuite.continuous.ContinuousTestGeneration;
-import org.evosuite.jenkins.recorder.EvoSuiteRecorder;
-import org.evosuite.xsd.CUT;
-import org.evosuite.xsd.Project;
-import org.evosuite.xsd.ProjectUtil;
+import java.io.ByteArrayInputStream;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class ModuleAction implements Action {
 

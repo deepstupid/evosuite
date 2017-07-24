@@ -22,10 +22,6 @@
  */
 package org.evosuite.junit;
 
-import java.io.File;
-import java.util.List;
-import java.util.Set;
-
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.evosuite.Properties;
 import org.evosuite.ga.Chromosome;
@@ -33,6 +29,10 @@ import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
 import org.evosuite.utils.LoggingUtils;
 import org.evosuite.utils.ReportGenerator;
 import org.evosuite.utils.Utils;
+
+import java.io.File;
+import java.util.List;
+import java.util.Set;
 
 /**
  * <p>

@@ -19,12 +19,6 @@
  */
 package org.evosuite.coverage.dataflow;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.Properties.Criterion;
 import org.evosuite.ga.Chromosome;
@@ -35,6 +29,8 @@ import org.evosuite.testcase.execution.ExecutionTrace;
 import org.evosuite.utils.ArrayUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 /**
  * 

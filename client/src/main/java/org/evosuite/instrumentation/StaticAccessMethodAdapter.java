@@ -22,14 +22,14 @@
  */
 package org.evosuite.instrumentation;
 
-import static org.objectweb.asm.Opcodes.INVOKESTATIC;
-
 import org.evosuite.runtime.classhandling.ClassResetter;
 import org.evosuite.runtime.instrumentation.RuntimeInstrumentation;
 import org.evosuite.testcase.execution.ExecutionTracer;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
+
+import static org.objectweb.asm.Opcodes.INVOKESTATIC;
 
 /**
  * For each PUTSTATIC or GETSTATIC we include a call to

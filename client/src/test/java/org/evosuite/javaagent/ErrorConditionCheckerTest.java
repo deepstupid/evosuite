@@ -22,12 +22,12 @@
  */
 package org.evosuite.javaagent;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.evosuite.instrumentation.error.ErrorConditionChecker;
 import org.junit.Test;
 import org.objectweb.asm.Opcodes;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author Gordon Fraser

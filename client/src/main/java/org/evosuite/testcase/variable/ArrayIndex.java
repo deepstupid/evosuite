@@ -19,20 +19,19 @@
  */
 package org.evosuite.testcase.variable;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-
+import com.googlecode.gentyref.GenericTypeReflector;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.utils.generic.GenericClass;
 import org.objectweb.asm.commons.GeneratorAdapter;
 
-import com.googlecode.gentyref.GenericTypeReflector;
+import java.lang.reflect.Array;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 /**
  * This class defines an reference to an array element. E.g. foo[3]

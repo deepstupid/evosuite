@@ -17,10 +17,10 @@
  */
 package org.evosuite.ga.metaheuristics.mosa.comparators;
 
+import org.evosuite.ga.Chromosome;
+
 import java.io.Serializable;
 import java.util.Comparator;
-
-import org.evosuite.ga.Chromosome;
 
 /**
  * Sort a Collection of Chromosomes by CrowdingDistance

@@ -20,7 +20,6 @@
 package org.evosuite.runtime.vnet;
 
 import org.junit.Assert;
-
 import org.junit.Test;
 
 public class DNSTest {

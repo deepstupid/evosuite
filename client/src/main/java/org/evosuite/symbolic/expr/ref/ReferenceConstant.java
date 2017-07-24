@@ -19,12 +19,12 @@
  */
 package org.evosuite.symbolic.expr.ref;
 
-import java.util.Collections;
-import java.util.Set;
-
 import org.evosuite.symbolic.expr.ExpressionVisitor;
 import org.evosuite.symbolic.expr.Variable;
 import org.objectweb.asm.Type;
+
+import java.util.Collections;
+import java.util.Set;
 
 /**
  * This class represents a reference that is not symbolic (e.g. a new Object()

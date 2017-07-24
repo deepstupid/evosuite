@@ -23,7 +23,6 @@
 package org.evosuite.testsuite;
 
 import junit.framework.Assert;
-
 import org.evosuite.Properties;
 import org.evosuite.junit.JUnitTestReader;
 import org.evosuite.testcase.TestCase;

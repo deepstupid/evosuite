@@ -19,20 +19,18 @@
  */
 package org.evosuite.mock.java.io;
 
-import java.io.File;
-
-import org.junit.Assert;
-
+import com.examples.with.different.packagename.mock.java.io.ExtendingFile;
 import org.evosuite.Properties;
 import org.evosuite.classpath.ClassPathHandler;
 import org.evosuite.instrumentation.InstrumentingClassLoader;
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.mock.java.io.MockFile;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.mock.java.io.ExtendingFile;
+import java.io.File;
 
 public class ParentReplacementTest {
 

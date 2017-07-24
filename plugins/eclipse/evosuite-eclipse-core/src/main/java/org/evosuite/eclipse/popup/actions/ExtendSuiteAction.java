@@ -19,9 +19,6 @@
  */
 package org.evosuite.eclipse.popup.actions;
 
-import java.io.File;
-import java.util.HashSet;
-
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IResourceRuleFactory;
 import org.eclipse.core.resources.ResourcesPlugin;
@@ -39,6 +36,9 @@ import org.eclipse.jface.dialogs.ProgressMonitorDialog;
 import org.eclipse.ui.dialogs.SelectionDialog;
 import org.evosuite.junit.DetermineSUT;
 import org.evosuite.junit.DetermineSUT.NoJUnitClassException;
+
+import java.io.File;
+import java.util.HashSet;
 
 @SuppressWarnings("restriction")
 public abstract class ExtendSuiteAction extends TestGenerationAction {

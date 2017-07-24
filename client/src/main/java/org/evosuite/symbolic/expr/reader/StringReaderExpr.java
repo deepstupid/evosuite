@@ -19,9 +19,6 @@
  */
 package org.evosuite.symbolic.expr.reader;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.symbolic.ConstraintTooLongException;
 import org.evosuite.symbolic.expr.AbstractExpression;
@@ -29,6 +26,9 @@ import org.evosuite.symbolic.expr.ExpressionVisitor;
 import org.evosuite.symbolic.expr.Variable;
 import org.evosuite.symbolic.expr.bv.IntegerValue;
 import org.evosuite.symbolic.expr.str.StringValue;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public final class StringReaderExpr extends AbstractExpression<Long> implements
 		IntegerValue {

@@ -19,18 +19,7 @@
  */
 package org.evosuite.symbolic.solver.avm;
 
-import static org.evosuite.symbolic.SymbolicObserverTest.printConstraints;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.fail;
-import static org.evosuite.symbolic.solver.TestSolver.solve;
-
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-
+import com.examples.with.different.packagename.concolic.StringSearch2;
 import org.evosuite.Properties;
 import org.evosuite.RandomizedTC;
 import org.evosuite.symbolic.BranchCondition;
@@ -38,12 +27,19 @@ import org.evosuite.symbolic.ConcolicExecution;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.solver.SolverTimeoutException;
-import org.evosuite.symbolic.solver.avm.EvoSuiteSolver;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.concolic.StringSearch2;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+import static org.evosuite.symbolic.SymbolicObserverTest.printConstraints;
+import static org.evosuite.symbolic.solver.TestSolver.solve;
+import static org.junit.Assert.*;
 
 public class TestStringSearch2 extends RandomizedTC {
 

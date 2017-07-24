@@ -22,8 +22,6 @@
  */
 package org.evosuite;
 
-import java.io.Serializable;
-
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
 import org.evosuite.ga.metaheuristics.SearchListener;
@@ -32,6 +30,8 @@ import org.evosuite.rmi.ClientServices;
 import org.evosuite.rmi.service.ClientState;
 import org.evosuite.rmi.service.ClientStateInformation;
 import org.evosuite.testsuite.TestSuiteChromosome;
+
+import java.io.Serializable;
 
 /**
  * <p>

@@ -19,16 +19,6 @@
  */
 package org.evosuite.maven.util;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.model.building.ModelBuildingRequest;
 import org.apache.maven.plugin.logging.Log;
@@ -39,6 +29,12 @@ import org.apache.maven.project.ProjectBuildingResult;
 import org.eclipse.aether.RepositorySystemSession;
 import org.evosuite.EvoSuite;
 import org.evosuite.utils.LoggingUtils;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Note: we cannot call EvoSuite directly on same JVM, like the following:

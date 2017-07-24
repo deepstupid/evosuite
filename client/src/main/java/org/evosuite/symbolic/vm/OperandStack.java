@@ -19,13 +19,13 @@
  */
 package org.evosuite.symbolic.vm;
 
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.LinkedList;
-
 import org.evosuite.symbolic.expr.bv.IntegerValue;
 import org.evosuite.symbolic.expr.fp.RealValue;
 import org.evosuite.symbolic.expr.ref.ReferenceExpression;
+
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 /**
  * 

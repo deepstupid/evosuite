@@ -19,11 +19,7 @@
  */
 package org.evosuite.symbolic.vm;
 
-import static org.evosuite.dse.util.Assertions.notNull;
-
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-
+import org.evosuite.dse.AbstractVM;
 import org.evosuite.symbolic.expr.Expression;
 import org.evosuite.symbolic.expr.IntegerConstraint;
 import org.evosuite.symbolic.expr.bv.IntegerConstant;
@@ -35,7 +31,11 @@ import org.evosuite.symbolic.instrument.ConcolicInstrumentingClassLoader;
 import org.objectweb.asm.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.evosuite.dse.AbstractVM;
+
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+
+import static org.evosuite.dse.util.Assertions.notNull;
 
 /**
  * Static area (static fields) and heap (instance fields)

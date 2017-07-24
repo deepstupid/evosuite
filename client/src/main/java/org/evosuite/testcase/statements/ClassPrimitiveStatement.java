@@ -19,6 +19,13 @@
  */
 package org.evosuite.testcase.statements;
 
+import org.evosuite.Properties;
+import org.evosuite.TestGenerationContext;
+import org.evosuite.seeding.ConstantPoolManager;
+import org.evosuite.testcase.TestCase;
+import org.evosuite.utils.Randomness;
+import org.evosuite.utils.generic.GenericClass;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -28,14 +35,6 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.evosuite.Properties;
-import org.evosuite.TestGenerationContext;
-import org.evosuite.seeding.ConstantPoolManager;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.utils.generic.GenericClass;
-import org.evosuite.utils.Randomness;
-import org.objectweb.asm.commons.GeneratorAdapter;
 
 public class ClassPrimitiveStatement extends PrimitiveStatement<Class<?>> {
 

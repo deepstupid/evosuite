@@ -22,8 +22,6 @@
  */
 package org.evosuite;
 
-import java.util.List;
-
 import org.evosuite.assertion.InspectorManager;
 import org.evosuite.contracts.ContractChecker;
 import org.evosuite.contracts.FailingTestSet;
@@ -43,8 +41,6 @@ import org.evosuite.runtime.Runtime;
 import org.evosuite.runtime.classhandling.ModifiedTargetStaticFields;
 import org.evosuite.runtime.instrumentation.MethodCallReplacementCache;
 import org.evosuite.runtime.instrumentation.RemoveFinalClassAdapter;
-import org.evosuite.runtime.javaee.db.DBManager;
-import org.evosuite.runtime.javaee.injection.Injector;
 import org.evosuite.runtime.util.JOptionPaneInputs;
 import org.evosuite.runtime.util.SystemInUtil;
 import org.evosuite.seeding.CastClassManager;
@@ -62,6 +58,8 @@ import org.evosuite.testcase.execution.reset.ClassReInitializer;
 import org.evosuite.utils.ArrayUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 /**
  * @author Gordon Fraser
@@ -97,7 +95,6 @@ public class TestGenerationContext {
 		classLoader = new InstrumentingClassLoader();
 		regressionClassLoader = new InstrumentingClassLoader(true);
 
-		DBManager.getInstance().setSutClassLoader(classLoader);
 	}
 
 	public static TestGenerationContext getInstance() {
@@ -150,9 +147,7 @@ public class TestGenerationContext {
 		// re-instrument classes
 		classLoader = new InstrumentingClassLoader();
 
-		if (!DBManager.getInstance().isWasAccessed()) {
-			DBManager.getInstance().setSutClassLoader(classLoader);
-		}
+
 
 		TestCaseExecutor.pullDown();
 
@@ -224,8 +219,6 @@ public class TestGenerationContext {
 		JOptionPaneInputs.resetSingleton();
 		Runtime.resetSingleton();
 		MethodCallReplacementCache.resetSingleton();
-
-		Injector.reset();
 
 		DSEStats.clear();
 

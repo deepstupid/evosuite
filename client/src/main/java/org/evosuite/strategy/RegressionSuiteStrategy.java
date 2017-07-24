@@ -19,9 +19,6 @@
  */
 package org.evosuite.strategy;
 
-import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.List;
 import org.evosuite.Properties;
 import org.evosuite.Properties.Criterion;
 import org.evosuite.TestGenerationContext;
@@ -34,11 +31,7 @@ import org.evosuite.ga.stoppingconditions.MaxStatementsStoppingCondition;
 import org.evosuite.ga.stoppingconditions.StoppingCondition;
 import org.evosuite.ga.stoppingconditions.ZeroFitnessStoppingCondition;
 import org.evosuite.junit.JUnitAnalyzer;
-import org.evosuite.regression.RegressionAssertionCounter;
-import org.evosuite.regression.RegressionMeasure;
-import org.evosuite.regression.RegressionTestChromosome;
-import org.evosuite.regression.RegressionTestChromosomeFactory;
-import org.evosuite.regression.RegressionTestSuiteChromosome;
+import org.evosuite.regression.*;
 import org.evosuite.result.TestGenerationResultBuilder;
 import org.evosuite.rmi.ClientServices;
 import org.evosuite.rmi.service.ClientState;
@@ -52,6 +45,10 @@ import org.evosuite.testsuite.TestSuiteFitnessFunction;
 import org.evosuite.utils.ArrayUtil;
 import org.evosuite.utils.LoggingUtils;
 import org.evosuite.utils.Randomness;
+
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RegressionSuiteStrategy extends TestGenerationStrategy {
 

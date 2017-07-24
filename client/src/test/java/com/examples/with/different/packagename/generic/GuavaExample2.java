@@ -24,7 +24,6 @@ package com.examples.with.different.packagename.generic;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
 /**
  * @author Gordon Fraser

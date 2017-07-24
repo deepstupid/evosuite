@@ -19,10 +19,10 @@
  */
 package org.evosuite.junit;
 
+import org.evosuite.testcase.execution.ExecutionTrace;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import org.evosuite.testcase.execution.ExecutionTrace;
 
 /**
  * The information from executing a JUnit test case

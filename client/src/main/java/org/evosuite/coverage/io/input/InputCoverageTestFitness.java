@@ -19,24 +19,14 @@
  */
 package org.evosuite.coverage.io.input;
 
-import static org.evosuite.coverage.io.IOCoverageConstants.*;
-
-import org.evosuite.coverage.io.output.OutputCoverageGoal;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionObserver;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.execution.TestCaseExecutor;
-import org.evosuite.testcase.statements.ConstructorStatement;
-import org.evosuite.testcase.statements.EntityWithParametersStatement;
-import org.evosuite.testcase.statements.MethodStatement;
-import org.evosuite.utils.generic.GenericConstructor;
-import org.evosuite.utils.generic.GenericMethod;
 import org.objectweb.asm.Type;
 
-import java.lang.reflect.Array;
-import java.util.*;
-import java.util.Map.Entry;
+import java.util.Set;
 
 /**
  * @author Jose Miguel Rojas

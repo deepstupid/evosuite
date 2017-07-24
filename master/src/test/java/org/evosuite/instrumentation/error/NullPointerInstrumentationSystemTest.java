@@ -19,6 +19,8 @@
  */
 package org.evosuite.instrumentation.error;
 
+import com.examples.with.different.packagename.errorbranch.Fieldaccess;
+import com.examples.with.different.packagename.errorbranch.Methodcall;
 import org.evosuite.EvoSuite;
 import org.evosuite.Properties;
 import org.evosuite.SystemTestBase;
@@ -27,9 +29,6 @@ import org.evosuite.strategy.TestGenerationStrategy;
 import org.evosuite.testsuite.TestSuiteChromosome;
 import org.junit.Assert;
 import org.junit.Test;
-
-import com.examples.with.different.packagename.errorbranch.Fieldaccess;
-import com.examples.with.different.packagename.errorbranch.Methodcall;
 
 public class NullPointerInstrumentationSystemTest extends SystemTestBase {
 

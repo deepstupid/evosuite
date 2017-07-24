@@ -19,24 +19,24 @@
  */
 package org.evosuite.testcase.statements;
 
+import org.evosuite.Properties;
+import org.evosuite.testcase.TestCase;
+import org.evosuite.testcase.TestFactory;
+import org.evosuite.testcase.execution.CodeUnderTestException;
+import org.evosuite.testcase.execution.EvosuiteError;
+import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.variable.ArrayReference;
+import org.evosuite.testcase.variable.VariableReference;
+import org.evosuite.testcase.variable.VariableReferenceImpl;
+import org.evosuite.utils.Randomness;
+import org.evosuite.utils.generic.GenericField;
+
 import java.io.PrintStream;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.evosuite.Properties;
-import org.evosuite.testcase.variable.ArrayReference;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestFactory;
-import org.evosuite.testcase.variable.VariableReference;
-import org.evosuite.testcase.variable.VariableReferenceImpl;
-import org.evosuite.testcase.execution.CodeUnderTestException;
-import org.evosuite.testcase.execution.EvosuiteError;
-import org.evosuite.testcase.execution.Scope;
-import org.evosuite.utils.generic.GenericField;
-import org.evosuite.utils.Randomness;
 
 /**
  * Statement that accesses an instance/class field

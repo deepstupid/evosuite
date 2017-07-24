@@ -19,13 +19,13 @@
  */
 package org.evosuite.graphs.ccg;
 
-import java.util.List;
-import java.util.Map;
-
 import org.evosuite.graphs.EvoSuiteGraph;
 import org.evosuite.graphs.GraphPool;
 import org.evosuite.graphs.cfg.BytecodeInstruction;
 import org.evosuite.graphs.cfg.RawControlFlowGraph;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Represents the method call structure of a class in a graph.

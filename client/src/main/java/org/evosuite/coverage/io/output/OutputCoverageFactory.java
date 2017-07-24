@@ -19,21 +19,6 @@
  */
 package org.evosuite.coverage.io.output;
 
-import static org.evosuite.coverage.io.IOCoverageConstants.ARRAY_EMPTY;
-import static org.evosuite.coverage.io.IOCoverageConstants.ARRAY_NONEMPTY;
-import static org.evosuite.coverage.io.IOCoverageConstants.BOOL_FALSE;
-import static org.evosuite.coverage.io.IOCoverageConstants.BOOL_TRUE;
-import static org.evosuite.coverage.io.IOCoverageConstants.CHAR_ALPHA;
-import static org.evosuite.coverage.io.IOCoverageConstants.CHAR_DIGIT;
-import static org.evosuite.coverage.io.IOCoverageConstants.CHAR_OTHER;
-import static org.evosuite.coverage.io.IOCoverageConstants.NUM_NEGATIVE;
-import static org.evosuite.coverage.io.IOCoverageConstants.NUM_POSITIVE;
-import static org.evosuite.coverage.io.IOCoverageConstants.NUM_ZERO;
-import static org.evosuite.coverage.io.IOCoverageConstants.REF_NONNULL;
-import static org.evosuite.coverage.io.IOCoverageConstants.REF_NULL;
-import static org.evosuite.coverage.io.IOCoverageConstants.STRING_EMPTY;
-import static org.evosuite.coverage.io.IOCoverageConstants.STRING_NONEMPTY;
-
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.assertion.CheapPurityAnalyzer;
@@ -52,6 +37,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static org.evosuite.coverage.io.IOCoverageConstants.*;
 
 /**
  * @author Jose Miguel Rojas

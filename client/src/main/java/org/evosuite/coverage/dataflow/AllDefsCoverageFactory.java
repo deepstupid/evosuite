@@ -19,12 +19,12 @@
  */
 package org.evosuite.coverage.dataflow;
 
+import org.evosuite.testsuite.AbstractFitnessFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import org.evosuite.testsuite.AbstractFitnessFactory;
 
 /**
  * <p>

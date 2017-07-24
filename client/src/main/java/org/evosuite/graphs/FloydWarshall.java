@@ -59,9 +59,9 @@ package org.evosuite.graphs;
  *
  */
 
-import java.util.*;
+import org.jgrapht.Graph;
 
-import org.jgrapht.*;
+import java.util.HashMap;
 
 
 /**

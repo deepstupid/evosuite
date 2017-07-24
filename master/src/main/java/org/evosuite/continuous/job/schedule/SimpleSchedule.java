@@ -19,13 +19,13 @@
  */
 package org.evosuite.continuous.job.schedule;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import org.evosuite.continuous.job.JobDefinition;
 import org.evosuite.continuous.job.JobScheduler;
 import org.evosuite.continuous.project.ProjectStaticData;
 import org.evosuite.continuous.project.ProjectStaticData.ClassInfo;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class SimpleSchedule extends OneTimeSchedule{
 

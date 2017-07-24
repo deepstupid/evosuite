@@ -19,24 +19,20 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.junit.Assert.assertNotNull;
-import static org.evosuite.symbolic.solver.TestSolver.solve;
-import static org.junit.Assert.assertEquals;
-
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Map;
-
+import com.examples.with.different.packagename.solver.TestCaseAbs;
+import com.examples.with.different.packagename.solver.TestCaseMax;
+import com.examples.with.different.packagename.solver.TestCaseMin;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
 
-import com.examples.with.different.packagename.solver.TestCaseAbs;
-import com.examples.with.different.packagename.solver.TestCaseMax;
-import com.examples.with.different.packagename.solver.TestCaseMin;
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.Map;
 
-import static org.junit.Assert.assertTrue;
+import static org.evosuite.symbolic.solver.TestSolver.solve;
+import static org.junit.Assert.*;
 
 public class TestSolverMath {
 

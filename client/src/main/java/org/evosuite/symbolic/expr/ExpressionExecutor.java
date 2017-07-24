@@ -19,50 +19,27 @@
  */
 package org.evosuite.symbolic.expr;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
-
 import org.apache.oro.text.regex.MalformedPatternException;
 import org.apache.oro.text.regex.Pattern;
 import org.apache.oro.text.regex.Perl5Compiler;
 import org.apache.oro.text.regex.Perl5Matcher;
-import org.evosuite.symbolic.expr.bv.IntegerBinaryExpression;
-import org.evosuite.symbolic.expr.bv.IntegerComparison;
-import org.evosuite.symbolic.expr.bv.IntegerConstant;
-import org.evosuite.symbolic.expr.bv.IntegerUnaryExpression;
-import org.evosuite.symbolic.expr.bv.IntegerVariable;
-import org.evosuite.symbolic.expr.bv.RealComparison;
-import org.evosuite.symbolic.expr.bv.RealToIntegerCast;
-import org.evosuite.symbolic.expr.bv.RealUnaryToIntegerExpression;
-import org.evosuite.symbolic.expr.bv.StringBinaryComparison;
-import org.evosuite.symbolic.expr.bv.StringBinaryToIntegerExpression;
-import org.evosuite.symbolic.expr.bv.StringMultipleComparison;
-import org.evosuite.symbolic.expr.bv.StringMultipleToIntegerExpression;
-import org.evosuite.symbolic.expr.bv.StringToIntegerCast;
-import org.evosuite.symbolic.expr.bv.StringUnaryToIntegerExpression;
-import org.evosuite.symbolic.expr.fp.IntegerToRealCast;
-import org.evosuite.symbolic.expr.fp.RealBinaryExpression;
-import org.evosuite.symbolic.expr.fp.RealConstant;
-import org.evosuite.symbolic.expr.fp.RealUnaryExpression;
-import org.evosuite.symbolic.expr.fp.RealVariable;
+import org.evosuite.symbolic.expr.bv.*;
+import org.evosuite.symbolic.expr.fp.*;
 import org.evosuite.symbolic.expr.reader.StringReaderExpr;
 import org.evosuite.symbolic.expr.ref.GetFieldExpression;
 import org.evosuite.symbolic.expr.ref.ReferenceConstant;
 import org.evosuite.symbolic.expr.ref.ReferenceVariable;
-import org.evosuite.symbolic.expr.str.IntegerToStringCast;
-import org.evosuite.symbolic.expr.str.RealToStringCast;
-import org.evosuite.symbolic.expr.str.StringBinaryExpression;
-import org.evosuite.symbolic.expr.str.StringConstant;
-import org.evosuite.symbolic.expr.str.StringMultipleExpression;
-import org.evosuite.symbolic.expr.str.StringUnaryExpression;
-import org.evosuite.symbolic.expr.str.StringVariable;
+import org.evosuite.symbolic.expr.str.*;
 import org.evosuite.symbolic.expr.token.HasMoreTokensExpr;
 import org.evosuite.symbolic.expr.token.NewTokenizerExpr;
 import org.evosuite.symbolic.expr.token.NextTokenizerExpr;
 import org.evosuite.symbolic.expr.token.StringNextTokenExpr;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 /**
  * returns the concrete evaluation for a given expression.

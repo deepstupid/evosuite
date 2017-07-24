@@ -19,9 +19,6 @@
  */
 package org.evosuite.graphs;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.Properties;
 import org.evosuite.graphs.ccfg.ClassControlFlowGraph;
 import org.evosuite.graphs.ccg.ClassCallGraph;
@@ -31,6 +28,9 @@ import org.evosuite.graphs.cfg.RawControlFlowGraph;
 import org.evosuite.setup.DependencyAnalysis;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Gives access to all Graphs computed during CUT analysis such as CFGs created

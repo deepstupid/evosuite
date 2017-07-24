@@ -20,7 +20,6 @@
 package org.evosuite.assertion.stable;
 
 import com.examples.with.different.packagename.assertion.DoubleWrapperExample;
-import com.examples.with.different.packagename.stable.CloneMe;
 import org.evosuite.EvoSuite;
 import org.evosuite.Properties;
 import org.evosuite.SystemTestBase;

@@ -19,9 +19,6 @@
  */
 package org.evosuite.junit;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.ga.stoppingconditions.MaxStatementsStoppingCondition;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.ExecutionResult;
@@ -32,6 +29,9 @@ import org.evosuite.testsuite.TestSuiteChromosome;
 import org.junit.runner.JUnitCore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**

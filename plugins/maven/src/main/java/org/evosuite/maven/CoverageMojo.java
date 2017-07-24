@@ -19,11 +19,6 @@
  */
 package org.evosuite.maven;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -37,6 +32,11 @@ import org.apache.maven.project.ProjectBuilder;
 import org.eclipse.aether.RepositorySystemSession;
 import org.evosuite.maven.util.EvoSuiteRunner;
 import org.evosuite.maven.util.ProjectUtils;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Execute the manually written test suites (usually located under src/test/java)

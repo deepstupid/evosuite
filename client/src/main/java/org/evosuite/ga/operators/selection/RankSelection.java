@@ -19,11 +19,11 @@
  */
 package org.evosuite.ga.operators.selection;
 
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.utils.Randomness;
+
+import java.util.List;
 
 
 	/**

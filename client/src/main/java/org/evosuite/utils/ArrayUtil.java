@@ -19,11 +19,11 @@
  */
 package org.evosuite.utils;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
-import org.apache.commons.lang3.StringUtils;
 public abstract class ArrayUtil {
 	/**
 	 * <p>asSet</p>

@@ -19,16 +19,15 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.junit.Assert.assertNotNull;
-
-import java.lang.reflect.Method;
-import java.util.Collection;
-
+import com.examples.with.different.packagename.concolic.MIMETypeTest;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.testcase.DefaultTestCase;
 
-import com.examples.with.different.packagename.concolic.MIMETypeTest;
+import java.lang.reflect.Method;
+import java.util.Collection;
+
+import static org.junit.Assert.assertNotNull;
 
 public class TestMIMEType extends TestSolver {
 

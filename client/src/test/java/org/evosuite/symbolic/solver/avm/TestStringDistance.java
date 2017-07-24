@@ -19,11 +19,6 @@
  */
 package org.evosuite.symbolic.solver.avm;
 
-import static org.junit.Assert.*;
-
-import java.util.Collection;
-import java.util.Collections;
-
 import org.evosuite.RandomizedTC;
 import org.evosuite.symbolic.expr.Comparator;
 import org.evosuite.symbolic.expr.Constraint;
@@ -35,6 +30,12 @@ import org.evosuite.symbolic.expr.str.StringConstant;
 import org.evosuite.symbolic.expr.str.StringVariable;
 import org.evosuite.symbolic.solver.DistanceEstimator;
 import org.junit.Test;
+
+import java.util.Collection;
+import java.util.Collections;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestStringDistance extends RandomizedTC {
 

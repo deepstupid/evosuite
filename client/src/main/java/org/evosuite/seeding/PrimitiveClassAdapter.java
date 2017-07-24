@@ -20,11 +20,7 @@
 package org.evosuite.seeding;
 
 import org.evosuite.setup.DependencyAnalysis;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.FieldVisitor;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.Type;
+import org.objectweb.asm.*;
 
 /**
  * <p>

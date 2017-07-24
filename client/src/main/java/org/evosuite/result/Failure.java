@@ -19,15 +19,15 @@
  */
 package org.evosuite.result;
 
-import java.io.Serializable;
-import java.util.Arrays;
-
 import org.evosuite.Properties;
 import org.evosuite.contracts.ContractViolation;
-import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.statements.ConstructorStatement;
 import org.evosuite.testcase.statements.MethodStatement;
+import org.evosuite.testcase.statements.Statement;
+
+import java.io.Serializable;
+import java.util.Arrays;
 
 public class Failure implements Serializable {
 

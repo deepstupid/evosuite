@@ -22,12 +22,6 @@
  */
 package org.evosuite.setup;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Type;
-import java.util.*;
-import java.util.Map.Entry;
-import java.util.stream.Collectors;
-
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.coverage.archive.TestsArchive;
@@ -36,19 +30,23 @@ import org.evosuite.junit.CoverageAnalysis;
 import org.evosuite.runtime.util.AtMostOnceLogger;
 import org.evosuite.runtime.util.Inputs;
 import org.evosuite.seeding.CastClassManager;
-import org.evosuite.testcase.ConstraintHelper;
 import org.evosuite.testcase.ConstraintVerifier;
 import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.jee.InstanceOnlyOnce;
 import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.utils.ListUtil;
+import org.evosuite.utils.Randomness;
 import org.evosuite.utils.generic.GenericAccessibleObject;
 import org.evosuite.utils.generic.GenericClass;
 import org.evosuite.utils.generic.GenericConstructor;
 import org.evosuite.utils.generic.GenericMethod;
-import org.evosuite.utils.Randomness;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Type;
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.stream.Collectors;
 
 /**
  * @author Gordon Fraser
@@ -1061,24 +1059,6 @@ public class TestCluster {
 			cacheGenerators(clazz);
 			Set<GenericAccessibleObject<?>> candidates = new LinkedHashSet<>(generatorCache.get(clazz));
 			candidates.removeAll(excluded);
-
-			if(Properties.JEE) {
-				Iterator<GenericAccessibleObject<?>> iter = candidates.iterator();
-				while (iter.hasNext()) {
-					GenericAccessibleObject<?> gao = iter.next();
-					if (gao instanceof GenericConstructor) {
-						Class<?> klass = gao.getDeclaringClass();
-						if(InstanceOnlyOnce.canInstantiateOnlyOnce(klass) &&
-								ConstraintHelper.countNumberOfNewInstances(test, klass) != 0){
-							iter.remove();
-						}
-					}
-
-					if(! ConstraintVerifier.isValidPositionForInsertion(gao,test,position)){
-						iter.remove();
-					}
-				}
-			}
 
 			if(generatorRefToExclude != null){
 				Iterator<GenericAccessibleObject<?>> iter = candidates.iterator();

@@ -19,10 +19,10 @@
  */
 package org.evosuite.graphs.ccfg;
 
-import java.util.Map;
-import java.util.HashMap;
-
 import org.jgrapht.ext.ComponentAttributeProvider;
+
+import java.util.HashMap;
+import java.util.Map;
 public class CCFGEdgeAttributeProvider implements ComponentAttributeProvider<CCFGEdge> {
 
 	

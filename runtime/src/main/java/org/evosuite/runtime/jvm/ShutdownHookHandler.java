@@ -19,14 +19,14 @@
  */
 package org.evosuite.runtime.jvm;
 
+import org.evosuite.runtime.sandbox.Sandbox;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.IdentityHashMap;
 import java.util.List;
-
-import org.evosuite.runtime.sandbox.Sandbox;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This singleton class is used to store/run the the shutdown thread hooks that

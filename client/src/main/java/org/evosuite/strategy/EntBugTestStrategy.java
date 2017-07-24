@@ -19,10 +19,6 @@
  */
 package org.evosuite.strategy;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.coverage.FitnessFunctions;
 import org.evosuite.coverage.rho.RhoCoverageFactory;
@@ -38,6 +34,10 @@ import org.evosuite.testsuite.TestSuiteChromosome;
 import org.evosuite.utils.LoggingUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * @inproceedings{Campos:2013,

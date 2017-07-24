@@ -19,8 +19,8 @@
  */
 package org.evosuite.instrumentation.testability.transformer;
 
-import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
 import org.evosuite.instrumentation.TransformationStatistics;
+import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.JumpInsnNode;

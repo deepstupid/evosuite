@@ -19,12 +19,6 @@
  */
 package org.evosuite.continuous;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.continuous.job.JobDefinition;
 import org.evosuite.continuous.job.JobExecutor;
@@ -35,6 +29,12 @@ import org.evosuite.continuous.project.ProjectStaticData;
 import org.evosuite.utils.FileIOUtils;
 import org.evosuite.xsd.Project;
 import org.evosuite.xsd.ProjectUtil;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 
 
 /**

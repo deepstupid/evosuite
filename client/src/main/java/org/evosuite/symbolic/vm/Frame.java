@@ -19,9 +19,9 @@
  */
 package org.evosuite.symbolic.vm;
 
-import java.lang.reflect.Member;
-
 import org.objectweb.asm.Type;
+
+import java.lang.reflect.Member;
 
 /**
  * Invocation frame.

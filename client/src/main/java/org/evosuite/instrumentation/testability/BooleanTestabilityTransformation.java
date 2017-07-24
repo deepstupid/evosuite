@@ -22,9 +22,6 @@
  */
 package org.evosuite.instrumentation.testability;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.coverage.branch.Branch;
 import org.evosuite.coverage.branch.BranchPool;
@@ -35,39 +32,19 @@ import org.evosuite.graphs.cfg.BytecodeInstructionPool;
 import org.evosuite.instrumentation.BooleanArrayInterpreter;
 import org.evosuite.instrumentation.BooleanValueInterpreter;
 import org.evosuite.instrumentation.TransformationStatistics;
-import org.evosuite.instrumentation.testability.transformer.BitwiseOperatorTransformer;
-import org.evosuite.instrumentation.testability.transformer.BooleanArrayIndexTransformer;
-import org.evosuite.instrumentation.testability.transformer.BooleanArrayTransformer;
-import org.evosuite.instrumentation.testability.transformer.BooleanCallsTransformer;
-import org.evosuite.instrumentation.testability.transformer.BooleanDefinitionTransformer;
-import org.evosuite.instrumentation.testability.transformer.BooleanDistanceTransformer;
-import org.evosuite.instrumentation.testability.transformer.BooleanIfTransformer;
-import org.evosuite.instrumentation.testability.transformer.BooleanReturnTransformer;
-import org.evosuite.instrumentation.testability.transformer.ImplicitElseTransformer;
-import org.evosuite.instrumentation.testability.transformer.InstanceOfTransformer;
+import org.evosuite.instrumentation.testability.transformer.*;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.ClassNode;
-import org.objectweb.asm.tree.FieldInsnNode;
-import org.objectweb.asm.tree.FieldNode;
-import org.objectweb.asm.tree.FrameNode;
-import org.objectweb.asm.tree.InsnList;
-import org.objectweb.asm.tree.InsnNode;
-import org.objectweb.asm.tree.JumpInsnNode;
-import org.objectweb.asm.tree.LabelNode;
-import org.objectweb.asm.tree.LdcInsnNode;
-import org.objectweb.asm.tree.LineNumberNode;
-import org.objectweb.asm.tree.LocalVariableNode;
-import org.objectweb.asm.tree.MethodInsnNode;
-import org.objectweb.asm.tree.MethodNode;
-import org.objectweb.asm.tree.VarInsnNode;
+import org.objectweb.asm.tree.*;
 import org.objectweb.asm.tree.analysis.Analyzer;
 import org.objectweb.asm.tree.analysis.AnalyzerException;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Transform everything Boolean to ints.

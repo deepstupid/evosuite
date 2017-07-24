@@ -19,6 +19,21 @@
  */
 package org.evosuite.testcase.statements;
 
+import org.apache.commons.lang3.ClassUtils;
+import org.evosuite.Properties;
+import org.evosuite.setup.TestClusterGenerator;
+import org.evosuite.setup.TestClusterUtils;
+import org.evosuite.testcase.TestCase;
+import org.evosuite.testcase.TestFactory;
+import org.evosuite.testcase.execution.CodeUnderTestException;
+import org.evosuite.testcase.execution.EvosuiteError;
+import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.variable.*;
+import org.evosuite.utils.Randomness;
+import org.evosuite.utils.generic.GenericAccessibleObject;
+import org.evosuite.utils.generic.GenericClass;
+import org.evosuite.utils.generic.GenericField;
+
 import java.io.PrintStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -26,27 +41,6 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.apache.commons.lang3.ClassUtils;
-import org.evosuite.Properties;
-import org.evosuite.setup.TestClusterGenerator;
-import org.evosuite.setup.TestClusterUtils;
-import org.evosuite.testcase.variable.ArrayIndex;
-import org.evosuite.testcase.variable.ArrayReference;
-import org.evosuite.testcase.variable.FieldReference;
-import org.evosuite.testcase.variable.NullReference;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestFactory;
-import org.evosuite.testcase.variable.VariableReference;
-import org.evosuite.testcase.execution.CodeUnderTestException;
-import org.evosuite.testcase.execution.EvosuiteError;
-import org.evosuite.testcase.execution.Scope;
-import org.evosuite.utils.generic.GenericAccessibleObject;
-import org.evosuite.utils.generic.GenericClass;
-import org.evosuite.utils.generic.GenericField;
-import org.evosuite.utils.Randomness;
-import org.objectweb.asm.Type;
-import org.objectweb.asm.commons.GeneratorAdapter;
 
 /**
  * An assignment statement assigns a variable to another variable. This is only

@@ -25,11 +25,11 @@
 
 package org.evosuite.runtime.util;
 
-import shaded.org.evosuite.runtime.annotation.EvoSuiteClassExclude;
-import org.junit.BeforeClass;
-import org.junit.Before;
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import shaded.org.evosuite.runtime.annotation.EvoSuiteClassExclude;
 import shaded.org.evosuite.runtime.sandbox.Sandbox;
 import shaded.org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
 

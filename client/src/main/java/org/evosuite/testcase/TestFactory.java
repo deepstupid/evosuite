@@ -19,37 +19,22 @@
  */
 package org.evosuite.testcase;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-
+import com.googlecode.gentyref.CaptureType;
+import com.googlecode.gentyref.GenericTypeReflector;
 import org.apache.commons.lang3.ClassUtils;
 import org.evosuite.Properties;
-import org.evosuite.TestGenerationContext;
 import org.evosuite.TimeController;
 import org.evosuite.ga.ConstructionFailedException;
 import org.evosuite.runtime.annotation.Constraints;
-import org.evosuite.runtime.javaee.injection.Injector;
-import org.evosuite.runtime.javaee.javax.servlet.EvoServletState;
 import org.evosuite.runtime.mock.MockList;
 import org.evosuite.runtime.util.AtMostOnceLogger;
 import org.evosuite.runtime.util.Inputs;
 import org.evosuite.seeding.CastClassManager;
 import org.evosuite.seeding.ObjectPoolManager;
-import org.evosuite.setup.*;
-import org.evosuite.testcase.jee.InjectionSupport;
-import org.evosuite.testcase.jee.InstanceOnlyOnce;
-import org.evosuite.testcase.jee.ServletSupport;
+import org.evosuite.setup.DependencyAnalysis;
+import org.evosuite.setup.TestCluster;
+import org.evosuite.setup.TestClusterGenerator;
+import org.evosuite.setup.TestUsageChecker;
 import org.evosuite.testcase.mutation.RandomInsertion;
 import org.evosuite.testcase.statements.*;
 import org.evosuite.testcase.statements.environment.EnvironmentStatements;
@@ -57,19 +42,17 @@ import org.evosuite.testcase.statements.reflection.PrivateFieldStatement;
 import org.evosuite.testcase.statements.reflection.PrivateMethodStatement;
 import org.evosuite.testcase.statements.reflection.ReflectionFactory;
 import org.evosuite.testcase.variable.*;
-import org.evosuite.utils.generic.GenericAccessibleObject;
-import org.evosuite.utils.generic.GenericClass;
-import org.evosuite.utils.generic.GenericConstructor;
-import org.evosuite.utils.generic.GenericField;
-import org.evosuite.utils.generic.GenericMethod;
 import org.evosuite.utils.Randomness;
+import org.evosuite.utils.generic.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.googlecode.gentyref.CaptureType;
-import com.googlecode.gentyref.GenericTypeReflector;
-
-import javax.servlet.http.HttpServlet;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.lang.reflect.Type;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author Gordon Fraser
@@ -213,10 +196,6 @@ public class TestFactory {
 
 		Class<?> klass = constructor.getRawGeneratedType();
 
-		if(Properties.JEE && InstanceOnlyOnce.canInstantiateOnlyOnce(klass) && ConstraintHelper.countNumberOfNewInstances(test,klass) != 0){
-			throw new ConstructionFailedException("Class "+klass.getName()+" can only be instantiated once");
-		}
-
 		int length = test.size();
 
 		try {
@@ -234,20 +213,7 @@ public class TestFactory {
 			Statement st = new ConstructorStatement(test, constructor, parameters);
 			VariableReference ref =  test.addStatement(st, position);
 
-			if(Properties.JEE) {
-				int injectPosition = doInjection(test, position, klass, ref, recursionDepth);
 
-				if(Properties.HANDLE_SERVLETS) {
-					if (HttpServlet.class.isAssignableFrom(klass)) {
-						//Servlets are treated specially, as part of JEE
-						if (ConstraintHelper.countNumberOfMethodCalls(test, EvoServletState.class, "initServlet") == 0) {
-							Statement ms = new MethodStatement(test, ServletSupport.getServletInit(), null,
-									Arrays.asList(ref));
-							test.addStatement(ms, injectPosition++);
-						}
-					}
-				}
-			}
 
 			return ref;
 		} catch (Exception e) {
@@ -256,100 +222,100 @@ public class TestFactory {
 		}
 	}
 
-	private int doInjection(TestCase test, int position, Class<?> klass, VariableReference ref,
-							int recursionDepth) throws ConstructionFailedException {
-
-		int injectPosition = position + 1;
-		int startPos = injectPosition;
-
-		//check if this object needs any dependency injection
-
-		Class<?> target = klass;
-
-		while(target != null) {
-			VariableReference classConstant = new ConstantValue(test, new GenericClass(Class.class), target);
-
-			//first check all special fields
-			if (Injector.hasEntityManager(target)) {
-				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForEntityManager(), null,
-						Arrays.asList(ref, classConstant));
-				test.addStatement(ms, injectPosition++);
-			}
-			if (Injector.hasEntityManagerFactory(target)) {
-				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForEntityManagerFactory(), null,
-						Arrays.asList(ref, classConstant));
-				test.addStatement(ms, injectPosition++);
-			}
-			if (Injector.hasUserTransaction(target)) {
-				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForUserTransaction(), null,
-						Arrays.asList(ref, classConstant));
-				test.addStatement(ms, injectPosition++);
-			}
-			if (Injector.hasEvent(target)) {
-				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForEvent(), null,
-						Arrays.asList(ref, classConstant));
-				test.addStatement(ms, injectPosition++);
-			}
-
-			//then do the non-special fields that need injection
-			for (Field f : Injector.getGeneralFieldsToInject(target)) {
-
-				/*
-					Very tricky: if we allow to reuse a variable X, it might end up
-					that X is a bounded variable previously created for injection
-					but where the initialization calls have not been added yet to the test.
-					Handling it "properly" would be far too complicated :(
-					So we just avoid reusing existing variables in a recursive call, as
-					anyway we can always rely on FM to "save the day"
-				 */
-				boolean reuseVariables  = recursionDepth == 0;
-
-				int beforeLength = test.size();
-				VariableReference valueToInject = satisfyParameters(
-						test,
-						ref, // avoid calling methods of bounded variables
-						Arrays.asList((Type) f.getType()),
-						injectPosition,
-						recursionDepth +1,
-						false, true, reuseVariables).get(0);
-				int afterLength = test.size();
-				injectPosition += (afterLength - beforeLength);
-
-				VariableReference fieldName = new ConstantValue(test, new GenericClass(String.class), f.getName());
-				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForGeneralField(), null,
-						Arrays.asList(ref, classConstant, fieldName, valueToInject));
-				test.addStatement(ms, injectPosition++);
-			}
-
-			target = target.getSuperclass();
-		}
-
-		if(injectPosition != startPos) {
-			//validate the bean, but only if there was any injection
-			VariableReference classConstant = new ConstantValue(test, new GenericClass(Class.class), klass);
-			Statement ms = new MethodStatement(test, InjectionSupport.getValidateBean(), null, Arrays.asList(ref, classConstant));
-			test.addStatement(ms, injectPosition++);
-		}
-
-		/*
-			finally, call the the postConstruct (if any), but be sure the ones in
-			 superclass(es) are called first
-		 */
-		int pos = injectPosition;
-		target = klass;
-
-		while(target != null) {
-			if (Injector.hasPostConstruct(target)) {
-				VariableReference classConstant = new ConstantValue(test, new GenericClass(Class.class), target);
-				Statement ms = new MethodStatement(test, InjectionSupport.getPostConstruct(), null,
-						Arrays.asList(ref,classConstant));
-				test.addStatement(ms, pos);
-				injectPosition++;
-			}
-			target = target.getSuperclass();
-		}
-		return injectPosition;
-	}
+//	private int doInjection(TestCase test, int position, Class<?> klass, VariableReference ref,
+//							int recursionDepth) throws ConstructionFailedException {
+//
+//		int injectPosition = position + 1;
+//		int startPos = injectPosition;
+//
+//		//check if this object needs any dependency injection
+//
+//		Class<?> target = klass;
+//
+//		while(target != null) {
+//			VariableReference classConstant = new ConstantValue(test, new GenericClass(Class.class), target);
+//
+//			//first check all special fields
+//			if (Injector.hasEntityManager(target)) {
+//				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForEntityManager(), null,
+//						Arrays.asList(ref, classConstant));
+//				test.addStatement(ms, injectPosition++);
+//			}
+//			if (Injector.hasEntityManagerFactory(target)) {
+//				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForEntityManagerFactory(), null,
+//						Arrays.asList(ref, classConstant));
+//				test.addStatement(ms, injectPosition++);
+//			}
+//			if (Injector.hasUserTransaction(target)) {
+//				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForUserTransaction(), null,
+//						Arrays.asList(ref, classConstant));
+//				test.addStatement(ms, injectPosition++);
+//			}
+//			if (Injector.hasEvent(target)) {
+//				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForEvent(), null,
+//						Arrays.asList(ref, classConstant));
+//				test.addStatement(ms, injectPosition++);
+//			}
+//
+//			//then do the non-special fields that need injection
+//			for (Field f : Injector.getGeneralFieldsToInject(target)) {
+//
+//				/*
+//					Very tricky: if we allow to reuse a variable X, it might end up
+//					that X is a bounded variable previously created for injection
+//					but where the initialization calls have not been added yet to the test.
+//					Handling it "properly" would be far too complicated :(
+//					So we just avoid reusing existing variables in a recursive call, as
+//					anyway we can always rely on FM to "save the day"
+//				 */
+//				boolean reuseVariables  = recursionDepth == 0;
+//
+//				int beforeLength = test.size();
+//				VariableReference valueToInject = satisfyParameters(
+//						test,
+//						ref, // avoid calling methods of bounded variables
+//						Arrays.asList((Type) f.getType()),
+//						injectPosition,
+//						recursionDepth +1,
+//						false, true, reuseVariables).get(0);
+//				int afterLength = test.size();
+//				injectPosition += (afterLength - beforeLength);
+//
+//				VariableReference fieldName = new ConstantValue(test, new GenericClass(String.class), f.getName());
+//				Statement ms = new MethodStatement(test, InjectionSupport.getInjectorForGeneralField(), null,
+//						Arrays.asList(ref, classConstant, fieldName, valueToInject));
+//				test.addStatement(ms, injectPosition++);
+//			}
+//
+//			target = target.getSuperclass();
+//		}
+//
+//		if(injectPosition != startPos) {
+//			//validate the bean, but only if there was any injection
+//			VariableReference classConstant = new ConstantValue(test, new GenericClass(Class.class), klass);
+//			Statement ms = new MethodStatement(test, InjectionSupport.getValidateBean(), null, Arrays.asList(ref, classConstant));
+//			test.addStatement(ms, injectPosition++);
+//		}
+//
+//		/*
+//			finally, call the the postConstruct (if any), but be sure the ones in
+//			 superclass(es) are called first
+//		 */
+//		int pos = injectPosition;
+//		target = klass;
+//
+//		while(target != null) {
+//			if (Injector.hasPostConstruct(target)) {
+//				VariableReference classConstant = new ConstantValue(test, new GenericClass(Class.class), target);
+//				Statement ms = new MethodStatement(test, InjectionSupport.getPostConstruct(), null,
+//						Arrays.asList(ref,classConstant));
+//				test.addStatement(ms, pos);
+//				injectPosition++;
+//			}
+//			target = target.getSuperclass();
+//		}
+//		return injectPosition;
+//	}
 
 	/**
 	 * Add a field to the test case
@@ -1483,18 +1449,7 @@ public class TestFactory {
 			}
 		}
 
-		//check for bounded variables
-		if(Properties.JEE){
-			iter = objects.iterator();
-			while(iter.hasNext()) {
-				VariableReference ref = iter.next();
 
-				if(ConstraintHelper.getLastPositionOfBounded(ref,test) >= position){
-					iter.remove();
-					additionalToRemove.add(ref);
-				}
-			}
-		}
 
 
 		//further remove all other vars that have the deleted ones as additionals
@@ -2142,11 +2097,6 @@ public class TestFactory {
 				logger.warn("Have no target methods to test");
 				return false;
 			} else if (o.isConstructor()) {
-
-				if(InstanceOnlyOnce.canInstantiateOnlyOnce(o.getDeclaringClass()) &&
-						ConstraintHelper.countNumberOfNewInstances(test,o.getDeclaringClass()) != 0){
-					return false;
-				}
 
 				GenericConstructor c = (GenericConstructor) o;
 				logger.debug("Adding constructor call {}", c.getName());

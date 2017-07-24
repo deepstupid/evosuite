@@ -19,11 +19,6 @@
  */
 package org.evosuite.symbolic;
 
-import java.text.NumberFormat;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.rmi.ClientServices;
 import org.evosuite.statistics.RuntimeVariable;
@@ -34,6 +29,11 @@ import org.evosuite.symbolic.expr.StringConstraint;
 import org.evosuite.symbolic.solver.SolverCache;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.text.NumberFormat;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * This class is used to store statistics on DSE.

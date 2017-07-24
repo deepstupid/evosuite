@@ -19,10 +19,6 @@
  */
 package org.evosuite.executionmode;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Option;
 import org.apache.commons.io.FileUtils;
@@ -30,6 +26,10 @@ import org.evosuite.EvoSuite;
 import org.evosuite.Properties;
 import org.evosuite.Properties.NoSuchParameterException;
 import org.evosuite.utils.LoggingUtils;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 
 public class Setup {
 

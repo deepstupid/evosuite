@@ -22,8 +22,6 @@
  */
 package org.evosuite.instrumentation;
 
-import java.util.List;
-
 import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
@@ -34,6 +32,8 @@ import org.objectweb.asm.tree.VarInsnNode;
 import org.objectweb.asm.tree.analysis.AnalyzerException;
 import org.objectweb.asm.tree.analysis.BasicInterpreter;
 import org.objectweb.asm.tree.analysis.BasicValue;
+
+import java.util.List;
 
 /**
  * An interpreter that determines which values are real Booleans

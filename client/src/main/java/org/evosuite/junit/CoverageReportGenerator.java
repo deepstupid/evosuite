@@ -22,10 +22,10 @@
  */
 package org.evosuite.junit;
 
-import java.io.File;
-
 import org.evosuite.Properties;
 import org.evosuite.utils.FileIOUtils;
+
+import java.io.File;
 
 /**
  * <p>

@@ -22,12 +22,11 @@
  */
 package org.evosuite.coverage.path;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.evosuite.Properties;
 import org.evosuite.coverage.MethodNameMatcher;
 import org.evosuite.testsuite.AbstractFitnessFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>

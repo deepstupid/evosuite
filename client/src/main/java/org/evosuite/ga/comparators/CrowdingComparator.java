@@ -19,10 +19,10 @@
  */
 package org.evosuite.ga.comparators;
 
+import org.evosuite.ga.Chromosome;
+
 import java.io.Serializable;
 import java.util.Comparator;
-
-import org.evosuite.ga.Chromosome;
 
 /**
  * Sort a Collection of Chromosomes by Crowd

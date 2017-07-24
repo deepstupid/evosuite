@@ -14,7 +14,12 @@
     <dependencies>
         <dependency>
             <groupId>org.evosuite</groupId>
-            <artifactId>evosuite-shaded</artifactId>
+            <artifactId>evosuite-runtime</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.evosuite</groupId>
+            <artifactId>evosuite-client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

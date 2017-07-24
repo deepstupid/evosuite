@@ -21,9 +21,10 @@ package org.evosuite.seeding;
 
 import org.evosuite.Properties;
 import org.evosuite.utils.RandomAccessQueue;
-import org.evosuite.utils.Randomness;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Iterator;
+import java.util.Queue;
 
 /**
  * Created by gordon on 06/01/2017.

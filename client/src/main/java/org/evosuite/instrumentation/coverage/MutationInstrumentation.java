@@ -22,13 +22,6 @@
  */
 package org.evosuite.instrumentation.coverage;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.classpath.ResourceList;
 import org.evosuite.coverage.mutation.Mutation;
@@ -37,31 +30,20 @@ import org.evosuite.graphs.GraphPool;
 import org.evosuite.graphs.cfg.BytecodeInstruction;
 import org.evosuite.graphs.cfg.RawControlFlowGraph;
 import org.evosuite.instrumentation.BooleanValueInterpreter;
-import org.evosuite.instrumentation.mutation.InsertUnaryOperator;
-import org.evosuite.instrumentation.mutation.MutationOperator;
-import org.evosuite.instrumentation.mutation.ReplaceArithmeticOperator;
-import org.evosuite.instrumentation.mutation.ReplaceBitwiseOperator;
-import org.evosuite.instrumentation.mutation.ReplaceComparisonOperator;
-import org.evosuite.instrumentation.mutation.ReplaceConstant;
-import org.evosuite.instrumentation.mutation.ReplaceVariable;
+import org.evosuite.instrumentation.mutation.*;
 import org.evosuite.runtime.classhandling.ClassResetter;
 import org.evosuite.runtime.instrumentation.AnnotatedLabel;
 import org.evosuite.setup.DependencyAnalysis;
 import org.evosuite.testcase.execution.ExecutionTracer;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.FieldInsnNode;
-import org.objectweb.asm.tree.InsnList;
-import org.objectweb.asm.tree.JumpInsnNode;
-import org.objectweb.asm.tree.LabelNode;
-import org.objectweb.asm.tree.LdcInsnNode;
-import org.objectweb.asm.tree.MethodInsnNode;
-import org.objectweb.asm.tree.MethodNode;
+import org.objectweb.asm.tree.*;
 import org.objectweb.asm.tree.analysis.Analyzer;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 /**
  * <p>

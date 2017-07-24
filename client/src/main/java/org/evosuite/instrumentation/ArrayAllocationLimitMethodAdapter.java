@@ -22,9 +22,6 @@
  */
 package org.evosuite.instrumentation;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.PackageInfo;
 import org.evosuite.Properties;
 import org.evosuite.testcase.execution.TestCaseExecutor;
@@ -33,6 +30,9 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.commons.GeneratorAdapter;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**

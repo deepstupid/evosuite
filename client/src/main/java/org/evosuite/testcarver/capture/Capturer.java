@@ -19,20 +19,19 @@
  */
 package org.evosuite.testcarver.capture;
 
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.StaxDriver;
+import org.evosuite.TimeController;
+import org.evosuite.testcarver.exception.CapturerException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import org.evosuite.TimeController;
-import org.evosuite.testcarver.exception.CapturerException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.StaxDriver;
 
 public final class Capturer {
 	private static CaptureLog currentLog;

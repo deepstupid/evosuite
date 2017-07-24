@@ -19,17 +19,12 @@
  */
 package org.evosuite.symbolic.solver.cvc4;
 
-import java.util.HashSet;
-import java.util.Set;
-
-import org.evosuite.symbolic.expr.Comparator;
-import org.evosuite.symbolic.expr.ConstraintVisitor;
-import org.evosuite.symbolic.expr.Expression;
-import org.evosuite.symbolic.expr.IntegerConstraint;
-import org.evosuite.symbolic.expr.RealConstraint;
-import org.evosuite.symbolic.expr.StringConstraint;
+import org.evosuite.symbolic.expr.*;
 import org.evosuite.symbolic.solver.SmtExprBuilder;
 import org.evosuite.symbolic.solver.smt.SmtExpr;
+
+import java.util.HashSet;
+import java.util.Set;
 
 final class ConstraintToCVC4Visitor implements ConstraintVisitor<SmtExpr, Void> {
 

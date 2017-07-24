@@ -22,12 +22,13 @@
  */
 package org.evosuite.assertion;
 
+import org.evosuite.Properties;
+import org.evosuite.testcase.variable.VariableReference;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import org.evosuite.Properties;
-import org.evosuite.testcase.variable.VariableReference;
 
 /**
  * <p>ComparisonTraceEntry class.</p>

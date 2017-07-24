@@ -22,14 +22,14 @@
  */
 package org.evosuite.testcase.execution;
 
+import org.evosuite.coverage.dataflow.DefUse;
+import org.evosuite.setup.CallContext;
+import org.evosuite.testcase.execution.ExecutionTraceImpl.BranchEval;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import org.evosuite.coverage.dataflow.DefUse;
-import org.evosuite.setup.CallContext;
-import org.evosuite.testcase.execution.ExecutionTraceImpl.BranchEval;
 
 /**
  * <p>

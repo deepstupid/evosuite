@@ -19,12 +19,12 @@
  */
 package org.evosuite.utils;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.Properties;
 import org.evosuite.instrumentation.testability.TestabilityTransformationClassLoader;
 import org.evosuite.testcase.execution.ExecutionTracer;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class ClassTransformer {

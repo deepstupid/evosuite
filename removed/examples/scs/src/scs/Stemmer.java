@@ -52,8 +52,6 @@
  */
 package scs;
 
-import java.io.*;
-
 /**
  * Stemmer, implementing the Porter Stemming Algorithm
  * 

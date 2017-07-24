@@ -19,12 +19,9 @@
  */
 package org.evosuite.runtime.mock.java.io;
 
-import java.io.File;
-
-import org.evosuite.runtime.mock.java.io.MockFile;
-import org.junit.Assert;
-
 import org.junit.Test;
+
+import java.io.File;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

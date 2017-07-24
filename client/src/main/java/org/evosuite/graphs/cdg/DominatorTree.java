@@ -19,16 +19,16 @@
  */
 package org.evosuite.graphs.cdg;
 
+import org.evosuite.graphs.EvoSuiteGraph;
+import org.evosuite.graphs.cfg.ControlFlowGraph;
+import org.jgrapht.graph.DefaultEdge;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.evosuite.graphs.EvoSuiteGraph;
-import org.evosuite.graphs.cfg.ControlFlowGraph;
-import org.jgrapht.graph.DefaultEdge;
 
 
 /**

@@ -19,8 +19,6 @@
  */
 package org.evosuite.eclipse.replace;
 
-import java.util.Collection;
-
 public class NWAlgoType {
 	private String[] originalType;
 	private String[] newType;

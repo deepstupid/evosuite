@@ -22,14 +22,14 @@
  */
 package org.evosuite.contracts;
 
+import org.evosuite.assertion.EqualsAssertion;
+import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.variable.ConstantValue;
+import org.evosuite.testcase.variable.VariableReference;
+
 import java.lang.reflect.Method;
 import java.util.List;
-
-import org.evosuite.assertion.EqualsAssertion;
-import org.evosuite.testcase.variable.ConstantValue;
-import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.variable.VariableReference;
-import org.evosuite.testcase.execution.Scope;
 
 
 /**

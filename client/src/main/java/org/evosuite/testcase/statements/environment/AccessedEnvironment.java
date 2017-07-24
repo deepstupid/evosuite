@@ -19,12 +19,14 @@
  */
 package org.evosuite.testcase.statements.environment;
 
-import org.evosuite.runtime.javaee.JeeData;
 import org.evosuite.runtime.util.Inputs;
 import org.evosuite.runtime.vnet.EndPointInfo;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * Class used to keep track of what environment components (local files, remote URLs, etc)
@@ -60,7 +62,6 @@ public class AccessedEnvironment implements Serializable {
     private final Set<EndPointInfo> remoteContactedPorts;
 
 
-    private JeeData jeeData;
 
 
     public AccessedEnvironment(){
@@ -68,7 +69,6 @@ public class AccessedEnvironment implements Serializable {
         remoteURLs = new LinkedHashSet<>();
         localListeningPorts = new LinkedHashSet<>();
         remoteContactedPorts = new LinkedHashSet<>();
-        jeeData = null;
     }
 
     public void copyFrom(AccessedEnvironment other){
@@ -77,7 +77,6 @@ public class AccessedEnvironment implements Serializable {
         this.remoteURLs.addAll(other.remoteURLs);
         this.localListeningPorts.addAll(other.localListeningPorts);
         this.remoteContactedPorts.addAll(other.remoteContactedPorts);
-        this.jeeData = other.jeeData; //it is an immutable object
     }
 
     public void clear(){
@@ -85,7 +84,6 @@ public class AccessedEnvironment implements Serializable {
         remoteURLs.clear();
         localListeningPorts.clear();
         remoteContactedPorts.clear();
-        jeeData = null;
     }
 
     public boolean hasProperty(String property) throws IllegalArgumentException{
@@ -94,13 +92,6 @@ public class AccessedEnvironment implements Serializable {
         return false; //TODO
     }
 
-    public JeeData getJeeData() {
-        return jeeData;
-    }
-
-    public void setJeeData(JeeData jeeData) {
-        this.jeeData = jeeData;
-    }
 
     public void addRemoteContactedPorts(Collection<EndPointInfo> ports){
         remoteContactedPorts.addAll(ports);

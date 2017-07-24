@@ -22,21 +22,16 @@
  */
 package org.evosuite.setup;
 
-import java.util.Iterator;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.instrumentation.BytecodeInstrumentation;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.ClassNode;
-import org.objectweb.asm.tree.FieldInsnNode;
-import org.objectweb.asm.tree.InsnList;
-import org.objectweb.asm.tree.MethodInsnNode;
-import org.objectweb.asm.tree.MethodNode;
+import org.objectweb.asm.tree.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * This class creates a StaticUsageGraph by traversing the INVOKESTATIC/GETSTATIC relation

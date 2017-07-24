@@ -19,10 +19,10 @@
  */
 package org.evosuite.seeding;
 
-import java.io.Serializable;
-
 import org.evosuite.testcase.TestCase;
 import org.evosuite.utils.generic.GenericClass;
+
+import java.io.Serializable;
 
 class ObjectSequence implements Serializable {
 

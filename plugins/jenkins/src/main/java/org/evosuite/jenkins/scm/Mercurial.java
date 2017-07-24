@@ -22,16 +22,6 @@ package org.evosuite.jenkins.scm;
 import com.cloudbees.plugins.credentials.CredentialsProvider;
 import com.cloudbees.plugins.credentials.common.StandardUsernameCredentials;
 import com.cloudbees.plugins.credentials.domains.URIRequirementBuilder;
-
-import org.evosuite.jenkins.recorder.EvoSuiteRecorder;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import hudson.FilePath;
 import hudson.Launcher;
 import hudson.maven.AbstractMavenProject;
@@ -45,6 +35,14 @@ import hudson.plugins.mercurial.MercurialSCM;
 import hudson.security.ACL;
 import hudson.util.ArgumentListBuilder;
 import jenkins.model.Jenkins;
+import org.evosuite.jenkins.recorder.EvoSuiteRecorder;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Mercurial wrapper to handle hg commands, such commit and push.

@@ -22,14 +22,14 @@
  */
 package org.evosuite.seeding;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
-
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.signature.SignatureVisitor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * @author Gordon Fraser

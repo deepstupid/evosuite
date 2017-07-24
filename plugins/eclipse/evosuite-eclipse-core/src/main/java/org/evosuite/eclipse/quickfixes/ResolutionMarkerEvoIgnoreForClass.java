@@ -19,8 +19,6 @@
  */
 package org.evosuite.eclipse.quickfixes;
 
-import java.io.IOException;
-
 import org.eclipse.core.filebuffers.FileBuffers;
 import org.eclipse.core.filebuffers.ITextFileBuffer;
 import org.eclipse.core.filebuffers.ITextFileBufferManager;
@@ -40,6 +38,8 @@ import org.eclipse.jface.text.IDocument;
 import org.eclipse.text.edits.MalformedTreeException;
 import org.eclipse.text.edits.TextEdit;
 import org.eclipse.ui.IMarkerResolution;
+
+import java.io.IOException;
 
 public class ResolutionMarkerEvoIgnoreForClass implements IMarkerResolution {
 

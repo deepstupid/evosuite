@@ -19,17 +19,15 @@
  */
 package org.evosuite.runtime.mock.java.io;
 
+import org.evosuite.runtime.mock.MockFramework;
+import org.evosuite.runtime.vfs.VirtualFileSystem;
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-
-import org.evosuite.runtime.mock.MockFramework;
-import org.evosuite.runtime.mock.java.io.MockFile;
-import org.evosuite.runtime.mock.java.io.MockRandomAccessFile;
-import org.evosuite.runtime.vfs.VirtualFileSystem;
-import org.junit.Assert;
-import org.junit.Test;
 
 public class MockRandomAccessFileTest {
 

@@ -25,16 +25,12 @@ package org.evosuite.testcase.localsearch;
 import org.evosuite.Properties;
 import org.evosuite.ga.ConstructionFailedException;
 import org.evosuite.ga.localsearch.LocalSearchObjective;
-import org.evosuite.testcase.variable.ArrayReference;
-import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.TestCaseExpander;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFactory;
 import org.evosuite.testcase.execution.ExecutionResult;
-import org.evosuite.testcase.statements.ArrayStatement;
-import org.evosuite.testcase.statements.AssignmentStatement;
-import org.evosuite.testcase.statements.NullStatement;
-import org.evosuite.testcase.statements.PrimitiveStatement;
+import org.evosuite.testcase.statements.*;
+import org.evosuite.testcase.variable.ArrayReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

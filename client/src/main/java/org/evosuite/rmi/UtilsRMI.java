@@ -19,11 +19,11 @@
  */
 package org.evosuite.rmi;
 
+import org.evosuite.utils.Randomness;
+
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-
-import org.evosuite.utils.Randomness;
 
 public class UtilsRMI {
 

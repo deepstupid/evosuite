@@ -22,20 +22,15 @@
  */
 package org.evosuite.assertion;
 
-import com.examples.with.different.packagename.*;
 import org.evosuite.EvoSuite;
-import org.evosuite.Properties;
 import org.evosuite.SystemTestBase;
-import org.evosuite.coverage.TestCoverageGoal;
 import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
 import org.evosuite.strategy.TestGenerationStrategy;
 import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testsuite.TestSuiteChromosome;
 import org.junit.Assert;
-import org.junit.Test;
-
 import org.junit.Ignore;
+import org.junit.Test;
 
 /**
  * @author fraser

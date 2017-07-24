@@ -19,6 +19,16 @@
  */
 package org.evosuite.runtime.instrumentation;
 
+import org.evosuite.PackageInfo;
+import org.evosuite.runtime.RuntimeSettings;
+import org.evosuite.runtime.mock.*;
+import org.evosuite.runtime.mock.java.lang.MockThrowable;
+import org.evosuite.runtime.util.ReflectionUtils;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -27,20 +37,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.evosuite.PackageInfo;
-import org.evosuite.runtime.RuntimeSettings;
-import org.evosuite.runtime.mock.EvoSuiteMock;
-import org.evosuite.runtime.mock.MockList;
-import org.evosuite.runtime.mock.OverrideMock;
-import org.evosuite.runtime.mock.StaticReplacementMethod;
-import org.evosuite.runtime.mock.StaticReplacementMock;
-import org.evosuite.runtime.mock.java.lang.MockThrowable;
-import org.evosuite.runtime.util.ReflectionUtils;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.Type;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * @author gordon

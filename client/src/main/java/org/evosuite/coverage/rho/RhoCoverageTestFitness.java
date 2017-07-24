@@ -19,16 +19,12 @@
  */
 package org.evosuite.coverage.rho;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionResult;
+
+import java.util.*;
 
 public class RhoCoverageTestFitness extends TestFitnessFunction {
 

@@ -23,20 +23,6 @@ import com.cloudbees.plugins.credentials.CredentialsMatchers;
 import com.cloudbees.plugins.credentials.CredentialsProvider;
 import com.cloudbees.plugins.credentials.common.StandardUsernameCredentials;
 import com.cloudbees.plugins.credentials.domains.URIRequirementBuilder;
-
-import org.eclipse.jgit.transport.URIish;
-import org.evosuite.jenkins.recorder.EvoSuiteRecorder;
-import org.jenkinsci.plugins.gitclient.CliGitAPIImpl;
-import org.jenkinsci.plugins.gitclient.GitClient;
-import org.jenkinsci.plugins.gitclient.PushCommand;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-
 import hudson.EnvVars;
 import hudson.FilePath;
 import hudson.maven.AbstractMavenProject;
@@ -49,6 +35,18 @@ import hudson.plugins.git.GitSCM;
 import hudson.plugins.git.UserRemoteConfig;
 import hudson.security.ACL;
 import jenkins.plugins.git.GitSCMSource;
+import org.eclipse.jgit.transport.URIish;
+import org.evosuite.jenkins.recorder.EvoSuiteRecorder;
+import org.jenkinsci.plugins.gitclient.CliGitAPIImpl;
+import org.jenkinsci.plugins.gitclient.GitClient;
+import org.jenkinsci.plugins.gitclient.PushCommand;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Git wrapper to handle git commands, such commit and push.

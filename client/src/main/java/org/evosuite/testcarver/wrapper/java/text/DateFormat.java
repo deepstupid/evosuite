@@ -19,13 +19,6 @@
  */
 package org.evosuite.testcarver.wrapper.java.text;
 
-import java.text.FieldPosition;
-import java.text.NumberFormat;
-import java.text.ParseException;
-import java.text.ParsePosition;
-import java.util.Locale;
-import java.util.TimeZone;
-
 import org.evosuite.testcarver.capture.CaptureLog;
 import org.evosuite.testcarver.capture.CaptureUtil;
 import org.evosuite.testcarver.capture.Capturer;
@@ -33,6 +26,13 @@ import org.evosuite.testcarver.capture.FieldRegistry;
 import org.evosuite.testcarver.instrument.Instrumenter;
 import org.evosuite.testcarver.wrapper.java.util.Calendar;
 import org.evosuite.testcarver.wrapper.java.util.Date;
+
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.text.ParsePosition;
+import java.util.Locale;
+import java.util.TimeZone;
 
 public abstract class DateFormat extends java.text.DateFormat {
 

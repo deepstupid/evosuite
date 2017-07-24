@@ -21,7 +21,8 @@ package org.maven_test_project.cm;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class SimpleClassFullTest {
 

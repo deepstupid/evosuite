@@ -19,9 +19,9 @@
  */
 package org.evosuite.runtime.classhandling;
 
-import org.junit.Assert;
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.instrumentation.EvoClassLoader;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**

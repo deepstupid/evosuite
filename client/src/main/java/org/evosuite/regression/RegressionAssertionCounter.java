@@ -19,13 +19,8 @@
  */
 package org.evosuite.regression;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
 import org.evosuite.Properties;
 import org.evosuite.assertion.Assertion;
-import org.evosuite.ga.Chromosome;
 import org.evosuite.junit.JUnitAnalyzer;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.TestChromosome;
@@ -34,7 +29,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 /*
  * Assertion generator for regression testing.

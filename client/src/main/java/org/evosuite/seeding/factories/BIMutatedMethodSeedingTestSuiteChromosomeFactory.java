@@ -22,14 +22,14 @@
  */
 package org.evosuite.seeding.factories;
 
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.ga.ChromosomeFactory;
 import org.evosuite.runtime.Random;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testsuite.TestSuiteChromosome;
 import org.evosuite.utils.Randomness;
+
+import java.util.List;
 
 /**
  * @author Thomas White

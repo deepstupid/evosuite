@@ -20,8 +20,6 @@
 package org.evosuite.runtime;
 
 import org.evosuite.runtime.annotation.Constraints;
-import org.evosuite.runtime.javaee.injection.InjectionList;
-import org.evosuite.runtime.util.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -116,21 +114,21 @@ public class PrivateAccess {
         assert field != null;
         field.setAccessible(true);
 
-        if(tagsToCheck != null){
-            boolean match = false;
-            for(Annotation ann : ReflectionUtils.getDeclaredAnnotations(field)){
-                Class<? extends Annotation> tag = ann.annotationType();
-                if(InjectionList.isValidForInjection(tag, tagsToCheck)){
-                    match = true;
-                    break;
-                }
-            }
-
-            if(!match){
-                throw new IllegalArgumentException("The field "+fieldName+" in class "+klass.getName()+
-                        "does not have any valid annotation");
-            }
-        }
+//        if(tagsToCheck != null){
+//            boolean match = false;
+//            for(Annotation ann : ReflectionUtils.getDeclaredAnnotations(field)){
+//                Class<? extends Annotation> tag = ann.annotationType();
+//                if(InjectionList.isValidForInjection(tag, tagsToCheck)){
+//                    match = true;
+//                    break;
+//                }
+//            }
+//
+//            if(!match){
+//                throw new IllegalArgumentException("The field "+fieldName+" in class "+klass.getName()+
+//                        "does not have any valid annotation");
+//            }
+//        }
 
         try {
             Reflection.setField(field, instance, value);

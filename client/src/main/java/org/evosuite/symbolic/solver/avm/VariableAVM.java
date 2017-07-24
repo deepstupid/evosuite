@@ -19,10 +19,10 @@
  */
 package org.evosuite.symbolic.solver.avm;
 
-import java.util.Collection;
-
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.solver.SolverTimeoutException;
+
+import java.util.Collection;
 
 abstract class VariableAVM {
 

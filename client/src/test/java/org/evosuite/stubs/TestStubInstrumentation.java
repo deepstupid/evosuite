@@ -19,16 +19,15 @@
  */
 package org.evosuite.stubs;
 
-import java.lang.reflect.InvocationTargetException;
-import java.util.Locale;
-
-import org.junit.Assert;
-import org.junit.Test;
-
 import com.examples.with.different.packagename.Dummy;
 import com.examples.with.different.packagename.NullString;
 import com.examples.with.different.packagename.ReturnALocale;
 import com.examples.with.different.packagename.SimpleInteger;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.Locale;
 
 public class TestStubInstrumentation {
 

@@ -19,20 +19,14 @@
  */
 package org.evosuite.junit;
 
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.objectweb.asm.util.CheckClassAdapter;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.objectweb.asm.ClassReader;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.ClassWriter;
-import org.objectweb.asm.Label;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.util.CheckClassAdapter;
 
 /**
  * <p>TracingTestRunner class.</p>

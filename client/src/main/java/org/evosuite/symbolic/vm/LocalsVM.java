@@ -19,13 +19,13 @@
  */
 package org.evosuite.symbolic.vm;
 
+import org.evosuite.dse.AbstractVM;
 import org.evosuite.symbolic.expr.bv.IntegerConstant;
 import org.evosuite.symbolic.expr.bv.IntegerValue;
 import org.evosuite.symbolic.expr.fp.RealConstant;
 import org.evosuite.symbolic.expr.fp.RealValue;
 import org.evosuite.symbolic.expr.ref.ReferenceConstant;
 import org.evosuite.symbolic.expr.ref.ReferenceExpression;
-import org.evosuite.dse.AbstractVM;
 
 /**
  * 

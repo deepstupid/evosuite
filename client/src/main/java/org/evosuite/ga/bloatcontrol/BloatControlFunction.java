@@ -19,9 +19,9 @@
  */
 package org.evosuite.ga.bloatcontrol;
 
-import java.io.Serializable;
-
 import org.evosuite.ga.Chromosome;
+
+import java.io.Serializable;
 
 /**
  * The bloat control function is queried before adding an offspring to the next

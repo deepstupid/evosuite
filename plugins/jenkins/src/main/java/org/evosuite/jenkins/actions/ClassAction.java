@@ -19,32 +19,25 @@
  */
 package org.evosuite.jenkins.actions;
 
+import de.java2html.converter.JavaSource2HTMLConverter;
+import de.java2html.javasource.JavaSource;
+import de.java2html.javasource.JavaSourceParser;
+import de.java2html.options.JavaSourceConversionOptions;
+import hudson.FilePath;
+import hudson.model.AbstractBuild;
 import hudson.model.Action;
 import hudson.model.BuildListener;
 import hudson.remoting.VirtualChannel;
-import hudson.FilePath;
-import hudson.model.AbstractBuild;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.StringWriter;
-import java.nio.charset.Charset;
-import java.text.DecimalFormat;
-import java.util.Set;
-
 import org.evosuite.jenkins.recorder.EvoSuiteRecorder;
 import org.evosuite.xsd.CUT;
 import org.evosuite.xsd.CUTUtil;
 import org.evosuite.xsd.Generation;
 import org.evosuite.xsd.TestSuite;
 
-import de.java2html.converter.JavaSource2HTMLConverter;
-import de.java2html.javasource.JavaSource;
-import de.java2html.javasource.JavaSourceParser;
-import de.java2html.options.JavaSourceConversionOptions;
+import java.io.*;
+import java.nio.charset.Charset;
+import java.text.DecimalFormat;
+import java.util.Set;
 
 public class ClassAction implements Action {
 

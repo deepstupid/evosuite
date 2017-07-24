@@ -19,14 +19,14 @@
  */
 package org.evosuite.testcarver.instrument.classloader;
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-
 import org.evosuite.testcarver.capture.FieldRegistry;
 import org.evosuite.testcarver.instrument.Instrumenter;
 import org.evosuite.testcarver.instrument.TransformerUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 
 
 public class TransformingClassLoader extends ClassLoader

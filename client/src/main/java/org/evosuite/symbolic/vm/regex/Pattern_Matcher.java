@@ -19,14 +19,14 @@
  */
 package org.evosuite.symbolic.vm.regex;
 
-import java.util.regex.Matcher;
-
 import org.evosuite.symbolic.expr.ref.ReferenceConstant;
 import org.evosuite.symbolic.expr.ref.ReferenceExpression;
 import org.evosuite.symbolic.expr.str.StringValue;
 import org.evosuite.symbolic.vm.SymbolicEnvironment;
 import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicHeap;
+
+import java.util.regex.Matcher;
 
 public final class Pattern_Matcher extends SymbolicFunction {
 

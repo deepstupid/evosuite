@@ -20,14 +20,12 @@
 package org.evosuite.lm;
 
 import java.io.*;
-
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.Comparator;
-
-import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Represents a language model, a set of bigrams, unigrams and associated

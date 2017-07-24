@@ -19,15 +19,14 @@
  */
 package org.evosuite.runtime.mock;
 
-import java.util.List;
-
-import org.junit.Assert;
-
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.mock.java.lang.MockException;
 import org.evosuite.runtime.mock.java.lang.MockRuntime;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.List;
 
 public class MockListTest {
 

@@ -19,10 +19,6 @@
  */
 package org.evosuite.runtime.instrumentation;
 
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.runtime.mock.InvokeSpecialMock;
 import org.evosuite.runtime.mock.MockFramework;
 import org.evosuite.runtime.mock.MockList;
@@ -31,6 +27,10 @@ import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 

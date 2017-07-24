@@ -19,8 +19,6 @@
  */
 package org.evosuite.utils;
 
-import java.io.Serializable;
-
 import org.evosuite.Properties;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
@@ -29,6 +27,8 @@ import org.evosuite.ga.stoppingconditions.StoppingCondition;
 import org.evosuite.testcase.execution.TestCaseExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.Serializable;
 
 /**
  * EvoSuite can run out of resources: eg out of memory, or too many threads that

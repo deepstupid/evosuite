@@ -19,20 +19,20 @@
  */
 package org.evosuite.assertion;
 
+import org.evosuite.coverage.mutation.Mutation;
+import org.evosuite.testcase.TestCase;
+import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.variable.VariableReference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
-
-import org.evosuite.coverage.mutation.Mutation;
-import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.variable.VariableReference;
-import org.evosuite.testcase.execution.Scope;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Abstract class of an executable code assertion

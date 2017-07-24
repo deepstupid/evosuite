@@ -19,10 +19,10 @@
  */
 package org.evosuite.eclipse.quickfixes;
 
-import java.util.ArrayList;
-
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
+
+import java.util.ArrayList;
 
 public class ClassMethodVisitor extends ASTVisitor {
 	private ArrayList<MethodDeclaration> methods;

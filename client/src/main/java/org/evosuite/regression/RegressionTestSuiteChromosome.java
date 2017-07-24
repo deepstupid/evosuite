@@ -22,16 +22,16 @@
  */
 package org.evosuite.regression;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
 import org.evosuite.ga.ChromosomeFactory;
 import org.evosuite.ga.localsearch.LocalSearchObjective;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteChromosome;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * @author Gordon Fraser

@@ -23,10 +23,6 @@
 package org.evosuite;
 
 import org.evosuite.ga.stoppingconditions.StoppingConditionImpl;
-import org.evosuite.utils.LoggingUtils;
-
-import sun.misc.Signal;
-import sun.misc.SignalHandler;
 
 /**
  * <p>
@@ -36,7 +32,7 @@ import sun.misc.SignalHandler;
  * @author Gordon Fraser
  */
 @SuppressWarnings("restriction")
-public class ShutdownTestWriter extends StoppingConditionImpl implements SignalHandler {
+public class ShutdownTestWriter extends StoppingConditionImpl  {
 
 	private static final long serialVersionUID = -5703624299360241009L;
 
@@ -45,16 +41,16 @@ public class ShutdownTestWriter extends StoppingConditionImpl implements SignalH
 	/* (non-Javadoc)
 	 * @see sun.misc.SignalHandler#handle(sun.misc.Signal)
 	 */
-	/** {@inheritDoc} */
-	@Override
-	public void handle(Signal arg0) {
-		LoggingUtils.getEvoLogger().info("\n* User requested search stop");
-
-		// If this is the second Ctrl+C the user _really_ wants to stop...
-		if (interrupted)
-			System.exit(0);
-		interrupted = true;
-	}
+//	/** {@inheritDoc} */
+//	@Override
+//	public void handle(Signal arg0) {
+//		LoggingUtils.getEvoLogger().info("\n* User requested search stop");
+//
+//		// If this is the second Ctrl+C the user _really_ wants to stop...
+//		if (interrupted)
+//			System.exit(0);
+//		interrupted = true;
+//	}
 
 	/**
 	 * <p>

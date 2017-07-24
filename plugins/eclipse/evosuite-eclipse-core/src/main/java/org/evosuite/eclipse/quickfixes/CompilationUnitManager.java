@@ -22,8 +22,6 @@
  */
 package org.evosuite.eclipse.quickfixes;
 
-import java.io.IOException;
-
 import org.eclipse.core.resources.IResource;
 import org.eclipse.jdt.core.ICompilationUnit;
 import org.eclipse.jdt.core.IJavaElement;
@@ -32,6 +30,8 @@ import org.eclipse.jdt.core.JavaModelException;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
+
+import java.io.IOException;
 
 /**
  * @author Thomas White

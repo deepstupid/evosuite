@@ -19,18 +19,18 @@
  */
 package org.evosuite.rmi;
 
+import org.evosuite.rmi.service.MasterNodeImpl;
+import org.evosuite.rmi.service.MasterNodeLocal;
+import org.evosuite.rmi.service.MasterNodeRemote;
+import org.evosuite.utils.Randomness;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.rmi.NoSuchObjectException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-
-import org.evosuite.rmi.service.MasterNodeLocal;
-import org.evosuite.rmi.service.MasterNodeRemote;
-import org.evosuite.rmi.service.MasterNodeImpl;
-import org.evosuite.utils.Randomness;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This class should be used only in the Master process, not the clients.

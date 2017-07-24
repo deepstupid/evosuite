@@ -19,12 +19,12 @@
  */
 package org.evosuite.runtime.agent;
 
-import java.lang.instrument.Instrumentation;
-
 import org.evosuite.runtime.LoopCounter;
 import org.evosuite.runtime.mock.MockFramework;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.instrument.Instrumentation;
 
 /**
  * This is the entry point for the JavaAgent.

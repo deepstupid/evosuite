@@ -19,16 +19,15 @@
  */
 package org.evosuite.symbolic;
 
-import static org.junit.Assert.assertTrue;
-
-import java.lang.reflect.Field;
-import java.util.List;
-
+import com.examples.with.different.packagename.concolic.TestCaseNullAssignment;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.concolic.TestCaseNullAssignment;
+import java.lang.reflect.Field;
+import java.util.List;
+
+import static org.junit.Assert.assertTrue;
 
 public class SymbolicObserverTestNull {
 

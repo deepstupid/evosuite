@@ -19,9 +19,9 @@
  */
 package org.evosuite.junit.rules;
 
-import java.util.Arrays;
-
 import org.evosuite.TestGenerationContext;
+
+import java.util.Arrays;
 
 /**
  * Should be used as MethodRule

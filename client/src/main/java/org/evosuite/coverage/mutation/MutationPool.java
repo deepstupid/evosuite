@@ -22,15 +22,14 @@
  */
 package org.evosuite.coverage.mutation;
 
+import org.evosuite.graphs.cfg.BytecodeInstruction;
+import org.objectweb.asm.tree.AbstractInsnNode;
+import org.objectweb.asm.tree.InsnList;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.evosuite.graphs.cfg.BytecodeInstruction;
-import org.evosuite.utils.LoggingUtils;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.InsnList;
 
 
 /**

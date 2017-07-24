@@ -22,11 +22,11 @@
  */
 package org.evosuite.instrumentation.error;
 
-import java.math.BigDecimal;
-
 import org.objectweb.asm.Opcodes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.math.BigDecimal;
 
 /**
  * <p>

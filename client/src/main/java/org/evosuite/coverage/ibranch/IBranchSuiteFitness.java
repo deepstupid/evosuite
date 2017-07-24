@@ -19,13 +19,6 @@
  */
 package org.evosuite.coverage.ibranch;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.coverage.archive.TestsArchive;
 import org.evosuite.rmi.ClientServices;
@@ -36,6 +29,9 @@ import org.evosuite.testcase.ExecutableChromosome;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteFitnessFunction;
+
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * We don't remember what the I of IBranch stands for. Anyway, this fitness

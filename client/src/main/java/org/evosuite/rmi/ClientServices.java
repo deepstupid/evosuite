@@ -19,11 +19,6 @@
  */
 package org.evosuite.rmi;
 
-import java.rmi.NoSuchObjectException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
-import java.rmi.server.UnicastRemoteObject;
-
 import org.evosuite.Properties;
 import org.evosuite.rmi.service.ClientNodeImpl;
 import org.evosuite.rmi.service.ClientNodeLocal;
@@ -32,6 +27,11 @@ import org.evosuite.rmi.service.DummyClientNodeImpl;
 import org.evosuite.statistics.RuntimeVariable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.rmi.NoSuchObjectException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 
 /**
  * This class should be used only in the Client processes, not the master.

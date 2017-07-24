@@ -19,8 +19,6 @@
  */
 package org.evosuite.eclipse.popup.actions;
 
-import java.util.HashSet;
-
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IResourceVisitor;
 import org.eclipse.core.runtime.CoreException;
@@ -34,7 +32,8 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IActionDelegate;
 import org.eclipse.ui.IObjectActionDelegate;
 import org.eclipse.ui.IWorkbenchPart;
-import org.evosuite.eclipse.quickfixes.MarkerWriter;
+
+import java.util.HashSet;
 
 public class ClearMarkersAction implements IObjectActionDelegate {
 

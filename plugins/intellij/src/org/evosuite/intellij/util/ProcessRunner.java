@@ -19,7 +19,6 @@
  */
 package org.evosuite.intellij.util;
 
-import com.intellij.openapi.module.Module;
 import com.intellij.openapi.module.ModuleManager;
 import com.intellij.openapi.project.Project;
 import org.evosuite.intellij.EvoParameters;

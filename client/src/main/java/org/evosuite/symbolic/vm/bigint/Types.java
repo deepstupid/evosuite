@@ -19,9 +19,9 @@
  */
 package org.evosuite.symbolic.vm.bigint;
 
-import java.math.BigInteger;
-
 import org.objectweb.asm.Type;
+
+import java.math.BigInteger;
 
 public interface Types {
 

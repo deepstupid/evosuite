@@ -20,8 +20,9 @@
 package org.evosuite.symbolic.instrument;
 
 
-import static org.evosuite.dse.util.Assertions.check;
-import static org.evosuite.dse.util.Assertions.notNull;
+import org.evosuite.dse.MainConfig;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.Type;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,9 +32,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.evosuite.dse.MainConfig;
-import org.objectweb.asm.ClassReader;
-import org.objectweb.asm.Type;
+import static org.evosuite.dse.util.Assertions.check;
+import static org.evosuite.dse.util.Assertions.notNull;
 
 /**
  * A ClassLoader very similar to the <code>org.evosuite.javaagent.InstrumentingClassLoader</code>

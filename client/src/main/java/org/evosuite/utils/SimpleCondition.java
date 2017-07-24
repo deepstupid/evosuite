@@ -19,7 +19,9 @@
  */
 package org.evosuite.utils;
 
-import java.util.concurrent.locks.*;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 public class SimpleCondition {
 	private Lock lock;
 	private Condition condition;

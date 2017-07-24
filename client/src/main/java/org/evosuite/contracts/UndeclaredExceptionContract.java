@@ -22,15 +22,15 @@
  */
 package org.evosuite.contracts;
 
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.PackageInfo;
-import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.testcase.statements.MethodStatement;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.variable.VariableReference;
+
+import java.util.List;
+import java.util.Set;
 
 
 /**

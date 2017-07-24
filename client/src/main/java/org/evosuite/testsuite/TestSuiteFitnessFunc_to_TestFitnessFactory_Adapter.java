@@ -19,10 +19,10 @@
  */
 package org.evosuite.testsuite;
 
-import java.util.List;
-
 import org.evosuite.coverage.TestFitnessFactory;
 import org.evosuite.testcase.TestFitnessFunction;
+
+import java.util.List;
 
 /**
  * This adapters allows the use of a TestSuiteFitnessFunction as a

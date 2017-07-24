@@ -19,11 +19,6 @@
  */
 package org.evosuite.runtime;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Scanner;
-
 import org.evosuite.runtime.mock.java.io.MockFile;
 import org.evosuite.runtime.mock.java.io.MockFileInputStream;
 import org.evosuite.runtime.testdata.EvoSuiteFile;
@@ -31,6 +26,11 @@ import org.evosuite.runtime.testdata.FileSystemHandling;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class FileSystemHandlingTest {
 

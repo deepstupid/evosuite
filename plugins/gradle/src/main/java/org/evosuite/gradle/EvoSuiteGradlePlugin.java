@@ -19,8 +19,8 @@
  */
 package org.evosuite.gradle;
 
-import org.gradle.api.Project;
 import org.gradle.api.Plugin;
+import org.gradle.api.Project;
 
 /**
  * Created by Andrea Arcuri on 15/04/15.

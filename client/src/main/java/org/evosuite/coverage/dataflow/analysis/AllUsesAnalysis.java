@@ -19,31 +19,16 @@
  */
 package org.evosuite.coverage.dataflow.analysis;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
-import java.util.Stack;
-
 import org.evosuite.coverage.dataflow.DefUseCoverageFactory;
 import org.evosuite.coverage.dataflow.DefUseCoverageTestFitness;
 import org.evosuite.coverage.dataflow.DefUseCoverageTestFitness.DefUsePairType;
-import org.evosuite.graphs.ccfg.CCFGCodeNode;
-import org.evosuite.graphs.ccfg.CCFGEdge;
-import org.evosuite.graphs.ccfg.CCFGFieldClassCallNode;
-import org.evosuite.graphs.ccfg.CCFGFrameNode;
-import org.evosuite.graphs.ccfg.CCFGMethodCallNode;
-import org.evosuite.graphs.ccfg.CCFGMethodEntryNode;
-import org.evosuite.graphs.ccfg.CCFGMethodExitNode;
-import org.evosuite.graphs.ccfg.CCFGMethodReturnNode;
-import org.evosuite.graphs.ccfg.CCFGNode;
-import org.evosuite.graphs.ccfg.ClassControlFlowGraph;
+import org.evosuite.graphs.ccfg.*;
 import org.evosuite.graphs.ccfg.ClassControlFlowGraph.FrameNodeType;
 import org.evosuite.graphs.ccg.ClassCallNode;
 import org.evosuite.graphs.cfg.BytecodeInstruction;
 import org.evosuite.utils.LoggingUtils;
+
+import java.util.*;
 
 /**
  * This class computes all uses testing requirements of the relative CCFG.

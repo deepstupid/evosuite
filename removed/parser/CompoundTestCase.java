@@ -19,28 +19,13 @@
  */
 package org.evosuite.junit;
 
+import org.eclipse.jdt.core.dom.IVariableBinding;
+import org.evosuite.utils.GenericAccessibleObject;
+import org.objectweb.asm.commons.GeneratorAdapter;
+
 import java.io.PrintStream;
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.eclipse.jdt.core.dom.IVariableBinding;
-import org.evosuite.testcase.AbstractStatement;
-import org.evosuite.testcase.AssignmentStatement;
-import org.evosuite.testcase.DefaultTestCase;
-import org.evosuite.testcase.PrimitiveExpression;
-import org.evosuite.testcase.Scope;
-import org.evosuite.testcase.StatementInterface;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.VariableReference;
-import org.evosuite.utils.GenericAccessibleObject;
-import org.objectweb.asm.commons.GeneratorAdapter;
 
 /**
  * A compound test case is a test case that is read from an existing JUnit test

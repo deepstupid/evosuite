@@ -19,10 +19,10 @@
  */
 package org.evosuite.utils;
 
-import org.evosuite.*;
-
-import java.util.*;
-import java.util.Properties;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
 public abstract class ListUtil {
 	/**

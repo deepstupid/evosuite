@@ -19,16 +19,15 @@
  */
 package org.evosuite.graphs.cfg;
 
-import java.io.Serializable;
-import java.util.*;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-
 import org.evosuite.graphs.GraphPool;
 import org.evosuite.graphs.cdg.ControlDependenceGraph;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.Serializable;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * This class is used to represent basic blocks in the control flow graph.

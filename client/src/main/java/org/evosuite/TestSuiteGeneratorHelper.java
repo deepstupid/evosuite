@@ -19,8 +19,6 @@
  */
 package org.evosuite;
 
-import java.util.Map;
-import java.util.Set;
 import org.evosuite.Properties.AssertionStrategy;
 import org.evosuite.Properties.Criterion;
 import org.evosuite.assertion.AssertionGenerator;
@@ -32,19 +30,15 @@ import org.evosuite.coverage.branch.Branch;
 import org.evosuite.coverage.branch.BranchPool;
 import org.evosuite.rmi.ClientServices;
 import org.evosuite.statistics.RuntimeVariable;
-import org.evosuite.strategy.EntBugTestStrategy;
-import org.evosuite.strategy.FixedNumRandomTestStrategy;
-import org.evosuite.strategy.IndividualTestStrategy;
-import org.evosuite.strategy.MOSuiteStrategy;
-import org.evosuite.strategy.RandomTestStrategy;
-import org.evosuite.strategy.RegressionSuiteStrategy;
-import org.evosuite.strategy.TestGenerationStrategy;
-import org.evosuite.strategy.WholeTestSuiteStrategy;
+import org.evosuite.strategy.*;
 import org.evosuite.symbolic.DSEStrategy;
 import org.evosuite.testcase.execution.ExecutionTraceImpl;
 import org.evosuite.testsuite.TestSuiteChromosome;
 import org.evosuite.utils.LoggingUtils;
 import org.objectweb.asm.Opcodes;
+
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by sina on 06/04/2017.

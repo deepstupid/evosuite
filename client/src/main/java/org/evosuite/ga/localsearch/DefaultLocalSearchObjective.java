@@ -22,12 +22,12 @@
  */
 package org.evosuite.ga.localsearch;
 
+import org.evosuite.ga.Chromosome;
+import org.evosuite.ga.FitnessFunction;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.evosuite.ga.Chromosome;
-import org.evosuite.ga.FitnessFunction;
 
 /**
  * The Default local search objective only stores a list of fitness functions. 

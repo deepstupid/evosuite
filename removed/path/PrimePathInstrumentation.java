@@ -22,9 +22,6 @@
  */
 package org.evosuite.instrumentation.coverage;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 import org.evosuite.coverage.path.PrimePath;
 import org.evosuite.coverage.path.PrimePathPool;
 import org.evosuite.graphs.GraphPool;
@@ -34,6 +31,9 @@ import org.evosuite.graphs.cfg.RawControlFlowGraph;
 import org.objectweb.asm.tree.MethodNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * <p>

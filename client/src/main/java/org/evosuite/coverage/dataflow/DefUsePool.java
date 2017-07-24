@@ -19,16 +19,11 @@
  */
 package org.evosuite.coverage.dataflow;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.evosuite.graphs.cfg.BytecodeInstruction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 /**
  * This class is supposed to hold all the available information concerning

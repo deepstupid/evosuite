@@ -19,16 +19,16 @@
  */
 package org.evosuite.graphs.cfg;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
-
 import org.evosuite.graphs.EvoSuiteGraph;
 import org.jgrapht.graph.DefaultDirectedGraph;
 import org.objectweb.asm.Opcodes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
 
 
 /**

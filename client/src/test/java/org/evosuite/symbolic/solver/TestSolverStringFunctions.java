@@ -19,13 +19,7 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.evosuite.symbolic.solver.TestSolver.solve;
-
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Map;
-
+import com.examples.with.different.packagename.solver.*;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.symbolic.expr.Comparator;
 import org.evosuite.symbolic.expr.Constraint;
@@ -37,33 +31,12 @@ import org.evosuite.symbolic.expr.str.StringVariable;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
 
-import com.examples.with.different.packagename.solver.TestCaseStringAppendString;
-import com.examples.with.different.packagename.solver.TestCaseStringCharAt;
-import com.examples.with.different.packagename.solver.TestCaseStringCompareTo;
-import com.examples.with.different.packagename.solver.TestCaseStringConcat;
-import com.examples.with.different.packagename.solver.TestCaseStringContains;
-import com.examples.with.different.packagename.solver.TestCaseStringEndsWith;
-import com.examples.with.different.packagename.solver.TestCaseStringEquals;
-import com.examples.with.different.packagename.solver.TestCaseStringEqualsIgnoreCase;
-import com.examples.with.different.packagename.solver.TestCaseStringIndexOfChar;
-import com.examples.with.different.packagename.solver.TestCaseStringIndexOfCharInt;
-import com.examples.with.different.packagename.solver.TestCaseStringIndexOfString;
-import com.examples.with.different.packagename.solver.TestCaseStringIndexOfStringInt;
-import com.examples.with.different.packagename.solver.TestCaseStringLastIndexOfChar;
-import com.examples.with.different.packagename.solver.TestCaseStringLastIndexOfCharInt;
-import com.examples.with.different.packagename.solver.TestCaseStringLastIndexOfString;
-import com.examples.with.different.packagename.solver.TestCaseStringLastIndexOfStringInt;
-import com.examples.with.different.packagename.solver.TestCaseStringLength;
-import com.examples.with.different.packagename.solver.TestCaseStringLowerCase;
-import com.examples.with.different.packagename.solver.TestCaseStringNotEquals;
-import com.examples.with.different.packagename.solver.TestCaseStringReplaceChar;
-import com.examples.with.different.packagename.solver.TestCaseStringReplaceCharSequence;
-import com.examples.with.different.packagename.solver.TestCaseStringStartsWith;
-import com.examples.with.different.packagename.solver.TestCaseStringStartsWithIndex;
-import com.examples.with.different.packagename.solver.TestCaseStringSubstring;
-import com.examples.with.different.packagename.solver.TestCaseStringSubstringFromTo;
-import com.examples.with.different.packagename.solver.TestCaseStringTrim;
-import com.examples.with.different.packagename.solver.TestCaseStringUpperCase;
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Map;
+
+import static org.evosuite.symbolic.solver.TestSolver.solve;
 
 public class TestSolverStringFunctions {
 

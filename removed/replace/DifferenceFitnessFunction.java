@@ -22,18 +22,13 @@
  */
 package org.evosuite.eclipse.replace;
 
+import org.evosuite.coverage.TestFitnessFactory;
+import org.evosuite.testcase.execution.ExecutionResult;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.evosuite.coverage.TestFitnessFactory;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestCaseMinimizer;
-import org.evosuite.testcase.TestChromosome;
-import org.evosuite.testcase.TestCodeVisitor;
-import org.evosuite.testcase.TestFitnessFunction;
-import org.evosuite.testcase.execution.ExecutionResult;
 
 /**
  * This class is the fitness function, which calculates for a given test

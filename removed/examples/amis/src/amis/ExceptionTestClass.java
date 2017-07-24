@@ -19,8 +19,6 @@
  */
 package amis;
 
-import java.io.*;
-
 /**
  * @author Andre Mis
  * 

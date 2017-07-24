@@ -19,17 +19,13 @@
  */
 package org.evosuite.utils;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import org.evosuite.graphs.cfg.BytecodeInstruction;
+import org.objectweb.asm.Type;
+
+import java.io.*;
 import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
-
-import org.evosuite.graphs.cfg.BytecodeInstruction;
-import org.objectweb.asm.Type;
 
 public enum JdkPureMethodsList {
 

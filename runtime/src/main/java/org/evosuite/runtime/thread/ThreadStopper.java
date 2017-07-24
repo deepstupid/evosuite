@@ -19,17 +19,12 @@
  */
 package org.evosuite.runtime.thread;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.IdentityHashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
-
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.mock.java.util.MockTimer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 
 /**

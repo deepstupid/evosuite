@@ -19,17 +19,16 @@
  */
 package org.evosuite.utils;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
+import com.thoughtworks.xstream.XStream;
 import org.apache.commons.io.FileUtils;
 import org.evosuite.runtime.util.Inputs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.thoughtworks.xstream.XStream;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  *  Class used to cover some limitations of Apache IO FileUtils

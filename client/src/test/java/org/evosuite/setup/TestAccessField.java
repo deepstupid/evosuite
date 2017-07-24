@@ -20,13 +20,13 @@
 package org.evosuite.setup;
 
 
-import java.lang.reflect.Field;
-
 import org.apache.commons.lang3.reflect.FieldUtils;
 import org.evosuite.Properties;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.lang.reflect.Field;
 
 public class TestAccessField {
 

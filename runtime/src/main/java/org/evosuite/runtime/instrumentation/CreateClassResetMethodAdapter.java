@@ -19,12 +19,12 @@
  */
 package org.evosuite.runtime.instrumentation;
 
-import java.util.List;
-
 import org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter.StaticField;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
+
+import java.util.List;
 
 public class CreateClassResetMethodAdapter extends MethodVisitor {
 

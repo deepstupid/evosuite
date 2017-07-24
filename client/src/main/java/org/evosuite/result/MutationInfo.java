@@ -19,9 +19,9 @@
  */
 package org.evosuite.result;
 
-import java.io.Serializable;
-
 import org.evosuite.coverage.mutation.Mutation;
+
+import java.io.Serializable;
 
 public class MutationInfo implements Serializable {
 	

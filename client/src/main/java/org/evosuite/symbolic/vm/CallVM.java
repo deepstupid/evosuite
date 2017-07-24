@@ -19,6 +19,15 @@
  */
 package org.evosuite.symbolic.vm;
 
+import org.evosuite.dse.AbstractVM;
+import org.evosuite.symbolic.expr.bv.IntegerConstant;
+import org.evosuite.symbolic.expr.fp.RealConstant;
+import org.evosuite.symbolic.expr.ref.ReferenceConstant;
+import org.evosuite.symbolic.expr.ref.ReferenceExpression;
+import org.evosuite.symbolic.instrument.ConcolicInstrumentingClassLoader;
+import org.evosuite.symbolic.instrument.ConcolicMethodAdapter;
+import org.objectweb.asm.Type;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Member;
 import java.lang.reflect.Method;
@@ -27,15 +36,6 @@ import java.util.Deque;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
-
-import org.evosuite.symbolic.expr.bv.IntegerConstant;
-import org.evosuite.symbolic.expr.fp.RealConstant;
-import org.evosuite.symbolic.expr.ref.ReferenceConstant;
-import org.evosuite.symbolic.expr.ref.ReferenceExpression;
-import org.evosuite.symbolic.instrument.ConcolicInstrumentingClassLoader;
-import org.evosuite.symbolic.instrument.ConcolicMethodAdapter;
-import org.objectweb.asm.Type;
-import org.evosuite.dse.AbstractVM;
 
 /**
  * Explicit inter-procedural control transfer: InvokeXXX, Return, etc.

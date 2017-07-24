@@ -27,11 +27,7 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public final class FieldRegistry {
 	private static final Map<String, ReferenceQueue<?>> classRefQueueMapping = new LinkedHashMap<String, ReferenceQueue<?>>();

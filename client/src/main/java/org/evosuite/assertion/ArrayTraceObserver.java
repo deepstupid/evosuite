@@ -22,18 +22,14 @@
  */
 package org.evosuite.assertion;
 
-import java.lang.reflect.Array;
-
 import org.evosuite.Properties;
-import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.execution.Scope;
-import org.evosuite.testcase.statements.ArrayStatement;
-import org.evosuite.testcase.statements.AssignmentStatement;
-import org.evosuite.testcase.statements.FunctionalMockStatement;
-import org.evosuite.testcase.statements.PrimitiveStatement;
+import org.evosuite.testcase.statements.*;
+import org.evosuite.testcase.variable.VariableReference;
+
+import java.lang.reflect.Array;
 
 /**
  * @author Gordon Fraser

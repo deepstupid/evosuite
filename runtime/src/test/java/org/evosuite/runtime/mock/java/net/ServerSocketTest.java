@@ -19,23 +19,21 @@
  */
 package org.evosuite.runtime.mock.java.net;
 
+import org.evosuite.runtime.mock.MockFramework;
+import org.evosuite.runtime.testdata.EvoSuiteLocalAddress;
+import org.evosuite.runtime.testdata.NetworkHandling;
+import org.evosuite.runtime.vnet.NativeTcp;
+import org.evosuite.runtime.vnet.VirtualNetwork;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.util.Scanner;
-
-import org.evosuite.runtime.mock.MockFramework;
-import org.evosuite.runtime.testdata.EvoSuiteAddress;
-import org.evosuite.runtime.testdata.EvoSuiteLocalAddress;
-import org.evosuite.runtime.vnet.NativeTcp;
-import org.evosuite.runtime.testdata.NetworkHandling;
-import org.evosuite.runtime.vnet.VirtualNetwork;
-import org.junit.Assert;
-import org.junit.Before;
-
-import org.junit.Test;
 
 public class ServerSocketTest {
 

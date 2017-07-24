@@ -19,20 +19,16 @@
  */
 package org.evosuite.testcarver.wrapper.java.text;
 
-import java.text.AttributedCharacterIterator;
-import java.text.DateFormatSymbols;
-import java.text.FieldPosition;
-import java.text.ParseException;
-import java.text.ParsePosition;
-import java.util.Locale;
-import java.util.TimeZone;
-
 import org.evosuite.testcarver.capture.CaptureLog;
 import org.evosuite.testcarver.capture.Capturer;
 import org.evosuite.testcarver.capture.FieldRegistry;
 import org.evosuite.testcarver.instrument.Instrumenter;
 import org.evosuite.testcarver.wrapper.java.util.Calendar;
 import org.evosuite.testcarver.wrapper.java.util.Date;
+
+import java.text.*;
+import java.util.Locale;
+import java.util.TimeZone;
 
 /**
  * TODO: This is not complete. Should it be a subclass of the wrapper DateFormat, or the real SimpleDateFormat?

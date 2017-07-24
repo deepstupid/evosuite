@@ -22,20 +22,20 @@
  */
 package org.evosuite.contracts;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.List;
-
 import org.evosuite.assertion.EqualsAssertion;
+import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.testcase.statements.MethodStatement;
 import org.evosuite.testcase.statements.PrimitiveExpression;
 import org.evosuite.testcase.statements.PrimitiveExpression.Operator;
 import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testcase.variable.VariableReferenceImpl;
 import org.evosuite.utils.generic.GenericMethod;
+
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * o1.equals(o2) => o1.hashCode() == o2.hashCode()

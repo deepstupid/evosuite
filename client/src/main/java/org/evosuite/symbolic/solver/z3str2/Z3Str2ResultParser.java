@@ -19,14 +19,14 @@
  */
 package org.evosuite.symbolic.solver.z3str2;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.symbolic.solver.ResultParser;
 import org.evosuite.symbolic.solver.SolverErrorException;
 import org.evosuite.symbolic.solver.SolverResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashMap;
+import java.util.Map;
 
 class Z3Str2ResultParser extends ResultParser {
 

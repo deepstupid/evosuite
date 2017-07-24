@@ -19,8 +19,6 @@
  */
 package org.evosuite.eclipse.properties;
 
-import java.net.URL;
-
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.Path;
@@ -34,6 +32,8 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.evosuite.eclipse.Activator;
 import org.osgi.framework.Bundle;
+
+import java.net.URL;
 
 /**
  * @author Gordon Fraser

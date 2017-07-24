@@ -19,21 +19,14 @@
  */
 package org.evosuite.setup.callgraph;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.classpath.ResourceList;
 import org.evosuite.setup.Call;
 import org.evosuite.setup.CallContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 /**
  * CallGraph implementation. Based on the previous implementation in the

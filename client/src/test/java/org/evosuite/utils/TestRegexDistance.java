@@ -22,14 +22,13 @@
  */
 package org.evosuite.utils;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.regex.Pattern;
 
-import org.evosuite.utils.RegexDistanceUtils;
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author Gordon Fraser

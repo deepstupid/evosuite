@@ -19,13 +19,13 @@
  */
 package org.evosuite.instrumentation.error;
 
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.Type;
 
 public class ListInstrumentation extends ErrorBranchInstrumenter {
 

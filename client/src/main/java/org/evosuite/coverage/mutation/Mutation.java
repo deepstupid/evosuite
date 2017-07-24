@@ -22,15 +22,15 @@
  */
 package org.evosuite.coverage.mutation;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.coverage.branch.BranchCoverageGoal;
 import org.evosuite.graphs.cfg.BytecodeInstruction;
 import org.evosuite.graphs.cfg.ControlDependency;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.LdcInsnNode;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * <p>

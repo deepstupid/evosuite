@@ -19,10 +19,7 @@
  */
 package org.evosuite.ga.metaheuristics;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
+import com.examples.with.different.packagename.Calculator;
 import org.evosuite.EvoSuite;
 import org.evosuite.Properties;
 import org.evosuite.Properties.Algorithm;
@@ -40,7 +37,9 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.Calculator;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * NSGA-II test

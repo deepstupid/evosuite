@@ -22,10 +22,9 @@ package org.evosuite.runtime.util;
 import org.junit.Test;
 
 import java.io.File;
-import java.net.URI;
-import java.net.URL;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Andrea Arcuri on 21/11/15.

@@ -22,14 +22,14 @@
  */
 package org.evosuite.coverage.mutation;
 
+import org.evosuite.Properties;
+import org.evosuite.Properties.Strategy;
+import org.evosuite.ga.stoppingconditions.StoppingConditionImpl;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-import org.evosuite.Properties;
-import org.evosuite.Properties.Strategy;
-import org.evosuite.ga.stoppingconditions.StoppingConditionImpl;
 
 
 /**

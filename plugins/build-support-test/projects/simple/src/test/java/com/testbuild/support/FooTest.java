@@ -25,8 +25,6 @@ import org.evosuite.runtime.instrumentation.InstrumentedClass;
 import org.evosuite.runtime.mock.MockFramework;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class FooTest extends TestCase {
 
     //make it JUnit 3 compatible. Only needed when Ant called from Java,

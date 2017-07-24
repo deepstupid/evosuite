@@ -19,9 +19,8 @@
  */
 package org.evosuite.instrumentation;
 
-import org.evosuite.utils.RegexDistanceUtils;
-
 import dk.brics.automaton.Automaton;
+import org.evosuite.utils.RegexDistanceUtils;
 
 /**
  * Should rather call RegexDistanceUtils directly.

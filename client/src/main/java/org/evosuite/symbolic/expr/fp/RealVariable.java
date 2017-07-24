@@ -19,12 +19,12 @@
  */
 package org.evosuite.symbolic.expr.fp;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.symbolic.expr.AbstractExpression;
 import org.evosuite.symbolic.expr.ExpressionVisitor;
 import org.evosuite.symbolic.expr.Variable;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public final class RealVariable extends AbstractExpression<Double> implements RealValue,
         Variable<Double> {

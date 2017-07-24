@@ -19,19 +19,14 @@
  */
 package org.evosuite.continuous.persistency;
 
-import java.io.File;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import com.opencsv.CSVReader;
 import org.evosuite.statistics.RuntimeVariable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.opencsv.CSVReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.*;
 
 
 /**

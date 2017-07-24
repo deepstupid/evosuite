@@ -19,12 +19,12 @@
  */
 package org.evosuite.ga.stoppingconditions;
 
-import java.io.Serializable;
-import java.text.NumberFormat;
-
 import org.apache.commons.lang3.StringUtils;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
+
+import java.io.Serializable;
+import java.text.NumberFormat;
 
 
 /**

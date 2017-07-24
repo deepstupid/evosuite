@@ -19,11 +19,11 @@
  */
 package org.evosuite.runtime.vnet;
 
-import java.io.IOException;
-
 import org.evosuite.runtime.mock.java.net.SocketIn;
 import org.evosuite.runtime.mock.java.net.SocketOut;
 import org.evosuite.runtime.vnet.VirtualNetwork.ConnectionType;
+
+import java.io.IOException;
 
 /**
  * Class used to represent a remote TCP server, listening to a specific port.

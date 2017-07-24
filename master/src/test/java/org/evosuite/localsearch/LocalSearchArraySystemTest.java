@@ -19,11 +19,8 @@
  */
 package org.evosuite.localsearch;
 
-import static org.junit.Assert.assertEquals;
-
-import java.lang.reflect.Method;
-import java.util.Arrays;
-
+import com.examples.with.different.packagename.localsearch.ArrayLengthExample;
+import com.examples.with.different.packagename.localsearch.BasicArrayExample;
 import org.evosuite.Properties;
 import org.evosuite.Properties.LocalSearchBudgetType;
 import org.evosuite.SystemTestBase;
@@ -51,8 +48,10 @@ import org.evosuite.utils.generic.GenericMethod;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.localsearch.ArrayLengthExample;
-import com.examples.with.different.packagename.localsearch.BasicArrayExample;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 public class LocalSearchArraySystemTest extends SystemTestBase {
 

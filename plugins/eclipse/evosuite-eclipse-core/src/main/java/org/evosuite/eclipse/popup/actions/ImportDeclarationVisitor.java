@@ -22,11 +22,11 @@
  */
 package org.evosuite.eclipse.popup.actions;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.ImportDeclaration;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Jose Miguel Rojas

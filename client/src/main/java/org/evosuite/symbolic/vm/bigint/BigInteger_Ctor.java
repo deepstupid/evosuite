@@ -19,14 +19,14 @@
  */
 package org.evosuite.symbolic.vm.bigint;
 
-import java.math.BigInteger;
-
 import org.evosuite.symbolic.expr.bv.StringToIntegerCast;
 import org.evosuite.symbolic.expr.ref.ReferenceConstant;
 import org.evosuite.symbolic.expr.str.StringValue;
-import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicEnvironment;
+import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicHeap;
+
+import java.math.BigInteger;
 
 public final class BigInteger_Ctor extends SymbolicFunction {
 

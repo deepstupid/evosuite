@@ -19,14 +19,7 @@
  */
 package org.evosuite.clinit;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-
-import java.io.File;
-import java.util.Arrays;
-import java.util.List;
-
+import com.examples.with.different.packagename.clinit.FinalPrimitiveField;
 import org.evosuite.Properties;
 import org.evosuite.classpath.ClassPathHandler;
 import org.evosuite.setup.DependencyAnalysis;
@@ -36,7 +29,12 @@ import org.evosuite.setup.TestClusterGenerator;
 import org.evosuite.utils.generic.GenericAccessibleObject;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.clinit.FinalPrimitiveField;
+import java.io.File;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TestFinalPrimitiveFieldIsNotAddedToCluster {
 

@@ -19,12 +19,7 @@
  */
 package org.evosuite.coverage.dataflow;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.Properties.Criterion;
-import org.evosuite.TestSuiteGenerator;
 import org.evosuite.coverage.FitnessFunctions;
 import org.evosuite.testcase.ExecutableChromosome;
 import org.evosuite.testcase.TestChromosome;
@@ -33,6 +28,10 @@ import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteFitnessFunction;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Evaluate fitness of a test suite with respect to all of its def-use pairs

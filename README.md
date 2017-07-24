@@ -1,9 +1,14 @@
-[![Build Status](https://travis-ci.org/EvoSuite/evosuite.svg?branch=master)](https://travis-ci.org/EvoSuite/evosuite)
-[![CircleCI](https://circleci.com/gh/EvoSuite/evosuite/tree/master.svg?style=svg)](https://circleci.com/gh/EvoSuite/evosuite/tree/master)
+# EVOsweet (experimental fork of EvoSuite)
 
 # What is EvoSuite?
 
 EvoSuite automatically generates JUnit test suites for Java classes, targeting code coverage criteria such as branch coverage. It uses an evolutionary approach based on a genetic algorithm to derive test suites. To improve readability, the generated unit tests are minimized, and regression assertions that capture the current behavior of the tested classes are added to the tests.
+
+# What is EVOsweet?
+
+ 1. Deleted J2EE support
+ 2. Deleted Servlets support
+ 3. JDK 9+
 
 # Using EvoSuite
 

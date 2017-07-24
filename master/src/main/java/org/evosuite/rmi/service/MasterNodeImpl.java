@@ -19,27 +19,22 @@
  */
 package org.evosuite.rmi.service;
 
-import java.rmi.RemoteException;
-import java.rmi.registry.Registry;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArraySet;
-
 import org.evosuite.Properties;
 import org.evosuite.Properties.NoSuchParameterException;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.result.TestGenerationResult;
-import org.evosuite.statistics.SearchStatistics;
 import org.evosuite.statistics.RuntimeVariable;
+import org.evosuite.statistics.SearchStatistics;
 import org.evosuite.utils.Listener;
 import org.evosuite.utils.LoggingUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.Registry;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 public class MasterNodeImpl implements MasterNodeRemote, MasterNodeLocal {
 

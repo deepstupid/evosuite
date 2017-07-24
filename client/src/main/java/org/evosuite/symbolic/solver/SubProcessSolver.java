@@ -19,12 +19,12 @@
  */
 package org.evosuite.symbolic.solver;
 
+import org.evosuite.utils.ProcessLauncher;
+import org.evosuite.utils.ProcessTimeoutException;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-
-import org.evosuite.utils.ProcessLauncher;
-import org.evosuite.utils.ProcessTimeoutException;
 
 public abstract class SubProcessSolver extends Solver {
 

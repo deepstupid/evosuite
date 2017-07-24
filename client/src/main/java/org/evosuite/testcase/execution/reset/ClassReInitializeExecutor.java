@@ -19,9 +19,6 @@
  */
 package org.evosuite.testcase.execution.reset;
 
-import java.lang.reflect.Method;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.TimeController;
@@ -32,6 +29,9 @@ import org.evosuite.runtime.classhandling.ClassResetter;
 import org.evosuite.runtime.sandbox.Sandbox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Method;
+import java.util.List;
 
 /**
  * This class implements the actual invocation to the __STATIC_RESET() method

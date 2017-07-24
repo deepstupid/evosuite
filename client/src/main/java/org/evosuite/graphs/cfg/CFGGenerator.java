@@ -19,14 +19,14 @@
  */
 package org.evosuite.graphs.cfg;
 
-import java.util.List;
-
 import org.evosuite.graphs.GraphPool;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 /**
  * This classed is used to create the RawControlFlowGraph which can then be used

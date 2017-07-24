@@ -19,8 +19,6 @@
  */
 package org.evosuite.coverage.io.input;
 
-import static org.evosuite.coverage.io.IOCoverageConstants.*;
-
 import org.evosuite.Properties;
 import org.evosuite.coverage.archive.TestsArchive;
 import org.evosuite.testcase.ExecutableChromosome;
@@ -32,6 +30,8 @@ import org.evosuite.testsuite.TestSuiteFitnessFunction;
 import org.objectweb.asm.Type;
 
 import java.util.*;
+
+import static org.evosuite.coverage.io.IOCoverageConstants.*;
 
 /**
  * @author Jose Miguel Rojas

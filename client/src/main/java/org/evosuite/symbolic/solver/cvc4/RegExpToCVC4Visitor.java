@@ -19,13 +19,12 @@
  */
 package org.evosuite.symbolic.solver.cvc4;
 
+import dk.brics.automaton.RegExp;
+import dk.brics.automaton.RegExpVisitor;
 import org.evosuite.symbolic.solver.SmtExprBuilder;
 import org.evosuite.symbolic.solver.smt.SmtExpr;
 import org.evosuite.symbolic.solver.smt.SmtIntConstant;
 import org.evosuite.symbolic.solver.smt.SmtStringConstant;
-
-import dk.brics.automaton.RegExp;
-import dk.brics.automaton.RegExpVisitor;
 
 public final class RegExpToCVC4Visitor extends RegExpVisitor<SmtExpr> {
 

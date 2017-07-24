@@ -19,31 +19,18 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.evosuite.symbolic.solver.TestSolver.solve;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import com.examples.with.different.packagename.solver.*;
+import org.evosuite.symbolic.TestCaseBuilder;
+import org.evosuite.symbolic.expr.Constraint;
+import org.evosuite.testcase.DefaultTestCase;
+import org.evosuite.testcase.variable.VariableReference;
 
 import java.lang.reflect.Method;
 import java.util.Collection;
 import java.util.Map;
 
-import org.evosuite.symbolic.TestCaseBuilder;
-import org.evosuite.symbolic.expr.Constraint;
-import org.evosuite.symbolic.solver.SolverTimeoutException;
-import org.evosuite.testcase.DefaultTestCase;
-import org.evosuite.testcase.variable.VariableReference;
-
-import com.examples.with.different.packagename.solver.TestCaseBinaryOp;
-import com.examples.with.different.packagename.solver.TestCaseCastIntToReal;
-import com.examples.with.different.packagename.solver.TestCaseCastRealToInt;
-import com.examples.with.different.packagename.solver.TestCaseEq;
-import com.examples.with.different.packagename.solver.TestCaseGt;
-import com.examples.with.different.packagename.solver.TestCaseGte;
-import com.examples.with.different.packagename.solver.TestCaseLt;
-import com.examples.with.different.packagename.solver.TestCaseLte;
-import com.examples.with.different.packagename.solver.TestCaseMod;
-import com.examples.with.different.packagename.solver.TestCaseNeq;
+import static org.evosuite.symbolic.solver.TestSolver.solve;
+import static org.junit.Assert.*;
 
 public class TestSolverSimpleMath {
 

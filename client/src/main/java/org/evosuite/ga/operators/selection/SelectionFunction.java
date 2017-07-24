@@ -19,13 +19,13 @@
  */
 package org.evosuite.ga.operators.selection;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.evosuite.ga.Chromosome;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Abstract base class of selection functions

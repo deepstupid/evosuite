@@ -19,14 +19,10 @@
  */
 package org.evosuite.symbolic.solver.z3;
 
-import java.io.IOException;
-
-import org.evosuite.symbolic.solver.SolverEmptyQueryException;
-import org.evosuite.symbolic.solver.SolverErrorException;
-import org.evosuite.symbolic.solver.SolverParseException;
-import org.evosuite.symbolic.solver.SolverTimeoutException;
-import org.evosuite.symbolic.solver.TestSolverUNSAT;
+import org.evosuite.symbolic.solver.*;
 import org.junit.Test;
+
+import java.io.IOException;
 
 public class TestZ3UNSAT extends TestZ3 {
 

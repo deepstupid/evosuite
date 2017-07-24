@@ -19,13 +19,12 @@
  */
 package org.evosuite;
 
+import junit.framework.Assert;
+import org.evosuite.instrumentation.testability.TestabilityTransformationClassLoader;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
-import org.evosuite.instrumentation.testability.TestabilityTransformationClassLoader;
-
-import junit.framework.Assert;
 
 public class TestUtil {
 	private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(TestUtil.class);

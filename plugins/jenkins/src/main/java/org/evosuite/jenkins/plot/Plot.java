@@ -23,10 +23,6 @@ import hudson.model.AbstractProject;
 import hudson.util.ColorPalette;
 import hudson.util.Graph;
 import jenkins.model.JenkinsLocationConfiguration;
-
-import java.awt.Color;
-import java.util.Calendar;
-
 import org.evosuite.jenkins.actions.ProjectAction;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
@@ -40,6 +36,9 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.category.LineAndShapeRenderer;
 import org.jfree.chart.urls.CategoryURLGenerator;
 import org.jfree.data.category.CategoryDataset;
+
+import java.awt.*;
+import java.util.Calendar;
 
 public abstract class Plot extends Graph {
 

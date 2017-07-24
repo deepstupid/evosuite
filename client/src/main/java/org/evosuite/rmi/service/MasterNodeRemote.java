@@ -19,14 +19,14 @@
  */
 package org.evosuite.rmi.service;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-import java.util.List;
-
 import org.evosuite.Properties.NoSuchParameterException;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.result.TestGenerationResult;
 import org.evosuite.statistics.RuntimeVariable;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.util.List;
 
 /**
  * Master Node view in the client process.  

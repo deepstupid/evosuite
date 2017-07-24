@@ -19,7 +19,7 @@
  */
 package com.examples.with.different.packagename.mock.javax.swing;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class AskUserShowInternalConfirmDialogs2 {
 

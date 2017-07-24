@@ -22,16 +22,11 @@
  */
 package org.evosuite.coverage.path;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.evosuite.testcase.ExecutableChromosome;
-import org.evosuite.testcase.ExecutionResult;
-import org.evosuite.testcase.ExecutionTracer;
-import org.evosuite.testcase.TestChromosome;
-import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteFitnessFunction;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>

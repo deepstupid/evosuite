@@ -21,8 +21,6 @@ package com.examples.with.different.packagename.testcarver.joda;
 
 import org.junit.Test;
 
-import static junit.framework.Assert.assertEquals;
-
 /**
  * Created by jmr on 10/11/2015.
  * Minimised example from Joda Time.

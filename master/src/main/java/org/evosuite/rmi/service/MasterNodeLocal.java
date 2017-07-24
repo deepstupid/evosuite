@@ -19,10 +19,10 @@
  */
 package org.evosuite.rmi.service;
 
+import org.evosuite.utils.Listenable;
+
 import java.util.Collection;
 import java.util.Set;
-
-import org.evosuite.utils.Listenable;
 
 /**
  * Master Node view in the master process.  

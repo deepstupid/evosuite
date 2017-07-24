@@ -19,6 +19,9 @@
  */
 package org.evosuite.rmi;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.net.ServerSocket;
 import java.rmi.NotBoundException;
 import java.rmi.Remote;
@@ -26,10 +29,6 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-
-import org.junit.Assert;
-
-import org.junit.Test;
 
 public class OpenRegestryTest {
 

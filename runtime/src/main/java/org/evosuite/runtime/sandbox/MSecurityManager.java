@@ -19,31 +19,11 @@
  */
 package org.evosuite.runtime.sandbox;
 
-import java.awt.AWTPermission;
-import java.io.File;
-import java.io.FilePermission;
-import java.io.SerializablePermission;
-import java.lang.management.ManagementPermission;
-import java.lang.reflect.Method;
-import java.lang.reflect.ReflectPermission;
-import java.net.InetAddress;
-import java.net.NetPermission;
-import java.net.SocketPermission;
-import java.net.UnknownHostException;
-import java.security.AccessControlContext;
-import java.security.AllPermission;
-import java.security.Permission;
-import java.security.SecurityPermission;
-import java.security.UnresolvedPermission;
-import java.sql.SQLPermission;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.PropertyPermission;
-import java.util.Set;
-import java.util.concurrent.CopyOnWriteArraySet;
-import java.util.logging.FileHandler;
-import java.util.logging.LoggingPermission;
+import org.evosuite.PackageInfo;
+import org.evosuite.runtime.RuntimeSettings;
+import org.evosuite.runtime.vfs.VirtualFileSystem;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.management.MBeanPermission;
 import javax.management.MBeanServerPermission;
@@ -55,13 +35,23 @@ import javax.security.auth.PrivateCredentialPermission;
 import javax.security.auth.kerberos.DelegationPermission;
 import javax.security.auth.kerberos.ServicePermission;
 import javax.sound.sampled.AudioPermission;
-import javax.xml.ws.WebServicePermission;
-
-import org.evosuite.PackageInfo;
-import org.evosuite.runtime.RuntimeSettings;
-import org.evosuite.runtime.vfs.VirtualFileSystem;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.awt.*;
+import java.io.File;
+import java.io.FilePermission;
+import java.io.SerializablePermission;
+import java.lang.management.ManagementPermission;
+import java.lang.reflect.Method;
+import java.lang.reflect.ReflectPermission;
+import java.net.InetAddress;
+import java.net.NetPermission;
+import java.net.SocketPermission;
+import java.net.UnknownHostException;
+import java.security.*;
+import java.sql.SQLPermission;
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.logging.FileHandler;
+import java.util.logging.LoggingPermission;
 
 /**
  * <p>
@@ -631,9 +621,6 @@ public class MSecurityManager extends SecurityManager {
 			return checkPrivateCredentialPermission((PrivateCredentialPermission) perm);
 		}
 
-		if (perm instanceof WebServicePermission) {
-			return checkWebServicePermission((WebServicePermission) perm);
-		}
 
 		if (perm instanceof SubjectDelegationPermission) {
 			return checkSubjectDelegationPermission((SubjectDelegationPermission) perm);
@@ -861,13 +848,7 @@ public class MSecurityManager extends SecurityManager {
 		return true;
 	}
 
-	protected boolean checkWebServicePermission(WebServicePermission perm) {
-		/*
-		 * "publishing a web service endpoint" should be fine, but unsure whether it has effects or not on opening UDP/TCP ports. Need more
-		 * investigations before allowing it
-		 */
-		return false;
-	}
+
 
 	protected boolean checkPrivateCredentialPermission(PrivateCredentialPermission perm) {
 		/*

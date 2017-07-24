@@ -19,10 +19,10 @@
  */
 package org.evosuite.coverage;
 
-import java.util.List;
-
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testsuite.TestSuiteChromosome;
+
+import java.util.List;
 
 /**
  * A TestFitnessFactory produces a List of goals (of type TestFitnessFunction).

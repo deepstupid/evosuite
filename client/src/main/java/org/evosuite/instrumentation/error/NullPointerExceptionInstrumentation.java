@@ -19,11 +19,11 @@
  */
 package org.evosuite.instrumentation.error;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class NullPointerExceptionInstrumentation extends ErrorBranchInstrumenter {
 

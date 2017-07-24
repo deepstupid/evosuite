@@ -19,30 +19,20 @@
  */
 package org.evosuite.symbolic;
 
-import static org.junit.Assert.assertEquals;
+import com.examples.with.different.packagename.concolic.*;
+import org.evosuite.Properties;
+import org.evosuite.symbolic.expr.Constraint;
+import org.evosuite.testcase.DefaultTestCase;
+import org.evosuite.testcase.variable.ArrayReference;
+import org.evosuite.testcase.variable.VariableReference;
+import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import org.evosuite.Properties;
-import org.evosuite.symbolic.expr.Constraint;
-import org.evosuite.testcase.variable.ArrayReference;
-import org.evosuite.testcase.DefaultTestCase;
-import org.evosuite.testcase.variable.VariableReference;
-import org.junit.Test;
-
-import com.examples.with.different.packagename.concolic.Assertions;
-import com.examples.with.different.packagename.concolic.Boxer;
-import com.examples.with.different.packagename.concolic.Calculator;
-import com.examples.with.different.packagename.concolic.Fraction;
-import com.examples.with.different.packagename.concolic.IntHolder;
-import com.examples.with.different.packagename.concolic.MemoryCell;
-import com.examples.with.different.packagename.concolic.MyEnum;
-import com.examples.with.different.packagename.concolic.StaticFields;
-import com.examples.with.different.packagename.concolic.StringHandler;
-import com.examples.with.different.packagename.concolic.TestCase86;
+import static org.junit.Assert.assertEquals;
 
 public class SymbolicObserverTest {
 

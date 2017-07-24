@@ -19,15 +19,15 @@
  */
 package org.evosuite.testcase.variable;
 
-import java.io.Serializable;
-import java.lang.reflect.Type;
-import java.util.Map;
-
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.utils.generic.GenericClass;
 import org.objectweb.asm.commons.GeneratorAdapter;
+
+import java.io.Serializable;
+import java.lang.reflect.Type;
+import java.util.Map;
 
 /**
  * This class represents a variable in a test case

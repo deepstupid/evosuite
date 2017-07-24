@@ -19,30 +19,15 @@
  */
 package org.evosuite.setup;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
+import com.examples.with.different.packagename.staticusage.*;
 import org.evosuite.classpath.ClassPathHandler;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.staticusage.Bar1;
-import com.examples.with.different.packagename.staticusage.Bar4;
-import com.examples.with.different.packagename.staticusage.Bar3;
-import com.examples.with.different.packagename.staticusage.Bar2;
-import com.examples.with.different.packagename.staticusage.Bar5;
-import com.examples.with.different.packagename.staticusage.Bar6;
-import com.examples.with.different.packagename.staticusage.Bar7;
-import com.examples.with.different.packagename.staticusage.BarBar1;
-import com.examples.with.different.packagename.staticusage.Cycle1;
-import com.examples.with.different.packagename.staticusage.Cycle2;
-import com.examples.with.different.packagename.staticusage.Foo;
+import java.util.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 
 public class TestGetStaticGraph {

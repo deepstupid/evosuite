@@ -19,8 +19,8 @@
  */
 package org.evosuite.runtime.mock.java.lang;
 
-import org.evosuite.runtime.annotation.EvoSuiteExclude;
 import org.evosuite.runtime.RuntimeSettings;
+import org.evosuite.runtime.annotation.EvoSuiteExclude;
 import org.evosuite.runtime.mock.MockFramework;
 import org.evosuite.runtime.mock.OverrideMock;
 import org.evosuite.runtime.thread.ThreadCounter;

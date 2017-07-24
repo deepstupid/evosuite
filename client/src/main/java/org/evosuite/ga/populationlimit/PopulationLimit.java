@@ -22,10 +22,10 @@
  */
 package org.evosuite.ga.populationlimit;
 
+import org.evosuite.ga.Chromosome;
+
 import java.io.Serializable;
 import java.util.List;
-
-import org.evosuite.ga.Chromosome;
 
 /**
  * <p>PopulationLimit interface.</p>

@@ -19,6 +19,9 @@
  */
 package org.evosuite.jenkins.plot;
 
+import hudson.model.Run;
+import hudson.util.ChartUtil;
+import hudson.util.DataSetBuilder;
 import org.evosuite.jenkins.actions.BuildAction;
 import org.evosuite.jenkins.actions.ProjectAction;
 import org.jfree.data.category.CategoryDataset;
@@ -26,10 +29,6 @@ import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 
 import java.io.IOException;
-
-import hudson.model.Run;
-import hudson.util.ChartUtil;
-import hudson.util.DataSetBuilder;
 
 public class TimePlot extends Plot {
 

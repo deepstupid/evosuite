@@ -19,24 +19,18 @@
  */
 package org.evosuite.runtime.classhandling;
 
+import com.examples.with.different.packagename.staticfield.FailingStaticInitializer;
+import org.evosuite.EvoSuite;
+import org.evosuite.Properties;
+import org.evosuite.SystemTestBase;
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import org.evosuite.EvoSuite;
-import org.evosuite.Properties;
-import org.evosuite.SystemTestBase;
-import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
-import org.evosuite.testsuite.TestSuiteChromosome;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
-import com.examples.with.different.packagename.staticfield.FailingStaticInitializer;
-import com.examples.with.different.packagename.test.AssignmentTest;
 
 public class FailingStaticInitializerSystemTest extends SystemTestBase {
 

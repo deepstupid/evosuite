@@ -19,15 +19,15 @@
  */
 package org.evosuite.testcarver.wrapper.java.util;
 
-import java.util.Locale;
-import java.util.Map;
-import java.util.TimeZone;
-
 import org.evosuite.testcarver.capture.CaptureLog;
 import org.evosuite.testcarver.capture.CaptureUtil;
 import org.evosuite.testcarver.capture.Capturer;
 import org.evosuite.testcarver.capture.FieldRegistry;
 import org.evosuite.testcarver.instrument.Instrumenter;
+
+import java.util.Locale;
+import java.util.Map;
+import java.util.TimeZone;
 
 
 public class Calendar extends java.util.Calendar {

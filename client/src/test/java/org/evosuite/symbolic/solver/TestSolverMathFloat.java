@@ -19,25 +19,18 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.evosuite.symbolic.solver.TestSolver.solve;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Map;
-
+import com.examples.with.different.packagename.solver.*;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
 
-import com.examples.with.different.packagename.solver.TestCaseFloatAbs;
-import com.examples.with.different.packagename.solver.TestCaseFloatMax;
-import com.examples.with.different.packagename.solver.TestCaseFloatMin;
-import com.examples.with.different.packagename.solver.TestCaseFloatRound;
-import com.examples.with.different.packagename.solver.TestCaseFloatTrigonometry;
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.Map;
+
+import static org.evosuite.symbolic.solver.TestSolver.solve;
+import static org.junit.Assert.*;
 
 public class TestSolverMathFloat {
 

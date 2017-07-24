@@ -22,20 +22,20 @@
  */
 package org.evosuite.testcase.localsearch;
 
-import java.util.List;
-
 import org.evosuite.ga.localsearch.LocalSearchObjective;
 import org.evosuite.testcase.ExecutableChromosome;
-import org.evosuite.testcase.variable.NullReference;
-import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.TestChromosome;
-import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.statements.ConstructorStatement;
 import org.evosuite.testcase.statements.FieldStatement;
 import org.evosuite.testcase.statements.MethodStatement;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.variable.NullReference;
+import org.evosuite.testcase.variable.VariableReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 /**
  * Local search on the parameters of a function call

@@ -19,9 +19,9 @@
  */
 package org.evosuite.eclipse.quickfixes;
 
-import java.util.ArrayList;
-
 import org.eclipse.core.resources.IResource;
+
+import java.util.ArrayList;
 
 public class FileQueue {
 	private ArrayList<IResource> resources;

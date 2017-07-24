@@ -21,9 +21,9 @@ package org.evosuite.junit.naming.methods;
 
 import org.evosuite.coverage.exception.ExceptionCoverageTestFitness;
 import org.evosuite.coverage.io.input.InputCoverageTestFitness;
+import org.evosuite.coverage.io.output.OutputCoverageTestFitness;
 import org.evosuite.coverage.method.MethodCoverageTestFitness;
 import org.evosuite.coverage.method.MethodNoExceptionCoverageTestFitness;
-import org.evosuite.coverage.io.output.OutputCoverageTestFitness;
 import org.evosuite.testcase.TestFitnessFunction;
 
 import java.util.Comparator;

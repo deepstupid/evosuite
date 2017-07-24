@@ -19,15 +19,16 @@
  */
 package org.evosuite.symbolic.solver;
 
-import java.io.IOException;
-import java.util.Collection;
-import java.util.LinkedList;
-import static org.junit.Assert.assertTrue;
-
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.expr.IntegerConstraint;
 import org.evosuite.symbolic.expr.bv.IntegerVariable;
 import org.evosuite.symbolic.vm.ConstraintFactory;
+
+import java.io.IOException;
+import java.util.Collection;
+import java.util.LinkedList;
+
+import static org.junit.Assert.assertTrue;
 
 public class TestSolverUNSAT {
 

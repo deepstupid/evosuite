@@ -19,17 +19,17 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.evosuite.symbolic.SymbolicObserverTest.printConstraints;
-
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.symbolic.BranchCondition;
 import org.evosuite.symbolic.ConcolicExecution;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.testcase.DefaultTestCase;
+
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+
+import static org.evosuite.symbolic.SymbolicObserverTest.printConstraints;
 
 public abstract class DefaultTestCaseConcolicExecutor {
 

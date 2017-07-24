@@ -25,12 +25,12 @@
 package org.evosuite.runtime.util;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-import static shaded.org.evosuite.runtime.EvoAssertions.*;
-import org.evosuite.runtime.util.Inputs;
 import org.junit.runner.RunWith;
 import shaded.org.evosuite.runtime.EvoRunner;
 import shaded.org.evosuite.runtime.EvoRunnerParameters;
+
+import static org.junit.Assert.fail;
+import static shaded.org.evosuite.runtime.EvoAssertions.*;
 
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
 public class Inputs_ESTest extends Inputs_ESTest_scaffolding {

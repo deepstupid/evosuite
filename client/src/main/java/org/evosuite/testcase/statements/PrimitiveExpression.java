@@ -19,18 +19,18 @@
  */
 package org.evosuite.testcase.statements;
 
+import org.evosuite.testcase.TestCase;
+import org.evosuite.testcase.execution.CodeUnderTestException;
+import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.variable.VariableReference;
+import org.evosuite.testcase.variable.VariableReferenceImpl;
+import org.evosuite.utils.generic.GenericAccessibleObject;
+
 import java.io.PrintStream;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.execution.CodeUnderTestException;
-import org.evosuite.testcase.variable.VariableReference;
-import org.evosuite.testcase.variable.VariableReferenceImpl;
-import org.evosuite.testcase.execution.Scope;
-import org.evosuite.utils.generic.GenericAccessibleObject;
 
 // TODO-JRO Implement methods of PrimitiveExpression as needed
 public class PrimitiveExpression extends AbstractStatement {

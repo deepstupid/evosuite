@@ -22,8 +22,6 @@
  */
 package org.evosuite.testcase.localsearch;
 
-import java.util.Map;
-
 import org.evosuite.ga.ConstructionFailedException;
 import org.evosuite.ga.FitnessFunction;
 import org.evosuite.ga.localsearch.LocalSearchObjective;
@@ -32,6 +30,8 @@ import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFactory;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.statements.NullStatement;
+
+import java.util.Map;
 
 /**
  * Try to replace a null reference with a non-null reference

@@ -19,10 +19,10 @@
  */
 package org.evosuite.coverage.branch;
 
-import java.io.Serializable;
-
 import org.evosuite.graphs.cfg.BytecodeInstruction;
 import org.objectweb.asm.tree.LabelNode;
+
+import java.io.Serializable;
 
 /**
  * An object of this class corresponds to a Branch inside the class under test.

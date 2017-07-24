@@ -19,17 +19,13 @@
  */
 package org.evosuite.symbolic.expr.bv;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.symbolic.ConstraintTooLongException;
 import org.evosuite.symbolic.DSEStats;
-import org.evosuite.symbolic.expr.AbstractExpression;
-import org.evosuite.symbolic.expr.Cast;
-import org.evosuite.symbolic.expr.Expression;
-import org.evosuite.symbolic.expr.ExpressionVisitor;
-import org.evosuite.symbolic.expr.Variable;
+import org.evosuite.symbolic.expr.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public final class RealToIntegerCast extends AbstractExpression<Long> implements
         Cast<Double>, IntegerValue {

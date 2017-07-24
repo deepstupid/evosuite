@@ -19,15 +19,11 @@
  */
 package org.evosuite.instrumentation.testability.transformer;
 
-import org.evosuite.instrumentation.testability.BooleanHelper;
 import org.evosuite.instrumentation.TransformationStatistics;
+import org.evosuite.instrumentation.testability.BooleanHelper;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.LdcInsnNode;
-import org.objectweb.asm.tree.MethodInsnNode;
-import org.objectweb.asm.tree.MethodNode;
-import org.objectweb.asm.tree.TypeInsnNode;
+import org.objectweb.asm.tree.*;
 
 /**
  * Replace instanceof operation with helper that puts int on the stack

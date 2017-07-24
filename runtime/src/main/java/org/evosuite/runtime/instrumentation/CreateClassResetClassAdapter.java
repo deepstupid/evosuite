@@ -19,22 +19,18 @@
  */
 package org.evosuite.runtime.instrumentation;
 
+import org.evosuite.runtime.classhandling.ClassResetter;
+import org.evosuite.runtime.classhandling.ModifiedTargetStaticFields;
+import org.objectweb.asm.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.ObjectStreamClass;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
-
-import org.evosuite.runtime.classhandling.ClassResetter;
-import org.evosuite.runtime.classhandling.ModifiedTargetStaticFields;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.FieldVisitor;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.Type;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This visitor duplicates static initializers (i.e. <clinit>) into a new method

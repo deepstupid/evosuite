@@ -19,17 +19,13 @@
  */
 package org.evosuite.classpath;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.jar.*;
-
 import org.evosuite.Properties;
-import org.evosuite.runtime.util.Inputs;
 import org.evosuite.utils.LoggingUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.*;
+import java.util.Scanner;
 
 /**
  * When running EvoSuite there are at least three different classpaths

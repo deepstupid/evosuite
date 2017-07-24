@@ -19,8 +19,6 @@
  */
 package org.evosuite.eclipse.replace;
 
-import java.util.Collection;
-
 public class NWAlgo2 {
 	private String[] originalString;
 	private String[] newString;

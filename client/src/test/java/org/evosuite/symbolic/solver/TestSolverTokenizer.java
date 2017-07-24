@@ -19,16 +19,16 @@
  */
 package org.evosuite.symbolic.solver;
 
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Map;
-
+import com.examples.with.different.packagename.solver.TestCaseTokenizer;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
 
-import com.examples.with.different.packagename.solver.TestCaseTokenizer;
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.Map;
+
 import static org.evosuite.symbolic.solver.TestSolver.solve;
 
 public class TestSolverTokenizer {

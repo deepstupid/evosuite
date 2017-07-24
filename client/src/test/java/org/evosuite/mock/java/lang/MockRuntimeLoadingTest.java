@@ -19,15 +19,16 @@
  */
 package org.evosuite.mock.java.lang;
 
-import org.evosuite.classpath.ClassPathHandler;
-import org.junit.*;
-
+import com.examples.with.different.packagename.mock.java.lang.MemoryCheck;
 import org.evosuite.Properties;
+import org.evosuite.classpath.ClassPathHandler;
 import org.evosuite.instrumentation.InstrumentingClassLoader;
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.mock.MockFramework;
-
-import com.examples.with.different.packagename.mock.java.lang.MemoryCheck;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 public class MockRuntimeLoadingTest {
 

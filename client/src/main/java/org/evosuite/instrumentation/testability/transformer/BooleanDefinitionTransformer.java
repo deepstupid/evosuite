@@ -19,15 +19,11 @@
  */
 package org.evosuite.instrumentation.testability.transformer;
 
+import org.evosuite.instrumentation.TransformationStatistics;
 import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
 import org.evosuite.instrumentation.testability.DescriptorMapping;
-import org.evosuite.instrumentation.TransformationStatistics;
 import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.FieldInsnNode;
-import org.objectweb.asm.tree.InsnNode;
-import org.objectweb.asm.tree.MethodNode;
-import org.objectweb.asm.tree.VarInsnNode;
+import org.objectweb.asm.tree.*;
 
 /**
  * This transformer inserts calls to the get function when a Boolean is put

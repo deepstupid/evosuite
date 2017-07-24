@@ -22,16 +22,6 @@
  */
 package org.evosuite.regression;
 
-import static org.evosuite.Properties.REGRESSION_ANALYSIS_OBJECTDISTANCE;
-import static org.evosuite.regression.RegressionFitnessHelper.useMeasure;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Objects;
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.coverage.branch.Branch;
@@ -45,6 +35,12 @@ import org.evosuite.testcase.execution.MethodCall;
 import org.evosuite.testcase.execution.TestCaseExecutor;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteFitnessFunction;
+
+import java.util.*;
+import java.util.Map.Entry;
+
+import static org.evosuite.Properties.REGRESSION_ANALYSIS_OBJECTDISTANCE;
+import static org.evosuite.regression.RegressionFitnessHelper.useMeasure;
 
 
 public class RegressionSuiteFitness extends TestSuiteFitnessFunction {

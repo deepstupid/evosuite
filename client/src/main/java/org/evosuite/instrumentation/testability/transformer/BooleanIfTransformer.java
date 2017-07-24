@@ -19,17 +19,13 @@
  */
 package org.evosuite.instrumentation.testability.transformer;
 
+import org.evosuite.instrumentation.TransformationStatistics;
 import org.evosuite.instrumentation.testability.BooleanHelper;
 import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
 import org.evosuite.instrumentation.testability.DescriptorMapping;
-import org.evosuite.instrumentation.TransformationStatistics;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.InsnList;
-import org.objectweb.asm.tree.JumpInsnNode;
-import org.objectweb.asm.tree.MethodInsnNode;
-import org.objectweb.asm.tree.MethodNode;
+import org.objectweb.asm.tree.*;
 import org.objectweb.asm.tree.analysis.Frame;
 
 /**

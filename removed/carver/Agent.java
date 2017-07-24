@@ -19,14 +19,14 @@
  */
 package org.evosuite.testcarver.agent;
 
-import java.lang.instrument.Instrumentation;
-
 import org.evosuite.testcarver.capture.Capturer;
 import org.evosuite.testcarver.configuration.Configuration;
 import org.evosuite.testcarver.exception.CapturerException;
 import org.evosuite.testcarver.instrument.Transformer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.instrument.Instrumentation;
 
 
 

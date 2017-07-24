@@ -19,9 +19,6 @@
  */
 package org.evosuite.symbolic.vm;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.symbolic.expr.Expression;
 import org.evosuite.symbolic.expr.bv.IntegerValue;
 import org.evosuite.symbolic.expr.fp.RealValue;
@@ -32,6 +29,9 @@ import org.evosuite.symbolic.expr.str.StringValue;
 import org.objectweb.asm.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 

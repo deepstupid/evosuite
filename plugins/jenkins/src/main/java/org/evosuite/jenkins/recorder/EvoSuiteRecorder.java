@@ -19,6 +19,18 @@
  */
 package org.evosuite.jenkins.recorder;
 
+import hudson.Extension;
+import hudson.Launcher;
+import hudson.maven.AbstractMavenProject;
+import hudson.model.*;
+import hudson.plugins.git.GitSCM;
+import hudson.plugins.mercurial.MercurialSCM;
+import hudson.scm.SCM;
+import hudson.tasks.BuildStepDescriptor;
+import hudson.tasks.BuildStepMonitor;
+import hudson.tasks.Publisher;
+import hudson.tasks.Recorder;
+import net.sf.json.JSONObject;
 import org.evosuite.jenkins.actions.BuildAction;
 import org.evosuite.jenkins.actions.ProjectAction;
 import org.evosuite.jenkins.scm.Git;
@@ -30,23 +42,6 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
-
-import hudson.Extension;
-import hudson.Launcher;
-import hudson.maven.AbstractMavenProject;
-import hudson.model.AbstractBuild;
-import hudson.model.AbstractProject;
-import hudson.model.Action;
-import hudson.model.BuildListener;
-import hudson.model.Result;
-import hudson.plugins.git.GitSCM;
-import hudson.plugins.mercurial.MercurialSCM;
-import hudson.scm.SCM;
-import hudson.tasks.BuildStepDescriptor;
-import hudson.tasks.BuildStepMonitor;
-import hudson.tasks.Publisher;
-import hudson.tasks.Recorder;
-import net.sf.json.JSONObject;
 
 public class EvoSuiteRecorder extends Recorder {
 

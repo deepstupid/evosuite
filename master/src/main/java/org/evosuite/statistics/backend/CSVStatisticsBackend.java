@@ -19,6 +19,12 @@
  */
 package org.evosuite.statistics.backend;
 
+import org.evosuite.Properties;
+import org.evosuite.ga.Chromosome;
+import org.evosuite.statistics.OutputVariable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -26,12 +32,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import org.evosuite.Properties;
-import org.evosuite.ga.Chromosome;
-import org.evosuite.statistics.OutputVariable;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This statistics backend writes all (selected) output variables to a CSV file

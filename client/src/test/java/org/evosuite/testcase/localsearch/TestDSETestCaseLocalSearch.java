@@ -19,15 +19,11 @@
  */
 package org.evosuite.testcase.localsearch;
 
-import static org.junit.Assert.*;
-
-import java.lang.reflect.Method;
-import java.util.Collections;
-
+import com.examples.with.different.packagename.symbolic.Foo;
 import org.evosuite.Properties;
+import org.evosuite.Properties.Criterion;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.classpath.ClassPathHandler;
-import org.evosuite.Properties.Criterion;
 import org.evosuite.coverage.branch.BranchCoverageSuiteFitness;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.testcase.DefaultTestCase;
@@ -40,7 +36,10 @@ import org.junit.Assume;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.symbolic.Foo;
+import java.lang.reflect.Method;
+import java.util.Collections;
+
+import static org.junit.Assert.*;
 
 public class TestDSETestCaseLocalSearch {
 

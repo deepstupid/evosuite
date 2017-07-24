@@ -22,10 +22,9 @@
  */
 package org.evosuite.ga.operators.selection;
 
-import static org.junit.Assert.assertTrue;
-
-import org.evosuite.ga.operators.selection.TournamentSelection;
 import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author Gordon Fraser

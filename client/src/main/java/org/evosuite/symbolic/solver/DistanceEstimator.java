@@ -19,15 +19,11 @@
  */
 package org.evosuite.symbolic.solver;
 
-import java.util.Collection;
-
-import org.evosuite.symbolic.expr.Constraint;
-import org.evosuite.symbolic.expr.DistanceCalculator;
-import org.evosuite.symbolic.expr.IntegerConstraint;
-import org.evosuite.symbolic.expr.RealConstraint;
-import org.evosuite.symbolic.expr.StringConstraint;
+import org.evosuite.symbolic.expr.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Collection;
 
 /**
  * <p>

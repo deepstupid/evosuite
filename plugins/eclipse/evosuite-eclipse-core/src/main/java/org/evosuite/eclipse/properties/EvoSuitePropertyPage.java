@@ -19,10 +19,6 @@
  */
 package org.evosuite.eclipse.properties;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.StringTokenizer;
-
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.QualifiedName;
@@ -30,16 +26,13 @@ import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Spinner;
-import org.eclipse.swt.widgets.Table;
-import org.eclipse.swt.widgets.TableItem;
-import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.widgets.*;
 import org.eclipse.ui.dialogs.PropertyPage;
 import org.evosuite.Properties;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.StringTokenizer;
 
 public class EvoSuitePropertyPage extends PropertyPage {
 

@@ -19,13 +19,13 @@
  */
 package org.evosuite.assertion;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.variable.VariableReference;
+
+import java.util.HashSet;
+import java.util.Set;
 public class EqualsAssertion extends Assertion {
 
 	private static final long serialVersionUID = 1427358542327670617L;

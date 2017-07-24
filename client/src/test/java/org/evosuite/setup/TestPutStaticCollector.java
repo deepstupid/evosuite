@@ -19,19 +19,18 @@
  */
 package org.evosuite.setup;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.Collections;
-import java.util.Set;
-
+import com.examples.with.different.packagename.staticusage.FooBar1;
+import com.examples.with.different.packagename.staticusage.FooBar2;
 import org.evosuite.classpath.ClassPathHandler;
 import org.evosuite.setup.PutStaticMethodCollector.MethodIdentifier;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.objectweb.asm.Type;
 
-import com.examples.with.different.packagename.staticusage.FooBar1;
-import com.examples.with.different.packagename.staticusage.FooBar2;
+import java.util.Collections;
+import java.util.Set;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestPutStaticCollector {
 

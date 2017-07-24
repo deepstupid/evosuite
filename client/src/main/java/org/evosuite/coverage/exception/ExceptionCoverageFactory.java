@@ -19,10 +19,13 @@
  */
 package org.evosuite.coverage.exception;
 
-import java.util.*;
-
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testsuite.AbstractFitnessFactory;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Coverage factory for observed exceptions

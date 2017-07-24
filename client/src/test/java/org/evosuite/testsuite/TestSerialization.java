@@ -19,18 +19,14 @@
  */
 package org.evosuite.testsuite;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.statements.PrimitiveStatement;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.io.*;
 
 public class TestSerialization {
 

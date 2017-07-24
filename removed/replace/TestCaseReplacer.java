@@ -22,28 +22,20 @@
  */
 package org.evosuite.eclipse.replace;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.evosuite.Properties;
 import org.evosuite.Properties.Algorithm;
 import org.evosuite.Properties.Strategy;
 import org.evosuite.TestSuiteGenerator;
 import org.evosuite.coverage.TestFitnessFactory;
 import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
-import org.evosuite.strategy.PropertiesSuiteGAFactory;
 import org.evosuite.strategy.PropertiesTestGAFactory;
-// import org.evosuite.junit.JUnitTestReader;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.TestCaseMinimizer;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionTracer;
-import org.evosuite.testcase.factories.RandomLengthTestFactory;
-import org.evosuite.testsuite.TestSuiteChromosome;
+
+// import org.evosuite.junit.JUnitTestReader;
 
 /**
  * This class is the main entry point for test case replacement

@@ -19,10 +19,10 @@
  */
 package org.evosuite.ga.comparators;
 
-import java.util.Comparator;
-
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.FitnessFunction;
+
+import java.util.Comparator;
 
 /**
  * Sort a Collection of Chromosomes by their fitness value

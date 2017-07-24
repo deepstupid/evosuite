@@ -19,7 +19,6 @@
  */
 package org.evosuite.intellij;
 
-import com.intellij.execution.filters.HyperlinkInfo;
 import com.intellij.execution.impl.ConsoleViewImpl;
 import com.intellij.execution.process.OSProcessHandler;
 import com.intellij.execution.ui.ConsoleViewContentType;
@@ -27,7 +26,6 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import org.evosuite.intellij.util.AsyncGUINotifier;
 
-import javax.swing.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

@@ -22,11 +22,11 @@
  */
 package org.evosuite.assertion;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.testcase.variable.VariableReference;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**

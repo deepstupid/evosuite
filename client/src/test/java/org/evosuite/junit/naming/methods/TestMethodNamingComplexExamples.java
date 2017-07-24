@@ -19,15 +19,6 @@
  */
 package org.evosuite.junit.naming.methods;
 
-import static org.evosuite.coverage.io.IOCoverageConstants.ARRAY_EMPTY;
-import static org.evosuite.coverage.io.IOCoverageConstants.ARRAY_NONEMPTY;
-import static org.evosuite.coverage.io.IOCoverageConstants.NUM_NEGATIVE;
-import static org.evosuite.coverage.io.IOCoverageConstants.NUM_POSITIVE;
-import static org.evosuite.coverage.io.IOCoverageConstants.NUM_ZERO;
-import static org.evosuite.coverage.io.IOCoverageConstants.REF_NONNULL;
-import static org.evosuite.coverage.io.IOCoverageConstants.REF_NULL;
-import static org.junit.Assert.assertEquals;
-
 import org.evosuite.coverage.exception.ExceptionCoverageTestFitness;
 import org.evosuite.coverage.io.input.InputCoverageGoal;
 import org.evosuite.coverage.io.input.InputCoverageTestFitness;
@@ -43,6 +34,9 @@ import org.junit.Test;
 import org.objectweb.asm.Type;
 
 import java.util.ArrayList;
+
+import static org.evosuite.coverage.io.IOCoverageConstants.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by jmr on 31/07/15.

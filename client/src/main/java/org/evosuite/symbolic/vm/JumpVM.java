@@ -19,14 +19,13 @@
  */
 package org.evosuite.symbolic.vm;
 
-import java.util.Vector;
-
+import org.evosuite.dse.AbstractVM;
+import org.evosuite.symbolic.expr.IntegerConstraint;
 import org.evosuite.symbolic.expr.bv.IntegerConstant;
 import org.evosuite.symbolic.expr.bv.IntegerValue;
 import org.evosuite.symbolic.expr.ref.ReferenceExpression;
-import org.evosuite.symbolic.expr.IntegerConstraint;
 
-import org.evosuite.dse.AbstractVM;
+import java.util.Vector;
 
 /**
  * Java byte codes we group together as "jump-related"

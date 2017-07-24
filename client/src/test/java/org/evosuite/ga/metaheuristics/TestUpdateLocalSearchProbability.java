@@ -19,10 +19,10 @@
  */
 package org.evosuite.ga.metaheuristics;
 
-import static org.junit.Assert.*;
-
 import org.evosuite.Properties;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestUpdateLocalSearchProbability {
 

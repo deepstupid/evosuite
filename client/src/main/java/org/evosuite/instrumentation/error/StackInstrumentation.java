@@ -19,12 +19,12 @@
  */
 package org.evosuite.instrumentation.error;
 
+import org.objectweb.asm.Opcodes;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
-
-import org.objectweb.asm.Opcodes;
 
 public class StackInstrumentation extends ErrorBranchInstrumenter {
 

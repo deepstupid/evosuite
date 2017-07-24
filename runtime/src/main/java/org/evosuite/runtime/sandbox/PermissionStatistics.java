@@ -22,16 +22,12 @@
  */
 package org.evosuite.runtime.sandbox;
 
+import org.slf4j.Logger;
+
 import java.io.FilePermission;
 import java.security.Permission;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-
-import org.slf4j.Logger;
 
 /**
  * <p>

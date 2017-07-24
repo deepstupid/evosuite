@@ -22,9 +22,6 @@
  */
 package org.evosuite.instrumentation.error;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.evosuite.runtime.instrumentation.AnnotatedLabel;
 import org.evosuite.runtime.instrumentation.AnnotatedMethodNode;
 import org.objectweb.asm.Label;
@@ -34,6 +31,9 @@ import org.objectweb.asm.commons.GeneratorAdapter;
 import org.objectweb.asm.tree.MethodNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>

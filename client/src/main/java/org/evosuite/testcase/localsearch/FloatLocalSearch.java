@@ -22,18 +22,17 @@
  */
 package org.evosuite.testcase.localsearch;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 import org.evosuite.ga.localsearch.LocalSearchBudget;
 import org.evosuite.ga.localsearch.LocalSearchObjective;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.statements.numeric.NumericalPrimitiveStatement;
-import org.evosuite.testsuite.localsearch.TestSuiteLocalSearchObjective;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 /**
  * <p>

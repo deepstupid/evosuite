@@ -22,9 +22,9 @@
  */
 package com.examples.with.different.packagename;
 
-import java.io.File;
-
 import org.apache.commons.io.FileUtils;
+
+import java.io.File;
 
 /**
  * @author Gordon Fraser

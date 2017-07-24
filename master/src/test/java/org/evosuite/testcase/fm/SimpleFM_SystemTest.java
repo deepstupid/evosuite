@@ -19,7 +19,6 @@
  */
 package org.evosuite.testcase.fm;
 
-import com.examples.with.different.packagename.fm.*;
 import org.evosuite.Properties;
 import org.evosuite.SystemTestBase;
 import org.evosuite.ga.metaheuristics.GeneticAlgorithm;

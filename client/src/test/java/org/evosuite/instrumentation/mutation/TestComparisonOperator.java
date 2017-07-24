@@ -22,11 +22,10 @@
  */
 package org.evosuite.instrumentation.mutation;
 
-import static org.junit.Assert.assertEquals;
-
-import org.evosuite.instrumentation.mutation.ReplaceComparisonOperator;
 import org.junit.Test;
 import org.objectweb.asm.Opcodes;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author fraser

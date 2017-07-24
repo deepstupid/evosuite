@@ -19,8 +19,8 @@
  */
 package org.evosuite.jenkins.actions;
 
-import hudson.model.Action;
 import hudson.model.AbstractBuild;
+import hudson.model.Action;
 
 import java.util.List;
 import java.util.Set;

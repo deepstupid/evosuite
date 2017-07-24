@@ -22,12 +22,12 @@
  */
 package org.evosuite.instrumentation.mutation;
 
-import java.util.List;
-
 import org.evosuite.coverage.mutation.Mutation;
 import org.evosuite.graphs.cfg.BytecodeInstruction;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.analysis.Frame;
+
+import java.util.List;
 
 
 /**

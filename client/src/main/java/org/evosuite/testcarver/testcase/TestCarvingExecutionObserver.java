@@ -20,13 +20,13 @@
 package org.evosuite.testcarver.testcase;
 
 import org.evosuite.testcarver.capture.FieldRegistry;
-import org.evosuite.testcase.variable.FieldReference;
-import org.evosuite.testcase.statements.Statement;
-import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testcase.execution.ExecutionObserver;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.testcase.statements.AssignmentStatement;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.variable.FieldReference;
+import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.utils.generic.GenericField;
 import org.objectweb.asm.Type;
 

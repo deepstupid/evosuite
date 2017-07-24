@@ -19,15 +19,15 @@
  */
 package org.evosuite.runtime.util;
 
+import org.evosuite.runtime.RuntimeSettings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import org.evosuite.runtime.RuntimeSettings;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This singleton class is used to handle calls to System.in by

@@ -19,11 +19,11 @@
  */
 package org.evosuite.maven.util;
 
+import org.codehaus.plexus.util.DirectoryScanner;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.codehaus.plexus.util.DirectoryScanner;
 
 public class FileUtils {
 

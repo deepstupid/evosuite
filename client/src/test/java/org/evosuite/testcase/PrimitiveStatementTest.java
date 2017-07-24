@@ -19,9 +19,9 @@
  */
 package org.evosuite.testcase;
 
-import org.evosuite.testcase.statements.numeric.IntPrimitiveStatement;
 import org.evosuite.testcase.statements.PrimitiveStatement;
 import org.evosuite.testcase.statements.StringPrimitiveStatement;
+import org.evosuite.testcase.statements.numeric.IntPrimitiveStatement;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -22,13 +22,13 @@
  */
 package org.evosuite.instrumentation.testability;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
-
 import org.evosuite.Properties;
 import org.evosuite.seeding.ConstantPoolManager;
 import org.objectweb.asm.Opcodes;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
 
 /**
  * <p>

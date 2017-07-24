@@ -22,9 +22,6 @@
  */
 package org.evosuite.testcase;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.ExecutionObserver;
 import org.evosuite.testcase.execution.ExecutionResult;
@@ -32,6 +29,9 @@ import org.evosuite.testcase.execution.Scope;
 import org.evosuite.testcase.statements.PrimitiveStatement;
 import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.variable.VariableReference;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Gordon Fraser

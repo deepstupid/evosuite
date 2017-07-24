@@ -19,11 +19,6 @@
  */
 package org.evosuite.instrumentation;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.evosuite.Properties;
 import org.evosuite.classpath.ResourceList;
 import org.evosuite.utils.FileIOUtils;
@@ -32,6 +27,11 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Testing might require adapting function signatures, for example Object

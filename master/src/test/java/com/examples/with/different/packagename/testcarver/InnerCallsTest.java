@@ -19,8 +19,6 @@
  */
 package com.examples.with.different.packagename.testcarver;
 
-import org.junit.*;
-
 public class InnerCallsTest {
 
 	@Test

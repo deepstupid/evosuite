@@ -19,17 +19,17 @@
  */
 package org.evosuite.runtime.agent;
 
-import java.lang.instrument.ClassFileTransformer;
-import java.lang.instrument.IllegalClassFormatException;
-import java.security.ProtectionDomain;
-import java.util.LinkedHashSet;
-import java.util.Set;
-
 import org.evosuite.PackageInfo;
 import org.evosuite.runtime.instrumentation.RuntimeInstrumentation;
 import org.objectweb.asm.ClassReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.instrument.ClassFileTransformer;
+import java.lang.instrument.IllegalClassFormatException;
+import java.security.ProtectionDomain;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * Once the agent is hooked to the current JVM, each time a class is

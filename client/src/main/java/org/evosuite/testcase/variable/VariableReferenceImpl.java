@@ -19,19 +19,19 @@
  */
 package org.evosuite.testcase.variable;
 
-import java.lang.reflect.Type;
-import java.util.Map;
-
-import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.Scope;
-import org.evosuite.utils.generic.GenericClass;
+import org.evosuite.testcase.statements.Statement;
 import org.evosuite.utils.PassiveChangeListener;
+import org.evosuite.utils.generic.GenericClass;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.commons.GeneratorAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Type;
+import java.util.Map;
 
 public class VariableReferenceImpl implements VariableReference {
 

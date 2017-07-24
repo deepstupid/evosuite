@@ -19,30 +19,12 @@
  */
 package org.evosuite.runtime.sandbox;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.net.InetAddress;
+import org.junit.*;
+
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.UnknownHostException;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import java.util.logging.LogManager;
-
-import org.evosuite.runtime.RuntimeSettings;
-import  org.junit.*;
-
-import javax.swing.*;
+import java.util.concurrent.*;
 
 public class MSecurityManagerTest {
 
@@ -319,37 +301,6 @@ public class MSecurityManagerTest {
 			securityManager.goingToExecuteTestCase(); //needed
 		}
 	}
-	
-	@Test
-	public void testCanLoadSwingStuff() throws InterruptedException, ExecutionException, TimeoutException{
-		
-		/*
-		 * This is needed, as it sets a hook, which will be called in the static
-		 * initializer of several swing components. So we need to call it 
-		 * here on the main thread
-		 */
-		LogManager.getLogManager();
-		
-		/*
-		 * Note: this test is not particularly robust. Eg, one thing it tests is whether SUT can load
-		 * the gui native code but that "could" be already loaded (shouldn't be though)
-		 */
-		Future<?> future = executor.submit(new Runnable(){
-			@Override
-			public void run() {
-				try {
-					/*
-					 * Note, this JUnit class shouldn't have a static link to AWt (eg "import"), otherwise this
-					 * test would be pointless
-					 */
-					Class.forName("javax.swing.JFrame");
-				} catch (ClassNotFoundException e) {
-					throw new Error(e);
-				}
-			}			
-		});	
-		future.get(1000, TimeUnit.MILLISECONDS);
-	}
-	
+
 	
 }

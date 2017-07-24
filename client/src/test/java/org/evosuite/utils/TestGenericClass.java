@@ -19,22 +19,10 @@
  */
 package org.evosuite.utils;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.Serializable;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.GenericDeclaration;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.lang.reflect.WildcardType;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
-
+import com.examples.with.different.packagename.generic.AbstractGuavaExample;
+import com.examples.with.different.packagename.generic.GuavaExample5;
+import com.googlecode.gentyref.GenericTypeReflector;
+import com.googlecode.gentyref.TypeToken;
 import org.apache.commons.lang3.reflect.TypeUtils;
 import org.evosuite.ga.ConstructionFailedException;
 import org.evosuite.instrumentation.InstrumentingClassLoader;
@@ -43,12 +31,12 @@ import org.evosuite.utils.generic.WildcardTypeImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.generic.AbstractGuavaExample;
-import com.examples.with.different.packagename.generic.GuavaExample5;
-import com.googlecode.gentyref.GenericTypeReflector;
-import com.googlecode.gentyref.TypeToken;
+import java.io.Serializable;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.*;
+import java.util.*;
 
-import java.lang.reflect.AnnotatedType;
+import static org.junit.Assert.assertEquals;
 
 public class TestGenericClass {
 

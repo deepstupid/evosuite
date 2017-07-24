@@ -19,10 +19,10 @@
  */
 package org.evosuite.graphs.cfg;
 
+import org.objectweb.asm.tree.analysis.Frame;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.objectweb.asm.tree.analysis.Frame;
 public class CFGFrame extends Frame { 
 	Map<Integer, CFGFrame> successors = new HashMap<Integer, CFGFrame>();
 	

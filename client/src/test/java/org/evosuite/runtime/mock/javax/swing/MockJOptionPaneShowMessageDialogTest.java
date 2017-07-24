@@ -19,13 +19,10 @@
  */
 package org.evosuite.runtime.mock.javax.swing;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.util.Set;
-
+import com.examples.with.different.packagename.mock.javax.swing.ShowMessageDialogExample;
 import org.evosuite.Properties;
-import org.evosuite.TestGenerationContext;
 import org.evosuite.Properties.Criterion;
+import org.evosuite.TestGenerationContext;
 import org.evosuite.classpath.ClassPathHandler;
 import org.evosuite.coverage.branch.BranchCoverageSuiteFitness;
 import org.evosuite.instrumentation.InstrumentingClassLoader;
@@ -35,13 +32,11 @@ import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.testsuite.TestSuiteChromosome;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
-import com.examples.with.different.packagename.mock.javax.swing.ShowMessageDialogExample;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.util.Set;
 
 public class MockJOptionPaneShowMessageDialogTest {
 

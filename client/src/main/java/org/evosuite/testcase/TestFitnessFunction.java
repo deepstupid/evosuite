@@ -19,12 +19,12 @@
  */
 package org.evosuite.testcase;
 
-import java.util.List;
-
 import org.evosuite.ga.FitnessFunction;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.execution.TestCaseExecutor;
 import org.evosuite.testsuite.TestSuiteChromosome;
+
+import java.util.List;
 
 /**
  * Abstract base class for fitness functions for test case chromosomes

@@ -19,19 +19,20 @@
  */
 package org.evosuite.runtime.classhandling;
 
+import org.evosuite.runtime.LoopCounter;
+import org.evosuite.runtime.TooManyResourcesException;
+import org.evosuite.runtime.agent.InstrumentingAgent;
+import org.evosuite.runtime.sandbox.Sandbox;
+import org.evosuite.runtime.util.AtMostOnceLogger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.evosuite.runtime.*;
-import org.evosuite.runtime.agent.InstrumentingAgent;
-import org.evosuite.runtime.sandbox.Sandbox;
-import org.evosuite.runtime.util.AtMostOnceLogger;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * This class resets the static fields of a given class by invoking the <clinit> class initializer.

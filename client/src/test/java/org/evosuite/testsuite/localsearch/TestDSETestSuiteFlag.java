@@ -19,13 +19,7 @@
  */
 package org.evosuite.testsuite.localsearch;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-
+import com.examples.with.different.packagename.ncs.Flag;
 import org.evosuite.Properties;
 import org.evosuite.Properties.Criterion;
 import org.evosuite.TestGenerationContext;
@@ -43,7 +37,10 @@ import org.junit.Assume;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.ncs.Flag;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+import static org.junit.Assert.*;
 
 public class TestDSETestSuiteFlag {
 

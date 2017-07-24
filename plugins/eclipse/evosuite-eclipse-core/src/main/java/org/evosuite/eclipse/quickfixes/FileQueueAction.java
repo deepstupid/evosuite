@@ -30,8 +30,8 @@ import org.eclipse.ui.IObjectActionDelegate;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
-import org.evosuite.eclipse.popup.actions.GenerateTestsEditorAction;
 import org.evosuite.eclipse.Activator;
+import org.evosuite.eclipse.popup.actions.GenerateTestsEditorAction;
 
 public class FileQueueAction implements IObjectActionDelegate {
 

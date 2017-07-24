@@ -20,13 +20,9 @@
 package org.evosuite.setup;
 
 import org.evosuite.Properties;
-import org.evosuite.runtime.*;
+import org.evosuite.runtime.Random;
 import org.evosuite.runtime.System;
 import org.evosuite.runtime.annotation.*;
-import org.evosuite.runtime.javaee.JeeData;
-import org.evosuite.runtime.javaee.TestDataJavaEE;
-import org.evosuite.runtime.javaee.javax.servlet.EvoServletState;
-import org.evosuite.runtime.mock.javax.naming.EvoNamingContext;
 import org.evosuite.runtime.testdata.*;
 import org.evosuite.runtime.util.JOptionPaneInputs;
 import org.evosuite.runtime.util.JOptionPaneInputs.GUIAction;
@@ -125,9 +121,7 @@ public class EnvironmentTestClusterAugmenter {
 			handleNetwork(test);
 		}
 
-		if (Properties.JEE) {
-			handleJEE(test);
-		}
+
 	}
 
 	private boolean hasAddedJOptionPaneInputsForStrings = false;
@@ -255,34 +249,7 @@ public class EnvironmentTestClusterAugmenter {
 
 	}
 
-	private void handleJEE(TestCase test) {
 
-		JeeData jeeData = TestDataJavaEE.getInstance().getJeeData();
-		test.getAccessedEnvironment().setJeeData(jeeData);
-
-		if (jeeData.lookedUpContextNames.size() > 0) {
-			addEnvironmentClassToCluster(EvoNamingContext.class);
-
-			// TODO add method with right input type
-		}
-
-		if (!Properties.HANDLE_SERVLETS) {
-			/*
-			 * Started to prepare custom mocks for Servlets, but then realized
-			 * that their behavior is very basic. As such, most likely they are
-			 * not needed, as they could be much better replaced by functional
-			 * mocks with Mockito...
-			 */
-
-			return;
-		}
-
-		if (jeeData.wasAServletInitialized) {
-			addEnvironmentClassToCluster(EvoServletState.class);
-		}
-
-		// TODO TestDataJavaEE data for Servlets
-	}
 
 	/**
 	 * Add the given klass to the test cluster. Also recursively add (as

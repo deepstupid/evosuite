@@ -19,20 +19,15 @@
  */
 package org.evosuite.continuous.job;
 
-import java.util.List;
-
 import org.evosuite.Properties.AvailableSchedule;
 import org.evosuite.continuous.CtgConfiguration;
-import org.evosuite.continuous.job.schedule.BudgetAndSeedingSchedule;
-import org.evosuite.continuous.job.schedule.BudgetSchedule;
-import org.evosuite.continuous.job.schedule.HistorySchedule;
-import org.evosuite.continuous.job.schedule.ScheduleType;
-import org.evosuite.continuous.job.schedule.SeedingSchedule;
-import org.evosuite.continuous.job.schedule.SimpleSchedule;
+import org.evosuite.continuous.job.schedule.*;
 import org.evosuite.continuous.project.ProjectStaticData;
 import org.evosuite.continuous.project.ProjectStaticData.ClassInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 /**
  * Class used to define which classes should be used as CUT for this CTG execution,

@@ -1,13 +1,14 @@
 package org.evosuite.regression;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 import org.evosuite.Properties;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.statements.MethodStatement;
 import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.variable.VariableReference;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by sina on 08/05/2017.

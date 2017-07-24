@@ -19,12 +19,6 @@
  */
 package org.evosuite.testcarver.extraction;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.regex.Pattern;
-
 import org.evosuite.testcase.TestCase;
 import org.evosuite.utils.ResourceList;
 import org.evosuite.utils.Utils;
@@ -32,6 +26,12 @@ import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.model.InitializationError;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Utility class to extract execution sequences.

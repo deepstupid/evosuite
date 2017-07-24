@@ -19,9 +19,9 @@
  */
 package org.evosuite.graphs.cfg;
 
-import java.io.Serializable;
-
 import org.evosuite.coverage.branch.Branch;
+
+import java.io.Serializable;
 public class ControlDependency implements Serializable {
 
 	private static final long serialVersionUID = 6288839964561655730L;

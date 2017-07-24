@@ -19,12 +19,6 @@
  */
 package org.evosuite.graphs.ccfg;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.evosuite.graphs.EvoSuiteGraph;
 import org.evosuite.graphs.GraphPool;
 import org.evosuite.graphs.ccg.ClassCallGraph;
@@ -34,6 +28,8 @@ import org.evosuite.graphs.cfg.ControlFlowEdge;
 import org.evosuite.graphs.cfg.RawControlFlowGraph;
 import org.evosuite.utils.JdkPureMethodsList;
 import org.objectweb.asm.Type;
+
+import java.util.*;
 
 /**
  * This class computes the Class Control Flow Graph (CCFG) of a CUT.

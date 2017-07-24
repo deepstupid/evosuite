@@ -19,12 +19,12 @@
  */
 package org.evosuite.instrumentation.error;
 
+import org.objectweb.asm.Opcodes;
+
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-
-import org.objectweb.asm.Opcodes;
 
 public class LinkedHashSetInstrumentation extends ErrorBranchInstrumenter {
 	

@@ -19,17 +19,17 @@
  */
 package org.evosuite.runtime.instrumentation;
 
+import org.evosuite.runtime.util.Inputs;
+import org.objectweb.asm.ClassReader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-import org.evosuite.runtime.util.Inputs;
-import org.objectweb.asm.ClassReader;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * An instrumenting class loader used in special cases in the generated JUnit tests

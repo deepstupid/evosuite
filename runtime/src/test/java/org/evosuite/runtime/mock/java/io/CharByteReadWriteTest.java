@@ -19,20 +19,14 @@
  */
 package org.evosuite.runtime.mock.java.io;
 
-import java.util.Scanner;
-
 import org.evosuite.runtime.Runtime;
 import org.evosuite.runtime.RuntimeSettings;
-import org.evosuite.runtime.mock.java.io.MockFileInputStream;
-import org.evosuite.runtime.mock.java.io.MockFileOutputStream;
-import org.evosuite.runtime.mock.java.io.MockFileReader;
-import org.evosuite.runtime.mock.java.io.MockFileWriter;
-import org.evosuite.runtime.mock.java.io.MockPrintStream;
-import org.evosuite.runtime.mock.java.io.MockPrintWriter;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Scanner;
 
 public class CharByteReadWriteTest {
 

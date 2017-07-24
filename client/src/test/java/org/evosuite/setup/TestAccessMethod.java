@@ -19,13 +19,13 @@
  */
 package org.evosuite.setup;
 
-import java.lang.reflect.Method;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.util.Set;
 
 public class TestAccessMethod {
 	@After

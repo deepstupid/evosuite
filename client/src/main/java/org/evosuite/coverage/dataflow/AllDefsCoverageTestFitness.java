@@ -19,12 +19,12 @@
  */
 package org.evosuite.coverage.dataflow;
 
-import java.util.Map;
-
 import org.evosuite.coverage.statement.StatementCoverageTestFitness;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionResult;
+
+import java.util.Map;
 
 /**
  * Evaluate fitness of a single test case with respect to one Definition-Use

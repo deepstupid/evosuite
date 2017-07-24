@@ -17,14 +17,14 @@
  */
 package org.evosuite.ga.metaheuristics.mosa;
 
+import org.evosuite.ga.Chromosome;
+import org.evosuite.ga.FitnessFunction;
+import org.evosuite.ga.comparators.SortByFitness;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
-
-import org.evosuite.ga.Chromosome;
-import org.evosuite.ga.FitnessFunction;
-import org.evosuite.ga.comparators.SortByFitness;
 
 /**
  * This class implements different variants of Crowding Distance for many-objective problems

@@ -19,9 +19,9 @@
  */
 package org.evosuite.symbolic.vm;
 
-import java.lang.reflect.Member;
-
 import org.evosuite.dse.MainConfig;
+
+import java.lang.reflect.Member;
 
 /**
  * Frame for a <clinit>() invocation

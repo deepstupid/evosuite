@@ -19,20 +19,15 @@
  */
 package org.evosuite.instrumentation;
 
-import static org.objectweb.asm.Opcodes.INVOKESTATIC;
+import org.evosuite.testcase.execution.ExecutionTracer;
+import org.objectweb.asm.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import org.evosuite.testcase.execution.ExecutionTracer;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.FieldVisitor;
-import org.objectweb.asm.Label;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.Type;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import static org.objectweb.asm.Opcodes.INVOKESTATIC;
 
 /**
  * This visitor inserts a callback to at the exit of each <clinit>() method

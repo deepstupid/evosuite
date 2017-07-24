@@ -19,7 +19,12 @@
  */
 package org.evosuite.instrumentation.error;
 
-import static org.junit.Assert.assertTrue;
+import org.junit.Assume;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+import org.objectweb.asm.Opcodes;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -27,13 +32,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.evosuite.instrumentation.error.ErrorConditionChecker;
-import org.junit.Assume;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
-import org.objectweb.asm.Opcodes;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
 public class TestLongUnderflow {

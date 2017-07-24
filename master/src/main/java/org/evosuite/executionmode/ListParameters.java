@@ -19,16 +19,16 @@
  */
 package org.evosuite.executionmode;
 
+import org.apache.commons.cli.Option;
+import org.evosuite.Properties;
+import org.evosuite.Properties.Parameter;
+import org.evosuite.utils.LoggingUtils;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-import org.apache.commons.cli.Option;
-import org.evosuite.Properties;
-import org.evosuite.Properties.Parameter;
-import org.evosuite.utils.LoggingUtils;
 
 /**
  * Class used to list on the console all the options in Properties

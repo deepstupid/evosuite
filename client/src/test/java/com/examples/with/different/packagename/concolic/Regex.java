@@ -33,7 +33,7 @@ package com.examples.with.different.packagename.concolic;
 //! trialfirst = 1        //EACH TRIAL USES A DIFFERENT RANDOM SEED
 //! triallast = 1         //NUMBER OF TRIALS = triallast - trialfirst + 1
 
-import java.util.regex.*;
+import java.util.regex.Pattern;
 
 public class Regex
 {

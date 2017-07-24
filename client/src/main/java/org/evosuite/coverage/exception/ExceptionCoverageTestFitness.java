@@ -19,7 +19,8 @@
  */
 package org.evosuite.coverage.exception;
 
-import org.evosuite.testcase.*;
+import org.evosuite.testcase.TestChromosome;
+import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionResult;
 
 

@@ -19,18 +19,17 @@
  */
 package org.evosuite.runtime.mock.java.net;
 
-import java.io.IOException;
-import java.net.*;
-import java.util.Scanner;
-
-import org.junit.Assert;
-
 import org.evosuite.runtime.vnet.EndPointInfo;
 import org.evosuite.runtime.vnet.RemoteTcpServer;
 import org.evosuite.runtime.vnet.VirtualNetwork;
 import org.evosuite.runtime.vnet.VirtualNetwork.ConnectionType;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.net.*;
+import java.util.Scanner;
 
 public class SocketTest {
 

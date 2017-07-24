@@ -22,6 +22,12 @@
  */
 package org.evosuite.testcase.statements;
 
+import org.evosuite.testcase.TestCase;
+import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.variable.NullReference;
+import org.evosuite.testcase.variable.VariableReference;
+import org.evosuite.utils.generic.GenericAccessibleObject;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.PrintStream;
@@ -30,13 +36,6 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
-import org.evosuite.testcase.variable.NullReference;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.variable.VariableReference;
-import org.evosuite.testcase.execution.Scope;
-import org.evosuite.utils.generic.GenericAccessibleObject;
-import org.objectweb.asm.commons.GeneratorAdapter;
 
 /**
  * The concept of variableReferences is: that they are created by some

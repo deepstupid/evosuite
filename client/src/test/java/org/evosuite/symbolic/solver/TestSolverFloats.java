@@ -19,44 +19,18 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.evosuite.symbolic.solver.TestSolver.solve;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import com.examples.with.different.packagename.solver.*;
+import org.evosuite.symbolic.TestCaseBuilder;
+import org.evosuite.symbolic.expr.Constraint;
+import org.evosuite.testcase.DefaultTestCase;
+import org.evosuite.testcase.variable.VariableReference;
 
 import java.lang.reflect.Method;
 import java.util.Collection;
 import java.util.Map;
 
-import org.evosuite.symbolic.TestCaseBuilder;
-import org.evosuite.symbolic.expr.Constraint;
-import org.evosuite.symbolic.solver.SolverTimeoutException;
-import org.evosuite.testcase.DefaultTestCase;
-import org.evosuite.testcase.variable.VariableReference;
-
-import com.examples.with.different.packagename.solver.TestCaseAcos;
-import com.examples.with.different.packagename.solver.TestCaseAsin;
-import com.examples.with.different.packagename.solver.TestCaseAtan;
-import com.examples.with.different.packagename.solver.TestCaseAtan2;
-import com.examples.with.different.packagename.solver.TestCaseCos;
-import com.examples.with.different.packagename.solver.TestCaseExp;
-import com.examples.with.different.packagename.solver.TestCaseFloatAdd;
-import com.examples.with.different.packagename.solver.TestCaseFloatDiv;
-import com.examples.with.different.packagename.solver.TestCaseFloatEq;
-import com.examples.with.different.packagename.solver.TestCaseFloatFraction;
-import com.examples.with.different.packagename.solver.TestCaseFloatGt;
-import com.examples.with.different.packagename.solver.TestCaseFloatGte;
-import com.examples.with.different.packagename.solver.TestCaseFloatLt;
-import com.examples.with.different.packagename.solver.TestCaseFloatLte;
-import com.examples.with.different.packagename.solver.TestCaseFloatMod;
-import com.examples.with.different.packagename.solver.TestCaseFloatMul;
-import com.examples.with.different.packagename.solver.TestCaseFloatNeq;
-import com.examples.with.different.packagename.solver.TestCaseFloatSub;
-import com.examples.with.different.packagename.solver.TestCaseLog;
-import com.examples.with.different.packagename.solver.TestCaseRound;
-import com.examples.with.different.packagename.solver.TestCaseSin;
-import com.examples.with.different.packagename.solver.TestCaseSqrt;
-import com.examples.with.different.packagename.solver.TestCaseTan;
+import static org.evosuite.symbolic.solver.TestSolver.solve;
+import static org.junit.Assert.*;
 
 public class TestSolverFloats {
 

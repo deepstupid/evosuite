@@ -19,12 +19,12 @@
  */
 package org.evosuite.instrumentation.error;
 
+import org.objectweb.asm.Opcodes;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
-
-import org.objectweb.asm.Opcodes;
 
 public class QueueInstrumentation extends ErrorBranchInstrumenter {
 	

@@ -19,19 +19,18 @@
  */
 package org.evosuite.symbolic.solver;
 
-import static org.evosuite.symbolic.solver.TestSolver.solve;
-
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Map;
-
+import com.examples.with.different.packagename.solver.TestCaseRegex;
 import org.evosuite.symbolic.TestCaseBuilder;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.solver.cvc4.CVC4Solver;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
 
-import com.examples.with.different.packagename.solver.TestCaseRegex;
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.Map;
+
+import static org.evosuite.symbolic.solver.TestSolver.solve;
 
 public abstract class TestSolverRegex {
 

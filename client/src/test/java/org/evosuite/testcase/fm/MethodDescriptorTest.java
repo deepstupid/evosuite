@@ -25,7 +25,8 @@ import org.junit.Test;
 import java.awt.*;
 import java.lang.reflect.Method;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by foo on 20/12/15.

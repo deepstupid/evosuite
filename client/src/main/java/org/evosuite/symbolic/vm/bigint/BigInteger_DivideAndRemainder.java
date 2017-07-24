@@ -19,16 +19,16 @@
  */
 package org.evosuite.symbolic.vm.bigint;
 
-import java.lang.reflect.Array;
-import java.math.BigInteger;
-
 import org.evosuite.symbolic.expr.bv.IntegerValue;
 import org.evosuite.symbolic.expr.ref.ReferenceConstant;
 import org.evosuite.symbolic.expr.ref.ReferenceExpression;
 import org.evosuite.symbolic.vm.ExpressionFactory;
-import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicEnvironment;
+import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicHeap;
+
+import java.lang.reflect.Array;
+import java.math.BigInteger;
 
 public final class BigInteger_DivideAndRemainder extends SymbolicFunction {
 

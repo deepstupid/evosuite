@@ -22,19 +22,18 @@
  */
 package org.evosuite.assertion;
 
-import java.util.Set;
-
-import org.evosuite.testcase.statements.*;
-import org.evosuite.testcase.variable.VariableReference;
+import org.evosuite.Properties;
+import org.evosuite.TestGenerationContext;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.ExecutionObserver;
 import org.evosuite.testcase.execution.ExecutionTracer;
 import org.evosuite.testcase.execution.Scope;
-
-import org.evosuite.Properties;
-import org.evosuite.TestGenerationContext;
+import org.evosuite.testcase.statements.*;
+import org.evosuite.testcase.variable.VariableReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Set;
 
 /**
  * <p>

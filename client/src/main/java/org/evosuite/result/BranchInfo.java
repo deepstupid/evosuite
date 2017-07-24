@@ -19,9 +19,9 @@
  */
 package org.evosuite.result;
 
-import java.io.Serializable;
-
 import org.evosuite.coverage.branch.Branch;
+
+import java.io.Serializable;
 
 public class BranchInfo implements Serializable {
 

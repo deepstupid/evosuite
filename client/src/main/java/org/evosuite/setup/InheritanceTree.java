@@ -22,9 +22,6 @@
  */
 package org.evosuite.setup;
 
-import java.io.File;
-import java.util.*;
-
 import org.evosuite.classpath.ResourceList;
 import org.evosuite.utils.LoggingUtils;
 import org.jgrapht.graph.DefaultEdge;
@@ -33,6 +30,9 @@ import org.jgrapht.graph.EdgeReversedGraph;
 import org.jgrapht.traverse.BreadthFirstIterator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.util.*;
 
 /**
  * @author Gordon Fraser

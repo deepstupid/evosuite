@@ -21,6 +21,12 @@ package org.evosuite.testcarver.testcase;
 
 import gnu.trove.list.array.TIntArrayList;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import org.evosuite.TestGenerationContext;
+import org.evosuite.testcarver.capture.CaptureLog;
+import org.evosuite.testcarver.capture.CaptureUtil;
+import org.evosuite.utils.GenericConstructor;
+import org.evosuite.utils.GenericField;
+import org.evosuite.utils.GenericMethod;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -28,23 +34,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
-
-import org.evosuite.TestGenerationContext;
-import org.evosuite.testcarver.capture.CaptureLog;
-import org.evosuite.testcarver.capture.CaptureUtil;
-import org.evosuite.testcase.AssignmentStatement;
-import org.evosuite.testcase.ConstructorStatement;
-import org.evosuite.testcase.DefaultTestCase;
-import org.evosuite.testcase.FieldReference;
-import org.evosuite.testcase.MethodStatement;
-import org.evosuite.testcase.NullStatement;
-import org.evosuite.testcase.PrimitiveStatement;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.VariableReference;
-import org.evosuite.testcase.VariableReferenceImpl;
-import org.evosuite.utils.GenericConstructor;
-import org.evosuite.utils.GenericField;
-import org.evosuite.utils.GenericMethod;
 
 @Deprecated
 public class TestCaseCodeGenerator {

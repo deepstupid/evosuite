@@ -26,10 +26,7 @@ import com.intellij.openapi.ui.Messages;
 import org.evosuite.intellij.util.EvoVersion;
 import org.evosuite.intellij.util.Utils;
 
-import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
-import java.awt.*;
-import java.awt.event.*;
 import java.io.File;
 import java.text.NumberFormat;
 import java.util.ArrayList;

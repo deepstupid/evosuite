@@ -19,11 +19,11 @@
  */
 package org.evosuite.rmi.service;
 
-import java.rmi.RemoteException;
-import java.rmi.registry.Registry;
-
 import org.evosuite.ga.Chromosome;
 import org.evosuite.statistics.RuntimeVariable;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.Registry;
 
 public class DummyClientNodeImpl extends ClientNodeImpl {
 

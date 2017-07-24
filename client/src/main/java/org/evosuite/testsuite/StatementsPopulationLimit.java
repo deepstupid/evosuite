@@ -22,11 +22,11 @@
  */
 package org.evosuite.testsuite;
 
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.populationlimit.PopulationLimit;
+
+import java.util.List;
 
 
 /**

@@ -19,10 +19,6 @@
  */
 package org.evosuite.graphs;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-
 import org.evosuite.TestGenerationContext;
 import org.evosuite.coverage.lcsaj.LCSAJ;
 import org.evosuite.graphs.cfg.BytecodeInstruction;
@@ -31,6 +27,10 @@ import org.evosuite.graphs.cfg.RawControlFlowGraph;
 import org.kohsuke.graphviz.Edge;
 import org.kohsuke.graphviz.Graph;
 import org.kohsuke.graphviz.Node;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class LCSAJGraph {
 

@@ -19,12 +19,12 @@
  */
 package org.evosuite.setup;
 
-import java.io.File;
-
 import org.evosuite.runtime.RuntimeSettings;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.io.File;
 
 public class TestClusterGeneratorTest {
 

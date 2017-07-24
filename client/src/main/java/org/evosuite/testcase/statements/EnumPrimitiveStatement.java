@@ -22,18 +22,16 @@
  */
 package org.evosuite.testcase.statements;
 
+import org.evosuite.testcase.TestCase;
+import org.evosuite.testcase.execution.ExecutionTracer;
+import org.evosuite.utils.Randomness;
+import org.evosuite.utils.generic.GenericClass;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.List;
-
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.execution.ExecutionTracer;
-import org.evosuite.utils.generic.GenericClass;
-import org.evosuite.utils.Randomness;
-import org.objectweb.asm.Type;
-import org.objectweb.asm.commons.GeneratorAdapter;
 
 /**
  * <p>

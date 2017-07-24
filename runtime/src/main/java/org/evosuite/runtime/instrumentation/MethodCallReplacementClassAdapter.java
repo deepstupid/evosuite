@@ -22,24 +22,20 @@
  */
 package org.evosuite.runtime.instrumentation;
 
-import java.awt.*;
-import java.io.ObjectStreamClass;
-import java.io.Serializable;
-import java.util.Arrays;
-
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.annotation.EvoSuiteExclude;
 import org.evosuite.runtime.mock.MockList;
 import org.evosuite.runtime.mock.StaticReplacementMock;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.FieldVisitor;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.Type;
+import org.objectweb.asm.*;
 import org.objectweb.asm.commons.GeneratorAdapter;
 import org.objectweb.asm.commons.Method;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.awt.*;
+import java.io.ObjectStreamClass;
+import java.io.Serializable;
+import java.util.Arrays;
 
 /**
  * <p>MethodCallReplacementClassAdapter class.</p>

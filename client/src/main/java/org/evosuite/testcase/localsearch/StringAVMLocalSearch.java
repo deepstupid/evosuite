@@ -22,8 +22,6 @@
  */
 package org.evosuite.testcase.localsearch;
 
-import java.util.Arrays;
-
 import org.evosuite.Properties;
 import org.evosuite.ga.localsearch.LocalSearchObjective;
 import org.evosuite.testcase.TestChromosome;
@@ -32,6 +30,8 @@ import org.evosuite.testcase.statements.StringPrimitiveStatement;
 import org.evosuite.utils.Randomness;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Arrays;
 
 /**
  * @author Gordon Fraser

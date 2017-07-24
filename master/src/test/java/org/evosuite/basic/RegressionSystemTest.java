@@ -22,6 +22,8 @@
  */
 package org.evosuite.basic;
 
+import com.examples.with.different.packagename.ExampleFieldClass;
+import com.examples.with.different.packagename.ExampleInheritedClass;
 import org.evosuite.EvoSuite;
 import org.evosuite.Properties;
 import org.evosuite.SystemTestBase;
@@ -31,27 +33,6 @@ import org.evosuite.testsuite.TestSuiteChromosome;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
-import com.examples.with.different.packagename.ExampleFieldClass;
-import com.examples.with.different.packagename.ExampleInheritedClass;
-import com.examples.with.different.packagename.test.AbsTest;
-import com.examples.with.different.packagename.test.ArrayTest;
-import com.examples.with.different.packagename.test.AssignmentTest;
-import com.examples.with.different.packagename.test.CallTest;
-import com.examples.with.different.packagename.test.DepTest;
-import com.examples.with.different.packagename.test.EmptyTest;
-import com.examples.with.different.packagename.test.EnumTest;
-import com.examples.with.different.packagename.test.EnumTest2;
-import com.examples.with.different.packagename.test.ExampleComplexReturnClass;
-import com.examples.with.different.packagename.test.ExampleObserverClass;
-import com.examples.with.different.packagename.test.ExampleStaticVoidSetterClass;
-import com.examples.with.different.packagename.test.FieldTest;
-import com.examples.with.different.packagename.test.MemberClass;
-import com.examples.with.different.packagename.test.ObjectTest;
-import com.examples.with.different.packagename.test.ObserverTest;
-import com.examples.with.different.packagename.test.PolyExample;
-import com.examples.with.different.packagename.test.StaticFieldTest;
-import com.examples.with.different.packagename.test.SwitchTest;
 
 /**
  * @author Gordon Fraser

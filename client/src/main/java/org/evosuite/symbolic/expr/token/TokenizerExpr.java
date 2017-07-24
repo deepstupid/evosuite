@@ -19,10 +19,10 @@
  */
 package org.evosuite.symbolic.expr.token;
 
-import java.util.StringTokenizer;
-
 import org.evosuite.symbolic.expr.AbstractExpression;
 import org.evosuite.symbolic.expr.str.StringValue;
+
+import java.util.StringTokenizer;
 
 public abstract class TokenizerExpr extends AbstractExpression<StringTokenizer> {
 

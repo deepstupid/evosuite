@@ -22,18 +22,12 @@
  */
 package org.evosuite.instrumentation.testability;
 
-import java.util.List;
-
 import org.evosuite.instrumentation.TransformationStatistics;
-import org.evosuite.instrumentation.testability.BooleanHelper;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.ClassNode;
-import org.objectweb.asm.tree.InsnList;
-import org.objectweb.asm.tree.InsnNode;
-import org.objectweb.asm.tree.MethodInsnNode;
-import org.objectweb.asm.tree.MethodNode;
+import org.objectweb.asm.tree.*;
+
+import java.util.List;
 
 /**
  * <p>ComparisonTransformation class.</p>

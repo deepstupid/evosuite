@@ -19,16 +19,9 @@
  */
 package org.evosuite.symbolic;
 
-import static org.evosuite.symbolic.SymbolicObserverTest.printConstraints;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import java.io.File;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.util.List;
-
+import com.examples.with.different.packagename.concolic.TestCaseWithFile;
+import com.examples.with.different.packagename.concolic.TestCaseWithReset;
+import com.examples.with.different.packagename.concolic.TestCaseWithURL;
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.runtime.Runtime;
@@ -48,9 +41,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.concolic.TestCaseWithFile;
-import com.examples.with.different.packagename.concolic.TestCaseWithReset;
-import com.examples.with.different.packagename.concolic.TestCaseWithURL;
+import java.io.File;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.util.List;
+
+import static org.evosuite.symbolic.SymbolicObserverTest.printConstraints;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ConcolicExecutionEnvironmentTest {
 

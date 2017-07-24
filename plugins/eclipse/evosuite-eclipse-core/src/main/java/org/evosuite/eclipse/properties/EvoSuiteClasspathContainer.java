@@ -19,10 +19,6 @@
  */
 package org.evosuite.eclipse.properties;
 
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.Path;
@@ -32,6 +28,10 @@ import org.eclipse.jdt.core.IClasspathEntry;
 import org.eclipse.jdt.core.JavaCore;
 import org.evosuite.eclipse.Activator;
 import org.osgi.framework.Bundle;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Gordon Fraser

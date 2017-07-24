@@ -34,9 +34,6 @@ import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.*;
-import java.awt.*;
-
 /**
  * Entry point for the IntelliJ plugin for when projects are opened/closed
  *

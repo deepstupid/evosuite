@@ -19,12 +19,12 @@
  */
 package org.evosuite.symbolic.vm;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.evosuite.symbolic.expr.bv.IntegerValue;
 import org.evosuite.symbolic.expr.fp.RealValue;
 import org.evosuite.symbolic.expr.ref.ReferenceExpression;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 

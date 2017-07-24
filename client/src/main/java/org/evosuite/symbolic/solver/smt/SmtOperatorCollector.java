@@ -19,10 +19,10 @@
  */
 package org.evosuite.symbolic.solver.smt;
 
+import org.evosuite.symbolic.solver.smt.SmtOperation.Operator;
+
 import java.util.HashSet;
 import java.util.Set;
-
-import org.evosuite.symbolic.solver.smt.SmtOperation.Operator;
 
 public final class SmtOperatorCollector implements SmtExprVisitor<Void, Void> {
 

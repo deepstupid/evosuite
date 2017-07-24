@@ -19,11 +19,7 @@
  */
 package org.evosuite.symbolic;
 
-import static org.junit.Assert.assertTrue;
-
-import java.lang.reflect.Method;
-import java.util.List;
-
+import com.examples.with.different.packagename.concolic.ConcolicReflection;
 import org.evosuite.Properties;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.variable.VariableReference;
@@ -31,7 +27,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.concolic.ConcolicReflection;
+import java.lang.reflect.Method;
+import java.util.List;
+
+import static org.junit.Assert.assertTrue;
 
 public class TestConcolicReflection {
 

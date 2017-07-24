@@ -19,10 +19,6 @@
  */
 package org.evosuite.instrumentation.testability;
 
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.PackageInfo;
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
@@ -34,6 +30,10 @@ import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.tree.ClassNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <em>Note:</em> Do not inadvertently use multiple instances of this class in

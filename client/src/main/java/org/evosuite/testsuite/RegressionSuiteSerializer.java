@@ -19,9 +19,6 @@
  */
 package org.evosuite.testsuite;
 
-import static org.evosuite.Properties.SEED_DIR;
-import static org.evosuite.Properties.TARGET_CLASS;
-
 import org.evosuite.Properties;
 import org.evosuite.Properties.AssertionStrategy;
 import org.evosuite.TestGenerationContext;
@@ -40,6 +37,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import static org.evosuite.Properties.SEED_DIR;
+import static org.evosuite.Properties.TARGET_CLASS;
 
 public class RegressionSuiteSerializer {
 

@@ -22,14 +22,13 @@
  */
 package org.evosuite.testcase.statements.numeric;
 
-import java.lang.reflect.Type;
-
 import org.evosuite.Properties;
 import org.evosuite.seeding.ConstantPool;
 import org.evosuite.seeding.ConstantPoolManager;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.utils.Randomness;
-import org.objectweb.asm.commons.GeneratorAdapter;
+
+import java.lang.reflect.Type;
 
 /**
  * <p>

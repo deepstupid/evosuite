@@ -19,13 +19,6 @@
  */
 package org.evosuite.utils;
 
-import java.io.*;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.rmi.RemoteException;
-import java.util.*;
-import java.util.concurrent.CountDownLatch;
-
 import org.evosuite.ClientProcess;
 import org.evosuite.ConsoleProgressBar;
 import org.evosuite.Properties;
@@ -37,9 +30,15 @@ import org.evosuite.rmi.service.ClientState;
 import org.evosuite.runtime.sandbox.Sandbox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import sun.misc.Signal;
 import sun.misc.SignalHandler;
+
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.rmi.RemoteException;
+import java.util.*;
+import java.util.concurrent.CountDownLatch;
 
 /*
  * this code should be used by the main master process.

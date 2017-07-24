@@ -19,18 +19,6 @@
  */
 package org.evosuite.testsuite;
 
-import java.io.File;
-import java.io.Serializable;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.evosuite.Properties;
 import org.evosuite.TestSuiteGenerator;
@@ -47,18 +35,16 @@ import org.evosuite.ga.stoppingconditions.MaxFitnessEvaluationsStoppingCondition
 import org.evosuite.ga.stoppingconditions.MaxStatementsStoppingCondition;
 import org.evosuite.ga.stoppingconditions.MaxTestsStoppingCondition;
 import org.evosuite.graphs.cfg.CFGMethodAdapter;
-import org.evosuite.testcase.ConstructorStatement;
-import org.evosuite.testcase.ExecutionResult;
-import org.evosuite.testcase.ExecutionTrace;
-import org.evosuite.testcase.MethodStatement;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestCaseExecutor;
-import org.evosuite.testcase.TestChromosome;
-import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.utils.ArrayUtil;
 import org.evosuite.utils.ReportGenerator;
 import org.evosuite.utils.Utils;
 import org.objectweb.asm.Type;
+
+import java.io.File;
+import java.io.Serializable;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.util.Map.Entry;
 
 /**
  * <p>

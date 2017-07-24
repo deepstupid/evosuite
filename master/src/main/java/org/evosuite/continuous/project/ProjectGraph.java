@@ -19,14 +19,6 @@
  */
 package org.evosuite.continuous.project;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.evosuite.continuous.project.ProjectStaticData.ClassInfo;
 import org.evosuite.seeding.CastClassAnalyzer;
 import org.evosuite.setup.DependencyAnalysis;
@@ -39,6 +31,8 @@ import org.objectweb.asm.tree.FieldNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 /**
  * <p>

@@ -19,12 +19,7 @@
  */
 package org.evosuite.symbolic.solver.z3str2;
 
-import org.evosuite.symbolic.solver.smt.SmtAssertion;
-import org.evosuite.symbolic.solver.smt.SmtCheckSatQuery;
-import org.evosuite.symbolic.solver.smt.SmtConstantDeclaration;
-import org.evosuite.symbolic.solver.smt.SmtExpr;
-import org.evosuite.symbolic.solver.smt.SmtExprPrinter;
-import org.evosuite.symbolic.solver.smt.SmtFunctionDefinition;
+import org.evosuite.symbolic.solver.smt.*;
 
 class Z3Str2QueryPrinter {
 

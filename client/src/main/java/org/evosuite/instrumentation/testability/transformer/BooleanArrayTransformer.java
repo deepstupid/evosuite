@@ -22,11 +22,7 @@ package org.evosuite.instrumentation.testability.transformer;
 import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.IntInsnNode;
-import org.objectweb.asm.tree.MethodNode;
-import org.objectweb.asm.tree.MultiANewArrayInsnNode;
-import org.objectweb.asm.tree.TypeInsnNode;
+import org.objectweb.asm.tree.*;
 
 /**
  * Make sure arrays of booleans are also transformed

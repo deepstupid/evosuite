@@ -19,12 +19,12 @@
  */
 package org.evosuite.instrumentation;
 
-import java.util.HashMap;
-
 import org.evosuite.assertion.CheapPurityAnalyzer;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
+
+import java.util.HashMap;
 
 /**
  * It launches a <code>PurityAnalysisMethodVisitor</code> on each method.

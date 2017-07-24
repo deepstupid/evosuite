@@ -19,11 +19,7 @@
  */
 package org.evosuite.symbolic.solver.z3str2;
 
-import org.evosuite.symbolic.expr.Comparator;
-import org.evosuite.symbolic.expr.ConstraintVisitor;
-import org.evosuite.symbolic.expr.IntegerConstraint;
-import org.evosuite.symbolic.expr.RealConstraint;
-import org.evosuite.symbolic.expr.StringConstraint;
+import org.evosuite.symbolic.expr.*;
 import org.evosuite.symbolic.solver.SmtExprBuilder;
 import org.evosuite.symbolic.solver.smt.SmtExpr;
 

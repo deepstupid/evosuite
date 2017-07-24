@@ -19,9 +19,9 @@
  */
 package org.evosuite.runtime.vfs;
 
-import java.io.File;
-
 import org.evosuite.runtime.RuntimeSettings;
+
+import java.io.File;
 
 /**
  * Parent class for both files and folders

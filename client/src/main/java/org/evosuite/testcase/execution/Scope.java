@@ -19,22 +19,15 @@
  */
 package org.evosuite.testcase.execution;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Proxy;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
 import org.evosuite.setup.TestUsageChecker;
 import org.evosuite.testcase.variable.ArrayReference;
 import org.evosuite.testcase.variable.VariableReference;
+
+import java.lang.reflect.Array;
+import java.lang.reflect.Proxy;
+import java.lang.reflect.Type;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * This class represents the state of a test case execution

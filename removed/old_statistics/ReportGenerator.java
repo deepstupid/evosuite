@@ -19,62 +19,27 @@
  */
 package org.evosuite.utils;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.Serializable;
-import java.net.URL;
-import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
-
-import org.apache.commons.lang3.StringEscapeUtils;
-import org.evosuite.Properties;
-import org.evosuite.Properties.NoSuchParameterException;
-import org.evosuite.contracts.AssertionErrorContract;
-import org.evosuite.contracts.EqualsContract;
-import org.evosuite.contracts.EqualsHashcodeContract;
-import org.evosuite.contracts.EqualsNullContract;
-import org.evosuite.contracts.EqualsSymmetricContract;
-import org.evosuite.contracts.FailingTestSet;
-import org.evosuite.contracts.HashCodeReturnsNormallyContract;
-import org.evosuite.contracts.JCrasherExceptionContract;
-import org.evosuite.contracts.NullPointerExceptionContract;
-import org.evosuite.contracts.ToStringReturnsNormallyContract;
-import org.evosuite.contracts.UndeclaredExceptionContract;
-import org.evosuite.ga.Chromosome;
-import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
-import org.evosuite.ga.metaheuristics.SearchListener;
-import org.evosuite.runtime.sandbox.PermissionStatistics;
-import org.evosuite.testcase.ExecutionResult;
-import org.evosuite.testcase.ExecutionTrace;
-import org.evosuite.testcase.ExecutionTracer;
-import org.evosuite.testcase.JUnitTestCarvedChromosomeFactory;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestCaseExecutor;
-import org.evosuite.testcase.TestChromosome;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.panayotis.gnuplot.JavaPlot;
 import com.panayotis.gnuplot.plot.AbstractPlot;
 import com.panayotis.gnuplot.style.PlotStyle;
 import com.panayotis.gnuplot.style.Style;
 import com.panayotis.gnuplot.terminal.FileTerminal;
 import com.panayotis.gnuplot.terminal.GNUPlotTerminal;
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.evosuite.Properties;
+import org.evosuite.Properties.NoSuchParameterException;
+import org.evosuite.ga.Chromosome;
+import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
+import org.evosuite.ga.metaheuristics.SearchListener;
+import org.evosuite.runtime.sandbox.PermissionStatistics;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.net.URL;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 /**
  * <p>

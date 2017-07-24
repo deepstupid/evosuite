@@ -23,15 +23,18 @@ import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.mock.MockFramework;
 import org.evosuite.runtime.mock.java.net.MockDatagramSocket;
 import org.evosuite.runtime.mock.java.net.MockInetAddress;
+import org.evosuite.runtime.mock.java.net.MockServerSocket;
 import org.evosuite.runtime.mock.java.net.MockURL;
 import org.evosuite.runtime.vnet.VirtualNetwork;
 import org.junit.After;
 import org.junit.Assert;
-import org.evosuite.runtime.mock.java.net.MockServerSocket;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.net.*;
+import java.net.DatagramPacket;
+import java.net.Socket;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Scanner;
 
 /**

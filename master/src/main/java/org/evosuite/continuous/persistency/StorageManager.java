@@ -19,17 +19,17 @@
  */
 package org.evosuite.continuous.persistency;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.StringWriter;
-import java.math.BigInteger;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.util.*;
+import com.opencsv.CSVReader;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
+import org.evosuite.Properties;
+import org.evosuite.continuous.project.ProjectStaticData;
+import org.evosuite.utils.ArrayUtil;
+import org.evosuite.utils.FileIOUtils;
+import org.evosuite.utils.LoggingUtils;
+import org.evosuite.xsd.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -38,26 +38,11 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.time.DateFormatUtils;
-import org.evosuite.Properties;
-import org.evosuite.continuous.project.ProjectStaticData;
-import org.evosuite.utils.ArrayUtil;
-import org.evosuite.utils.FileIOUtils;
-import org.evosuite.utils.LoggingUtils;
-import org.evosuite.xsd.CUT;
-import org.evosuite.xsd.CUTUtil;
-import org.evosuite.xsd.Coverage;
-import org.evosuite.xsd.Generation;
-import org.evosuite.xsd.GenerationUtil;
-import org.evosuite.xsd.Project;
-import org.evosuite.xsd.ProjectUtil;
-import org.evosuite.xsd.TestSuite;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.opencsv.CSVReader;
+import java.io.*;
+import java.math.BigInteger;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.*;
 
 /**
  * Class used to store all CTG info on disk

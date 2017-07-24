@@ -20,66 +20,44 @@
 package org.evosuite.strategy;
 
 import org.evosuite.Properties;
-import org.evosuite.ShutdownTestWriter;
 import org.evosuite.Properties.Criterion;
 import org.evosuite.Properties.Strategy;
 import org.evosuite.Properties.TheReplacementFunction;
+import org.evosuite.ShutdownTestWriter;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.coverage.archive.ArchiveTestChromosomeFactory;
 import org.evosuite.coverage.archive.TestsArchive;
 import org.evosuite.coverage.branch.BranchPool;
+import org.evosuite.coverage.ibranch.IBranchSecondaryObjective;
 import org.evosuite.coverage.mutation.MutationTestPool;
 import org.evosuite.coverage.mutation.MutationTimeoutStoppingCondition;
 import org.evosuite.coverage.rho.RhoTestSuiteSecondaryObjective;
 import org.evosuite.ga.ChromosomeFactory;
 import org.evosuite.ga.FitnessReplacementFunction;
 import org.evosuite.ga.SecondaryObjective;
-import org.evosuite.coverage.ibranch.IBranchSecondaryObjective;
-import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
-import org.evosuite.ga.metaheuristics.RandomSearch;
-import org.evosuite.ga.metaheuristics.SPEA2;
-import org.evosuite.ga.metaheuristics.SteadyStateGA;
-import org.evosuite.ga.metaheuristics.NSGAII;
+import org.evosuite.ga.metaheuristics.*;
 import org.evosuite.ga.metaheuristics.mosa.MOSA;
-import org.evosuite.ga.metaheuristics.OnePlusOneEA;
-import org.evosuite.ga.metaheuristics.StandardGA;
-import org.evosuite.ga.metaheuristics.MonotonicGA;
-import org.evosuite.regression.RegressionTestChromosomeFactory;
-import org.evosuite.regression.RegressionTestSuiteChromosomeFactory;
-import org.evosuite.statistics.StatisticsListener;
 import org.evosuite.ga.operators.crossover.CrossOverFunction;
 import org.evosuite.ga.operators.crossover.SinglePointCrossOver;
 import org.evosuite.ga.operators.crossover.SinglePointFixedCrossOver;
 import org.evosuite.ga.operators.crossover.SinglePointRelativeCrossOver;
-import org.evosuite.ga.operators.selection.BinaryTournamentSelectionCrowdedComparison;
-import org.evosuite.ga.operators.selection.FitnessProportionateSelection;
-import org.evosuite.ga.operators.selection.RankSelection;
-import org.evosuite.ga.operators.selection.SelectionFunction;
-import org.evosuite.ga.operators.selection.TournamentSelection;
-import org.evosuite.ga.stoppingconditions.GlobalTimeStoppingCondition;
-import org.evosuite.ga.stoppingconditions.MaxTimeStoppingCondition;
-import org.evosuite.ga.stoppingconditions.RMIStoppingCondition;
-import org.evosuite.ga.stoppingconditions.SocketStoppingCondition;
-import org.evosuite.ga.stoppingconditions.StoppingCondition;
-import org.evosuite.ga.stoppingconditions.ZeroFitnessStoppingCondition;
+import org.evosuite.ga.operators.selection.*;
+import org.evosuite.ga.stoppingconditions.*;
+import org.evosuite.regression.RegressionTestSuiteChromosomeFactory;
+import org.evosuite.statistics.StatisticsListener;
 import org.evosuite.testcase.factories.AllMethodsTestChromosomeFactory;
 import org.evosuite.testcase.factories.JUnitTestCarvedChromosomeFactory;
 import org.evosuite.testcase.factories.RandomLengthTestFactory;
 import org.evosuite.testcase.localsearch.BranchCoverageMap;
-import org.evosuite.testsuite.secondaryobjectives.MinimizeAverageLengthSecondaryObjective;
-import org.evosuite.testsuite.secondaryobjectives.MinimizeExceptionsSecondaryObjective;
-import org.evosuite.testsuite.secondaryobjectives.MinimizeMaxLengthSecondaryObjective;
-import org.evosuite.testsuite.secondaryobjectives.MinimizeSizeSecondaryObjective;
-import org.evosuite.testsuite.secondaryobjectives.MinimizeTotalLengthSecondaryObjective;
 import org.evosuite.testsuite.RelativeSuiteLengthBloatControl;
-import org.evosuite.testsuite.factories.SerializationSuiteChromosomeFactory;
 import org.evosuite.testsuite.TestSuiteChromosome;
-import org.evosuite.testsuite.factories.TestSuiteChromosomeFactory;
 import org.evosuite.testsuite.TestSuiteReplacementFunction;
+import org.evosuite.testsuite.factories.SerializationSuiteChromosomeFactory;
+import org.evosuite.testsuite.factories.TestSuiteChromosomeFactory;
+import org.evosuite.testsuite.secondaryobjectives.*;
 import org.evosuite.utils.ArrayUtil;
 import org.evosuite.utils.ResourceController;
 
-import sun.misc.Signal;
 
 /**
  * Factory for GA on test suites
@@ -373,7 +351,7 @@ public class PropertiesSuiteGAFactory extends PropertiesSearchAlgorithmFactory<T
 			}
 
 			// Runtime.getRuntime().addShutdownHook(writer);
-			Signal.handle(new Signal("INT"), writer);
+			//Signal.handle(new Signal("INT"), writer);
 		}
 
 		ga.addListener(new ResourceController());

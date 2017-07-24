@@ -19,11 +19,6 @@
  */
 package org.evosuite.executionmode;
 
-import java.io.*;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
@@ -34,6 +29,11 @@ import org.evosuite.continuous.ContinuousTestGeneration;
 import org.evosuite.continuous.CtgConfiguration;
 import org.evosuite.utils.LoggingUtils;
 import org.evosuite.utils.SpawnProcessKeepAliveChecker;
+
+import java.io.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class Continuous {
 

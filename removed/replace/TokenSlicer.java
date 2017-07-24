@@ -18,7 +18,7 @@
  * License along with EvoSuite. If not, see <http://www.gnu.org/licenses/>.
  */
 package org.evosuite.eclipse.replace;
-import java.io.*;
+
 import java.util.Collection;
 import java.util.HashMap;
 

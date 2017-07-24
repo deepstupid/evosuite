@@ -22,13 +22,13 @@
  */
 package org.evosuite.testcase.variable;
 
-import java.lang.reflect.Type;
-
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.testcase.statements.Statement;
-import org.evosuite.utils.generic.GenericClass;
 import org.evosuite.utils.NumberFormatter;
+import org.evosuite.utils.generic.GenericClass;
+
+import java.lang.reflect.Type;
 
 
 /**

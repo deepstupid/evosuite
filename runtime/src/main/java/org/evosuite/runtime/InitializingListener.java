@@ -19,15 +19,15 @@
  */
 package org.evosuite.runtime;
 
+import org.evosuite.runtime.agent.InstrumentingAgent;
+import org.junit.runner.Description;
+import org.junit.runner.notification.RunListener;
+
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import org.evosuite.runtime.agent.InstrumentingAgent;
-import org.junit.runner.Description;
-import org.junit.runner.notification.RunListener;
 
 /**
  * When running tests from a build tool (eg  "mvn test" when using Maven)

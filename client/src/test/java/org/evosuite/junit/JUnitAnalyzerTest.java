@@ -19,12 +19,7 @@
  */
 package org.evosuite.junit;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.examples.with.different.packagename.sandbox.OpenStream;
 import org.apache.commons.io.FileUtils;
 import org.evosuite.Properties;
 import org.evosuite.classpath.ClassPathHandler;
@@ -37,7 +32,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.sandbox.OpenStream;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.List;
 
 public class JUnitAnalyzerTest {
 

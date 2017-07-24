@@ -17,11 +17,11 @@
  */
 package org.evosuite.ga.metaheuristics.mosa;
 
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.FitnessFunction;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * Interface for ranking algorithms

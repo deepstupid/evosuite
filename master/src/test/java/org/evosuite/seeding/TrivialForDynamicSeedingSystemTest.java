@@ -29,13 +29,6 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.TrivialForDynamicSeeding;
-import com.examples.with.different.packagename.TrivialForDynamicSeedingEndsWith;
-import com.examples.with.different.packagename.TrivialForDynamicSeedingRegex;
-import com.examples.with.different.packagename.TrivialForDynamicSeedingRegionMatches;
-import com.examples.with.different.packagename.TrivialForDynamicSeedingRegionMatchesCase;
-import com.examples.with.different.packagename.TrivialForDynamicSeedingStartsWith;
-
 public class TrivialForDynamicSeedingSystemTest extends SystemTestBase {
 
 	public static final double defaultDynamicPool = Properties.DYNAMIC_POOL;

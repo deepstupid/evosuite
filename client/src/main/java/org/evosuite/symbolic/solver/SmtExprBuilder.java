@@ -19,17 +19,7 @@
  */
 package org.evosuite.symbolic.solver;
 
-import org.evosuite.symbolic.solver.smt.SmtBooleanConstant;
-import org.evosuite.symbolic.solver.smt.SmtConstantDeclaration;
-import org.evosuite.symbolic.solver.smt.SmtExpr;
-import org.evosuite.symbolic.solver.smt.SmtFunctionDeclaration;
-import org.evosuite.symbolic.solver.smt.SmtIntConstant;
-import org.evosuite.symbolic.solver.smt.SmtIntVariable;
-import org.evosuite.symbolic.solver.smt.SmtOperation;
-import org.evosuite.symbolic.solver.smt.SmtRealConstant;
-import org.evosuite.symbolic.solver.smt.SmtRealVariable;
-import org.evosuite.symbolic.solver.smt.SmtStringConstant;
-import org.evosuite.symbolic.solver.smt.SmtStringVariable;
+import org.evosuite.symbolic.solver.smt.*;
 
 public abstract class SmtExprBuilder {
 

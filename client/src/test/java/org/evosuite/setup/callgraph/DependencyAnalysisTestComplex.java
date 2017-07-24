@@ -19,11 +19,6 @@
  */
 package org.evosuite.setup.callgraph;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.Properties.Criterion;
 import org.evosuite.classpath.ClassPathHandler;
@@ -31,6 +26,11 @@ import org.evosuite.setup.DependencyAnalysis;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class DependencyAnalysisTestComplex {
 

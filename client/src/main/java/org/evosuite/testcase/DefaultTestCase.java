@@ -19,23 +19,7 @@
  */
 package org.evosuite.testcase;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
-
+import com.googlecode.gentyref.GenericTypeReflector;
 import org.evosuite.assertion.Assertion;
 import org.evosuite.assertion.InspectorAssertion;
 import org.evosuite.assertion.PrimitiveFieldAssertion;
@@ -43,21 +27,27 @@ import org.evosuite.contracts.ContractViolation;
 import org.evosuite.ga.ConstructionFailedException;
 import org.evosuite.runtime.util.Inputs;
 import org.evosuite.setup.TestClusterUtils;
-import org.evosuite.testcase.statements.*;
-import org.evosuite.testcase.statements.environment.AccessedEnvironment;
 import org.evosuite.testcase.execution.CodeUnderTestException;
 import org.evosuite.testcase.execution.Scope;
+import org.evosuite.testcase.statements.*;
+import org.evosuite.testcase.statements.environment.AccessedEnvironment;
 import org.evosuite.testcase.variable.*;
-import org.evosuite.utils.generic.GenericClass;
-import org.evosuite.utils.generic.GenericField;
 import org.evosuite.utils.ListenableList;
 import org.evosuite.utils.Listener;
 import org.evosuite.utils.Randomness;
+import org.evosuite.utils.generic.GenericClass;
+import org.evosuite.utils.generic.GenericField;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.googlecode.gentyref.GenericTypeReflector;
-import org.springframework.util.ClassUtils;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A test case is a list of statements
@@ -1000,15 +990,16 @@ public class DefaultTestCase implements TestCase, Serializable {
 	private boolean methodNeedsDownCast(MethodStatement methodStatement, VariableReference var, Class<?> abstractClass) {
 
 		if(!methodStatement.isStatic() && methodStatement.getCallee().equals(var)) {
-			if(!ClassUtils.hasMethod(abstractClass, methodStatement.getMethod().getName(), methodStatement.getMethod().getRawParameterTypes())) {
-				// Need downcast for real
-				return true;
-			} else {
-				Method superClassMethod = ClassUtils.getMethod(abstractClass, methodStatement.getMethod().getName(), methodStatement.getMethod().getRawParameterTypes());
+			try {
+				Method superClassMethod = abstractClass.getMethod(methodStatement.getMethod().getName(), methodStatement.getMethod().getRawParameterTypes());
+				//Method superClassMethod = ClassUtils.getMethod(abstractClass, methodStatement.getMethod().getName(), methodStatement.getMethod().getRawParameterTypes());
 				if(!methodStatement.getMethod().getRawGeneratedType().equals(superClassMethod.getReturnType())) {
 					// Overriding can also change return value, in which case we need to keep the downcast
 					return true;
 				}
+			} catch (NoSuchMethodException e) {
+				// Need downcast for real
+				return true;
 			}
 		}
 		List<VariableReference> parameters = methodStatement.getParameterReferences();
@@ -1061,8 +1052,12 @@ public class DefaultTestCase implements TestCase, Serializable {
 			if(assertion instanceof InspectorAssertion && assertion.getSource().equals(var)) {
 				InspectorAssertion inspectorAssertion = (InspectorAssertion)assertion;
 				Method inspectorMethod = inspectorAssertion.getInspector().getMethod();
-				if(!ClassUtils.hasMethod(abstractClass, inspectorMethod.getName(), inspectorMethod.getParameterTypes())) {
-					return true;
+				try {
+					if(abstractClass.getMethod(inspectorMethod.getName(), inspectorMethod.getParameterTypes())!=null) {
+                        return true;
+                    }
+				} catch (NoSuchMethodException e) {
+					//e.printStackTrace();
 				}
 			} else if(assertion instanceof PrimitiveFieldAssertion && assertion.getSource().equals(var)) {
 				PrimitiveFieldAssertion fieldAssertion = (PrimitiveFieldAssertion)assertion;

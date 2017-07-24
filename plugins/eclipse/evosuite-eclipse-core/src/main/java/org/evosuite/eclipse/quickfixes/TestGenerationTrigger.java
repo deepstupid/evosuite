@@ -19,8 +19,6 @@
  */
 package org.evosuite.eclipse.quickfixes;
 
-import java.io.File;
-
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IProject;
@@ -28,10 +26,10 @@ import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.core.JavaCore;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.viewers.ISelection;
 import org.evosuite.eclipse.popup.actions.TestGenerationAction;
 import org.evosuite.eclipse.popup.actions.TestGenerationJob;
+
+import java.io.File;
 
 
 /**

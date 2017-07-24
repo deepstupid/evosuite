@@ -22,19 +22,18 @@
  */
 package org.evosuite.utils.generic;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.lang.reflect.*;
-
+import com.googlecode.gentyref.GenericTypeReflector;
 import org.apache.commons.lang3.ArrayUtils;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.ga.ConstructionFailedException;
 import org.evosuite.setup.TestClusterGenerator;
 import org.evosuite.setup.TestUsageChecker;
-
-import com.googlecode.gentyref.GenericTypeReflector;
 import org.evosuite.utils.LoggingUtils;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.lang.reflect.*;
 
 /**
  * @author Gordon Fraser

@@ -22,10 +22,10 @@
  */
 package org.evosuite.ga.localsearch;
 
-import java.util.List;
-
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.FitnessFunction;
+
+import java.util.List;
 
 /**
  * Represents a local search objective that will be used during local search to

@@ -19,19 +19,15 @@
  */
 package org.evosuite.graphs.cdg;
 
+import org.evosuite.coverage.branch.Branch;
+import org.evosuite.graphs.EvoSuiteGraph;
+import org.evosuite.graphs.cfg.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
-
-import org.evosuite.coverage.branch.Branch;
-import org.evosuite.graphs.EvoSuiteGraph;
-import org.evosuite.graphs.cfg.ActualControlFlowGraph;
-import org.evosuite.graphs.cfg.BasicBlock;
-import org.evosuite.graphs.cfg.BytecodeInstruction;
-import org.evosuite.graphs.cfg.ControlDependency;
-import org.evosuite.graphs.cfg.ControlFlowEdge;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 public class ControlDependenceGraph extends EvoSuiteGraph<BasicBlock, ControlFlowEdge> {
 
 	private static Logger logger = LoggerFactory.getLogger(ControlDependenceGraph.class);

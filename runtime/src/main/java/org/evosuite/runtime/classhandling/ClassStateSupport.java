@@ -19,10 +19,6 @@
  */
 package org.evosuite.runtime.classhandling;
 
-import java.lang.instrument.UnmodifiableClassException;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.evosuite.runtime.LoopCounter;
 import org.evosuite.runtime.RuntimeSettings;
 import org.evosuite.runtime.agent.InstrumentingAgent;
@@ -31,6 +27,10 @@ import org.evosuite.runtime.sandbox.Sandbox;
 import org.evosuite.runtime.util.AtMostOnceLogger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.instrument.UnmodifiableClassException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 

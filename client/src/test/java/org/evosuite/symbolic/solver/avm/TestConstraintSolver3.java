@@ -19,13 +19,6 @@
  */
 package org.evosuite.symbolic.solver.avm;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Map;
-
 import org.evosuite.Properties;
 import org.evosuite.Properties.LocalSearchBudgetType;
 import org.evosuite.RandomizedTC;
@@ -38,8 +31,14 @@ import org.evosuite.symbolic.expr.str.StringVariable;
 import org.evosuite.symbolic.solver.SolverEmptyQueryException;
 import org.evosuite.symbolic.solver.SolverResult;
 import org.evosuite.symbolic.solver.SolverTimeoutException;
-import org.evosuite.symbolic.solver.avm.EvoSuiteSolver;
 import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class TestConstraintSolver3 extends RandomizedTC {
 

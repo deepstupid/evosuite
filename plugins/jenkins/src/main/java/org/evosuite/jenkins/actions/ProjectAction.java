@@ -19,6 +19,16 @@
  */
 package org.evosuite.jenkins.actions;
 
+import hudson.EnvVars;
+import hudson.FilePath;
+import hudson.maven.AbstractMavenProject;
+import hudson.maven.MavenModule;
+import hudson.maven.MavenModuleSet;
+import hudson.model.AbstractBuild;
+import hudson.model.AbstractProject;
+import hudson.model.Action;
+import hudson.model.BuildListener;
+import hudson.remoting.VirtualChannel;
 import org.evosuite.Properties;
 import org.evosuite.jenkins.plot.CoveragePlot;
 import org.evosuite.jenkins.plot.TimePlot;
@@ -35,17 +45,6 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
-import hudson.EnvVars;
-import hudson.FilePath;
-import hudson.maven.AbstractMavenProject;
-import hudson.maven.MavenModule;
-import hudson.maven.MavenModuleSet;
-import hudson.model.AbstractBuild;
-import hudson.model.AbstractProject;
-import hudson.model.Action;
-import hudson.model.BuildListener;
-import hudson.remoting.VirtualChannel;
 
 public class ProjectAction implements Action {
 

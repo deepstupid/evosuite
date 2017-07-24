@@ -19,11 +19,11 @@
  */
 package org.evosuite.utils.generic;
 
+import com.googlecode.gentyref.GenericTypeReflector;
+
 import java.lang.reflect.Type;
 import java.lang.reflect.WildcardType;
 import java.util.Arrays;
-
-import com.googlecode.gentyref.GenericTypeReflector;
 
 public class WildcardTypeImpl implements WildcardType {
 

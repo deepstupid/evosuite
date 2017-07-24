@@ -19,12 +19,14 @@
  */
 package org.evosuite.runtime.util;
 
-import java.io.IOException;
-import java.io.InputStream;
-
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Opcodes;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+
 
 /**
  * A ClassWriter that computes the common super class of two classes without

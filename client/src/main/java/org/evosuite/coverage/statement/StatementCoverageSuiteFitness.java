@@ -19,16 +19,16 @@
  */
 package org.evosuite.coverage.statement;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.testcase.ExecutableChromosome;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteFitnessFunction;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class StatementCoverageSuiteFitness extends TestSuiteFitnessFunction {
 

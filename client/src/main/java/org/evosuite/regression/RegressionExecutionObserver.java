@@ -19,15 +19,16 @@
  */
 package org.evosuite.regression;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import org.evosuite.testcase.execution.ExecutionObserver;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.execution.Scope;
 import org.evosuite.testcase.statements.Statement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class RegressionExecutionObserver extends ExecutionObserver {
 

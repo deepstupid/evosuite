@@ -19,16 +19,15 @@
  */
 package org.evosuite.runtime.mock.java.net;
 
+import org.evosuite.runtime.vnet.NetworkInterfaceState;
+import org.evosuite.runtime.vnet.VirtualNetwork;
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
 import java.util.List;
-
-import org.junit.Assert;
-
-import org.evosuite.runtime.vnet.NetworkInterfaceState;
-import org.evosuite.runtime.vnet.VirtualNetwork;
-import org.junit.Test;
 
 public class NetworkInterfaceTest {
 

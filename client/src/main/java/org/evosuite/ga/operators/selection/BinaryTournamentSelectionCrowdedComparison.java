@@ -19,11 +19,11 @@
  */
 package org.evosuite.ga.operators.selection;
 
-import java.util.List;
-
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.comparators.CrowdingComparator;
 import org.evosuite.utils.Randomness;
+
+import java.util.List;
 
 /**
  * Select an individual from a population using a Crowd Comparison Operator

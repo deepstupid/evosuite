@@ -22,15 +22,15 @@
  */
 package org.evosuite.ga.stoppingconditions;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-
 import org.evosuite.Properties;
 import org.evosuite.ga.Chromosome;
 import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
 import org.evosuite.utils.LoggingUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.net.ServerSocket;
 
 /**
  * <p>SocketStoppingCondition class.</p>

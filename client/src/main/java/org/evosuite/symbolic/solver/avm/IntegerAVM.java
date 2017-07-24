@@ -19,14 +19,14 @@
  */
 package org.evosuite.symbolic.solver.avm;
 
-import java.util.Collection;
-
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.expr.bv.IntegerVariable;
 import org.evosuite.symbolic.solver.DistanceEstimator;
 import org.evosuite.symbolic.solver.SolverTimeoutException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Collection;
 
 final class IntegerAVM extends VariableAVM {
 

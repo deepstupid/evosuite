@@ -26,11 +26,12 @@ package org.evosuite.symbolic.instrument;
  * @author fraser
  * 
  */
+
+import org.evosuite.dse.MainConfig;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
-
-import org.evosuite.dse.MainConfig;
 
 
 /**

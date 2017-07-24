@@ -19,25 +19,12 @@
  */
 package org.evosuite.testcase.execution;
 
-import java.io.PrintStream;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.ga.stoppingconditions.MaxStatementsStoppingCondition;
 import org.evosuite.ga.stoppingconditions.MaxTestsStoppingCondition;
 import org.evosuite.runtime.LoopCounter;
 import org.evosuite.runtime.Runtime;
-import org.evosuite.runtime.javaee.db.DBManager;
 import org.evosuite.runtime.sandbox.PermissionStatistics;
 import org.evosuite.runtime.sandbox.Sandbox;
 import org.evosuite.runtime.util.JOptionPaneInputs;
@@ -47,6 +34,13 @@ import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.execution.reset.ClassReInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.PrintStream;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.concurrent.*;
 
 /**
  * <p>
@@ -508,9 +502,7 @@ public class TestCaseExecutor implements ThreadFactory {
 			// which can take seconds
 			if (elem.getClassName().equals("sun.font.CFontManager"))
 				return true;
-			// JDBC initialisation can take a while, and interrupting can mess things up
-			if (elem.getClassName().equals(DBManager.class.getCanonicalName()) && elem.getMethodName().equals("initDB"))
-				return true;
+
 		}
 		return false;
 	}

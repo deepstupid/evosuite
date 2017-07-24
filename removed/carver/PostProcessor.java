@@ -19,18 +19,7 @@
  */
 package org.evosuite.testcarver.codegen;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import javax.tools.*;
-
+import gnu.trove.list.array.TIntArrayList;
 import org.eclipse.jdt.internal.compiler.tool.EclipseCompiler;
 import org.evosuite.testcarver.capture.CaptureLog;
 import org.evosuite.testcarver.configuration.Configuration;
@@ -41,9 +30,10 @@ import org.junit.runners.model.InitializationError;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-
-import gnu.trove.list.array.TIntArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public final class PostProcessor {
 	

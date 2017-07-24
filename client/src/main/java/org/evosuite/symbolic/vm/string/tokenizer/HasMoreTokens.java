@@ -19,8 +19,6 @@
  */
 package org.evosuite.symbolic.vm.string.tokenizer;
 
-import java.util.StringTokenizer;
-
 import org.evosuite.symbolic.expr.ref.ReferenceConstant;
 import org.evosuite.symbolic.expr.token.HasMoreTokensExpr;
 import org.evosuite.symbolic.expr.token.TokenizerExpr;
@@ -28,6 +26,8 @@ import org.evosuite.symbolic.vm.SymbolicEnvironment;
 import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicHeap;
 import org.evosuite.symbolic.vm.string.Types;
+
+import java.util.StringTokenizer;
 
 public final class HasMoreTokens extends SymbolicFunction {
 

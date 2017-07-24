@@ -19,9 +19,6 @@
  */
 package org.evosuite.symbolic.vm.string;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 import org.evosuite.symbolic.expr.Expression;
 import org.evosuite.symbolic.expr.Operator;
 import org.evosuite.symbolic.expr.bv.IntegerValue;
@@ -33,6 +30,9 @@ import org.evosuite.symbolic.expr.str.StringValue;
 import org.evosuite.symbolic.vm.SymbolicEnvironment;
 import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicHeap;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 public abstract class IndexOf extends SymbolicFunction {
 

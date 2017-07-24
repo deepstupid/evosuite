@@ -20,17 +20,16 @@
 package org.evosuite.coverage.io.input;
 
 
-import org.evosuite.testcase.TestFitnessFunction;
-import org.evosuite.testcase.statements.EntityWithParametersStatement;
 import org.objectweb.asm.Type;
 
 import java.io.Serializable;
 import java.lang.reflect.Array;
-import java.util.*;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import static org.evosuite.coverage.io.IOCoverageConstants.*;
-import static org.evosuite.coverage.io.IOCoverageConstants.REF_NONNULL;
-import static org.evosuite.coverage.io.IOCoverageConstants.STRING_NONEMPTY;
 
 /**
  * A single input coverage goal.

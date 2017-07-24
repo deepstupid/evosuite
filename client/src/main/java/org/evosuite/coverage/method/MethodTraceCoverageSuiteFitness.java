@@ -19,22 +19,20 @@
  */
 package org.evosuite.coverage.method;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.util.*;
-import java.util.Map.Entry;
-
 import org.evosuite.Properties;
 import org.evosuite.coverage.archive.TestsArchive;
-import org.evosuite.setup.TestUsageChecker;
 import org.evosuite.testcase.ExecutableChromosome;
-import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.statements.ConstructorStatement;
+import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.objectweb.asm.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
+import java.util.Map.Entry;
+import java.util.Set;
 
 /**
  * Fitness function for a whole test suite for all methods.

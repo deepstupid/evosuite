@@ -19,24 +19,15 @@
  */
 package org.evosuite.symbolic;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 import org.evosuite.Properties;
+import org.evosuite.dse.IVM;
+import org.evosuite.dse.MainConfig;
+import org.evosuite.dse.VM;
 import org.evosuite.ga.stoppingconditions.MaxStatementsStoppingCondition;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.expr.ExpressionExecutor;
 import org.evosuite.symbolic.instrument.ConcolicInstrumentingClassLoader;
-import org.evosuite.symbolic.vm.ArithmeticVM;
-import org.evosuite.symbolic.vm.CallVM;
-import org.evosuite.symbolic.vm.HeapVM;
-import org.evosuite.symbolic.vm.JumpVM;
-import org.evosuite.symbolic.vm.LocalsVM;
-import org.evosuite.symbolic.vm.OtherVM;
-import org.evosuite.symbolic.vm.PathConditionCollector;
-import org.evosuite.symbolic.vm.SymbolicFunctionVM;
-import org.evosuite.symbolic.vm.SymbolicEnvironment;
+import org.evosuite.symbolic.vm.*;
 import org.evosuite.testcase.DefaultTestCase;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testcase.execution.ExecutionObserver;
@@ -44,9 +35,10 @@ import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.execution.TestCaseExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.evosuite.dse.IVM;
-import org.evosuite.dse.MainConfig;
-import org.evosuite.dse.VM;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * <p>

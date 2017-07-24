@@ -20,13 +20,9 @@
 package org.evosuite.coverage.io.output;
 
 
-import org.evosuite.Properties;
-import org.evosuite.TestGenerationContext;
 import org.evosuite.assertion.Inspector;
 import org.evosuite.assertion.InspectorManager;
 import org.evosuite.setup.DependencyAnalysis;
-import org.evosuite.testcase.TestFitnessFunction;
-import org.evosuite.testcase.statements.MethodStatement;
 import org.objectweb.asm.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +30,8 @@ import org.slf4j.LoggerFactory;
 import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
-import java.util.*;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 import static org.evosuite.coverage.io.IOCoverageConstants.*;
 

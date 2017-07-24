@@ -19,22 +19,19 @@
  */
 package org.evosuite.classpath;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
-import java.util.Collection;
-
+import com.examples.with.different.packagename.classpath.Foo;
+import com.examples.with.different.packagename.classpath.subp.SubPackageFoo;
 import org.evosuite.TestGenerationContext;
-import org.evosuite.classpath.ClassPathHandler;
-import org.evosuite.classpath.ResourceList;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.classpath.Foo;
-import com.examples.with.different.packagename.classpath.subp.SubPackageFoo;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.Collection;
 
 public class ResourceListTest {
 

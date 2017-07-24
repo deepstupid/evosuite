@@ -19,7 +19,6 @@
  */
 package org.evosuite.assertion;
 
-import com.examples.with.different.packagename.ExampleNullAssertion;
 import com.examples.with.different.packagename.assertion.ExampleReturningEnum;
 import org.evosuite.EvoSuite;
 import org.evosuite.SystemTestBase;

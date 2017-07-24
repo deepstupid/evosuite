@@ -19,14 +19,14 @@
  */
 package org.evosuite.assertion;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.evosuite.Properties;
 import org.evosuite.testcase.TestCase;
 import org.evosuite.testcase.variable.VariableReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Abstract base class of execution traces

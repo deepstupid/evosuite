@@ -19,16 +19,6 @@
  */
 package org.evosuite.testcarver.extraction;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.TimeController;
@@ -40,12 +30,14 @@ import org.evosuite.testcarver.codegen.CaptureLogAnalyzer;
 import org.evosuite.testcarver.testcase.CarvedTestCase;
 import org.evosuite.testcarver.testcase.EvoTestCaseCodeGenerator;
 import org.evosuite.testcase.TestCase;
-import org.evosuite.utils.generic.GenericTypeInference;
 import org.evosuite.utils.LoggingUtils;
+import org.evosuite.utils.generic.GenericTypeInference;
 import org.junit.runner.Description;
 import org.junit.runner.notification.RunListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 public class CarvingRunListener extends RunListener {
 

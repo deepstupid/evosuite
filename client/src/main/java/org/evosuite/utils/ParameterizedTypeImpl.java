@@ -38,12 +38,12 @@ package org.evosuite.utils;
  * the License.
  */
 
+import com.googlecode.gentyref.CaptureType;
+import com.googlecode.gentyref.GenericTypeReflector;
+
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.Arrays;
-
-import com.googlecode.gentyref.CaptureType;
-import com.googlecode.gentyref.GenericTypeReflector;
 
 /**
  * An immutable implementation of the {@link ParameterizedType} interface. This

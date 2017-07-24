@@ -19,11 +19,11 @@
  */
 package org.evosuite.continuous.job.schedule;
 
-import java.util.List;
-
 import org.evosuite.continuous.job.JobDefinition;
 import org.evosuite.continuous.job.JobScheduler;
 import org.evosuite.utils.LoggingUtils;
+
+import java.util.List;
 
 /**
  * A schedule that can only be called once.

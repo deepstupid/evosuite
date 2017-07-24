@@ -19,11 +19,6 @@
  */
 package org.evosuite.coverage.lcsaj;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map.Entry;
-
 import org.evosuite.coverage.branch.Branch;
 import org.evosuite.coverage.branch.BranchCoverageSuiteFitness;
 import org.evosuite.testcase.ExecutableChromosome;
@@ -32,6 +27,11 @@ import org.evosuite.testcase.ExecutionTracer;
 import org.evosuite.testcase.TestChromosome;
 import org.evosuite.testsuite.AbstractTestSuiteChromosome;
 import org.evosuite.testsuite.TestSuiteFitnessFunction;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map.Entry;
 
 /**
  * Evaluate fitness of a test suite with respect to all LCSAJs of a class

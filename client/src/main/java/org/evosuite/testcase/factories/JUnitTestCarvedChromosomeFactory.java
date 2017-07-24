@@ -19,9 +19,6 @@
  */
 package org.evosuite.testcase.factories;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.evosuite.Properties;
 import org.evosuite.coverage.FitnessFunctions;
 import org.evosuite.ga.ChromosomeFactory;
@@ -37,6 +34,9 @@ import org.evosuite.utils.LoggingUtils;
 import org.evosuite.utils.Randomness;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class JUnitTestCarvedChromosomeFactory implements
         ChromosomeFactory<TestChromosome> {

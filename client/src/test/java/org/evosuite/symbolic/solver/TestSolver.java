@@ -19,11 +19,11 @@
  */
 package org.evosuite.symbolic.solver;
 
+import org.evosuite.symbolic.expr.Constraint;
+
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
-
-import org.evosuite.symbolic.expr.Constraint;
 
 public abstract class TestSolver {
 

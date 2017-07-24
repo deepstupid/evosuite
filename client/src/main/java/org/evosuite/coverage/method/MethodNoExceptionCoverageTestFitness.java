@@ -19,13 +19,13 @@
  */
 package org.evosuite.coverage.method;
 
-import org.evosuite.testcase.*;
+import org.evosuite.testcase.TestChromosome;
+import org.evosuite.testcase.TestFitnessFunction;
 import org.evosuite.testcase.execution.ExecutionResult;
 import org.evosuite.testcase.statements.ConstructorStatement;
 import org.evosuite.testcase.statements.EntityWithParametersStatement;
 import org.evosuite.testcase.statements.MethodStatement;
 import org.evosuite.testcase.statements.Statement;
-import org.objectweb.asm.Type;
 
 import java.util.Set;
 

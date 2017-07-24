@@ -19,47 +19,24 @@
  */
 package org.evosuite.symbolic.solver.z3str2;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.io.FileUtils;
 import org.evosuite.Properties;
 import org.evosuite.symbolic.expr.Constraint;
 import org.evosuite.symbolic.expr.Variable;
-import org.evosuite.symbolic.solver.SmtExprBuilder;
-import org.evosuite.symbolic.solver.SolverEmptyQueryException;
-import org.evosuite.symbolic.solver.SolverErrorException;
-import org.evosuite.symbolic.solver.SolverParseException;
-import org.evosuite.symbolic.solver.SolverResult;
-import org.evosuite.symbolic.solver.SolverTimeoutException;
-import org.evosuite.symbolic.solver.SubProcessSolver;
-import org.evosuite.symbolic.solver.smt.SmtAssertion;
-import org.evosuite.symbolic.solver.smt.SmtCheckSatQuery;
-import org.evosuite.symbolic.solver.smt.SmtConstantDeclaration;
-import org.evosuite.symbolic.solver.smt.SmtExpr;
-import org.evosuite.symbolic.solver.smt.SmtFunctionDefinition;
-import org.evosuite.symbolic.solver.smt.SmtIntVariable;
-import org.evosuite.symbolic.solver.smt.SmtOperation;
+import org.evosuite.symbolic.solver.*;
+import org.evosuite.symbolic.solver.smt.*;
 import org.evosuite.symbolic.solver.smt.SmtOperation.Operator;
-import org.evosuite.symbolic.solver.smt.SmtOperatorCollector;
-import org.evosuite.symbolic.solver.smt.SmtRealVariable;
-import org.evosuite.symbolic.solver.smt.SmtStringVariable;
-import org.evosuite.symbolic.solver.smt.SmtVariable;
-import org.evosuite.symbolic.solver.smt.SmtVariableCollector;
 import org.evosuite.symbolic.solver.z3.Z3Solver;
 import org.evosuite.testcase.execution.EvosuiteError;
 import org.evosuite.utils.FileIOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.*;
 
 public class Z3Str2Solver extends SubProcessSolver {
 

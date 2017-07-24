@@ -17,9 +17,9 @@
  */
 package org.evosuite.ga.metaheuristics.mosa.comparators;
 
-import java.util.Comparator;
-
 import org.evosuite.ga.Chromosome;
+
+import java.util.Comparator;
 
 /**
  * This class implements a <code>Comparator</code> (a method for comparing <code>Chromosomes</code> 

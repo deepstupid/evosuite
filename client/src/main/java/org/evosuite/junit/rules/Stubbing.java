@@ -19,13 +19,12 @@
  */
 package org.evosuite.junit.rules;
 
+import javax.swing.*;
 import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
-
-import javax.swing.DebugGraphics;
 
 public class Stubbing extends BaseRule {
 

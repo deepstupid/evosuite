@@ -22,13 +22,9 @@
  */
 package org.evosuite.utils;
 
-import java.util.ArrayDeque;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Queue;
-import java.util.Set;
-
 import org.evosuite.Properties;
+
+import java.util.*;
 
 /**
  * @author Gordon Fraser

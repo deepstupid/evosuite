@@ -22,22 +22,6 @@
  */
 package org.evosuite.setup;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Queue;
-import java.util.Set;
-
 import org.evosuite.Properties;
 import org.evosuite.Properties.Criterion;
 import org.evosuite.TestGenerationContext;
@@ -48,7 +32,6 @@ import org.evosuite.instrumentation.testability.BooleanTestabilityTransformation
 import org.evosuite.rmi.ClientServices;
 import org.evosuite.runtime.PrivateAccess;
 import org.evosuite.runtime.classhandling.ModifiedTargetStaticFields;
-import org.evosuite.runtime.javaee.injection.Injector;
 import org.evosuite.runtime.mock.MockList;
 import org.evosuite.runtime.sandbox.Sandbox;
 import org.evosuite.runtime.util.Inputs;
@@ -59,16 +42,19 @@ import org.evosuite.setup.PutStaticMethodCollector.MethodIdentifier;
 import org.evosuite.setup.callgraph.CallGraph;
 import org.evosuite.statistics.RuntimeVariable;
 import org.evosuite.utils.ArrayUtil;
-import org.evosuite.utils.generic.GenericAccessibleObject;
-import org.evosuite.utils.generic.GenericClass;
-import org.evosuite.utils.generic.GenericConstructor;
-import org.evosuite.utils.generic.GenericField;
-import org.evosuite.utils.generic.GenericMethod;
+import org.evosuite.utils.generic.*;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.InnerClassNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * @author Gordon Fraser
@@ -138,9 +124,6 @@ public class TestClusterGenerator {
 
 		handleSpecialCases();
 
-		if (Properties.JEE) {
-			addInjectionDependencies(blackList);
-		}
 
 		logger.info("Removing unusable generators");
 		TestCluster.getInstance().removeUnusableGenerators();
@@ -166,32 +149,6 @@ public class TestClusterGenerator {
 
 	// -----------------------------------------------------------------------------
 
-	private void addInjectionDependencies(Set<String> blackList) {
-
-		Set<Class<?>> toAdd = new LinkedHashSet<>();
-
-		try {
-			analyzedClasses.stream().flatMap(c -> Injector.getAllFieldsToInject(c).stream()).map(f -> f.getType())
-					.forEach(t -> addInjectionRecursively(t, toAdd, blackList));
-		} catch(Throwable t) {
-			logger.warn("Error during initialisation of injection dependencies: "+t+", continuing anyway.");
-		}
-		toAdd.stream().forEach(c -> dependencies.add(new DependencyPair(0, new GenericClass(c).getRawClass())));
-		resolveDependencies(blackList);
-	}
-
-	private void addInjectionRecursively(Class<?> target, Set<Class<?>> toAdd, Set<String> blackList) {
-
-		if (toAdd.contains(target) || blackList.contains(target.getName())) {
-			return;
-		}
-
-		toAdd.add(target);
-
-		for (Field f : Injector.getAllFieldsToInject(target)) {
-			addInjectionRecursively(f.getType(), toAdd, blackList);
-		}
-	}
 
 	private void handleSpecialCases() {
 

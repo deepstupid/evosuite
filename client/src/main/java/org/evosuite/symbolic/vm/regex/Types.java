@@ -19,12 +19,12 @@
  */
 package org.evosuite.symbolic.vm.regex;
 
-import static org.objectweb.asm.Type.BOOLEAN_TYPE;
+import org.objectweb.asm.Type;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.objectweb.asm.Type;
+import static org.objectweb.asm.Type.BOOLEAN_TYPE;
 
 public interface Types {
 

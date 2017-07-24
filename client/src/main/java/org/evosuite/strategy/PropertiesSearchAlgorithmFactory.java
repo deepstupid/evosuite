@@ -20,18 +20,12 @@
 package org.evosuite.strategy;
 
 import org.evosuite.Properties;
-import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
 import org.evosuite.ga.Chromosome;
+import org.evosuite.ga.metaheuristics.GeneticAlgorithm;
 import org.evosuite.ga.populationlimit.IndividualPopulationLimit;
 import org.evosuite.ga.populationlimit.PopulationLimit;
 import org.evosuite.ga.populationlimit.SizePopulationLimit;
-import org.evosuite.ga.stoppingconditions.MaxFitnessEvaluationsStoppingCondition;
-import org.evosuite.ga.stoppingconditions.MaxGenerationStoppingCondition;
-import org.evosuite.ga.stoppingconditions.MaxStatementsStoppingCondition;
-import org.evosuite.ga.stoppingconditions.MaxTestsStoppingCondition;
-import org.evosuite.ga.stoppingconditions.MaxTimeStoppingCondition;
-import org.evosuite.ga.stoppingconditions.StoppingCondition;
-import org.evosuite.ga.stoppingconditions.TimeDeltaStoppingCondition;
+import org.evosuite.ga.stoppingconditions.*;
 import org.evosuite.testsuite.StatementsPopulationLimit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

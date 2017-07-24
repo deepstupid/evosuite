@@ -19,11 +19,11 @@
  */
 package org.evosuite.symbolic.expr.ref;
 
-import java.util.Set;
-
 import org.evosuite.symbolic.expr.ExpressionVisitor;
 import org.evosuite.symbolic.expr.Variable;
 import org.objectweb.asm.Type;
+
+import java.util.Set;
 
 public final class GetFieldExpression extends ReferenceExpression {
 

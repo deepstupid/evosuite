@@ -19,17 +19,13 @@
  */
 package org.evosuite.symbolic.solver.cvc4;
 
+import org.evosuite.symbolic.solver.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
-
-import org.evosuite.symbolic.solver.ResultParser;
-import org.evosuite.symbolic.solver.SolverErrorException;
-import org.evosuite.symbolic.solver.SolverParseException;
-import org.evosuite.symbolic.solver.SolverResult;
-import org.evosuite.symbolic.solver.SolverTimeoutException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 final class CVC4ResultParser extends ResultParser {
 

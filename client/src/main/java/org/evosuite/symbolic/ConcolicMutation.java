@@ -19,32 +19,19 @@
  */
 package org.evosuite.symbolic;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.evosuite.symbolic.expr.BinaryExpression;
-import org.evosuite.symbolic.expr.Constraint;
-import org.evosuite.symbolic.expr.Expression;
-import org.evosuite.symbolic.expr.UnaryExpression;
-import org.evosuite.symbolic.expr.Variable;
-import org.evosuite.symbolic.solver.SolverCache;
+import org.evosuite.symbolic.expr.*;
 import org.evosuite.symbolic.solver.Solver;
+import org.evosuite.symbolic.solver.SolverCache;
 import org.evosuite.symbolic.solver.SolverFactory;
 import org.evosuite.symbolic.solver.SolverResult;
-import org.evosuite.testcase.statements.Statement;
 import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.statements.numeric.BooleanPrimitiveStatement;
-import org.evosuite.testcase.statements.numeric.BytePrimitiveStatement;
-import org.evosuite.testcase.statements.numeric.CharPrimitiveStatement;
-import org.evosuite.testcase.statements.numeric.IntPrimitiveStatement;
-import org.evosuite.testcase.statements.numeric.LongPrimitiveStatement;
 import org.evosuite.testcase.statements.PrimitiveStatement;
-import org.evosuite.testcase.statements.numeric.ShortPrimitiveStatement;
+import org.evosuite.testcase.statements.Statement;
+import org.evosuite.testcase.statements.numeric.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.*;
 
 /**
  * <p>

@@ -19,15 +19,11 @@
  */
 package org.evosuite.instrumentation.error;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Deque;
-import java.util.List;
-import java.util.Map;
+import org.objectweb.asm.Opcodes;
+
+import java.util.*;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
-
-import org.objectweb.asm.Opcodes;
 
 public class DequeInstrumentation extends ErrorBranchInstrumenter {
 

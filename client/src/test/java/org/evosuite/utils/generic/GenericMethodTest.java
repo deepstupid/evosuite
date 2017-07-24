@@ -22,14 +22,9 @@ package org.evosuite.utils.generic;
 
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.util.Arrays;
-
-import javax.servlet.Servlet;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Andrea Arcuri on 02/07/15.

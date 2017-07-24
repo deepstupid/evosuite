@@ -19,15 +19,15 @@
  */
 package org.evosuite;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import org.evosuite.Properties.StoppingCondition;
 import org.evosuite.Properties.TestFactory;
 import org.evosuite.rmi.service.ClientState;
 import org.evosuite.runtime.util.Inputs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 /**

@@ -19,22 +19,11 @@
  */
 package org.evosuite.junit;
 
-import java.lang.reflect.Type;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.evosuite.assertion.Assertion;
 import org.evosuite.ga.ConstructionFailedException;
-import org.evosuite.testcase.Scope;
-import org.evosuite.testcase.StatementInterface;
-import org.evosuite.testcase.TestCase;
-import org.evosuite.testcase.TestFitnessFunction;
-import org.evosuite.testcase.TestVisitor;
-import org.evosuite.testcase.VariableReference;
 import org.evosuite.utils.Listener;
+
+import java.lang.reflect.Type;
 
 
 /**

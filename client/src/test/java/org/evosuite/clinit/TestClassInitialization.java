@@ -19,11 +19,7 @@
  */
 package org.evosuite.clinit;
 
-import static org.junit.Assert.*;
-
-import java.lang.reflect.Method;
-import java.util.Collections;
-
+import com.examples.with.different.packagename.clinit.SimpleClass;
 import org.evosuite.Properties;
 import org.evosuite.TestGenerationContext;
 import org.evosuite.classpath.ClassPathHandler;
@@ -38,7 +34,11 @@ import org.evosuite.testcase.variable.VariableReference;
 import org.evosuite.utils.generic.GenericMethod;
 import org.junit.Test;
 
-import com.examples.with.different.packagename.clinit.SimpleClass;
+import java.lang.reflect.Method;
+import java.util.Collections;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class TestClassInitialization {
 

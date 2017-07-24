@@ -19,8 +19,6 @@
  */
 package org.evosuite.symbolic.vm.string.reader;
 
-import java.io.StringReader;
-
 import org.evosuite.symbolic.expr.reader.StringReaderExpr;
 import org.evosuite.symbolic.expr.ref.ReferenceConstant;
 import org.evosuite.symbolic.expr.str.StringValue;
@@ -28,6 +26,8 @@ import org.evosuite.symbolic.vm.SymbolicEnvironment;
 import org.evosuite.symbolic.vm.SymbolicFunction;
 import org.evosuite.symbolic.vm.SymbolicHeap;
 import org.evosuite.symbolic.vm.string.Types;
+
+import java.io.StringReader;
 
 public final class StringReader_Read extends SymbolicFunction {
 
